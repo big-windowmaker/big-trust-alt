@@ -20,10 +20,12 @@ arch=(any)
 url='https://github.com/big-windowmaker/big-trust-alt'
 license=('GPL-3.0-or-later')
 depends=(
+  glib2
   gtk4
   hicolor-icon-theme
   libadwaita
-  pacman          # repositórios: pacman -Sl / -Qq
+  pacman          # chamado em tempo de execução: pacman -Sl / -Qq
+  pango
   python
   python-gobject
 )

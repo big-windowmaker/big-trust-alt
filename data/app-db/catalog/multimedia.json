@@ -1,0 +1,1899 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "vlc",
+      "name": "VLC media player",
+      "vendor": "VideoLAN",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "vlc * win*"
+        ],
+        "products": [
+          "vlc media player"
+        ],
+        "vendors": [
+          "videolan"
+        ],
+        "packages": [
+          "vlc"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "vlc"
+        ],
+        "flatpak": [
+          "org.videolan.VLC"
+        ],
+        "desktop": [
+          "vlc.desktop",
+          "org.videolan.VLC.desktop"
+        ],
+        "website": "https://www.videolan.org/vlc/download-archlinux.html"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "mpv",
+      "name": "mpv",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "mpv"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "mpv"
+        ],
+        "flatpak": [
+          "io.mpv.Mpv"
+        ],
+        "desktop": [
+          "mpv.desktop",
+          "io.mpv.Mpv.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "celluloid",
+      "name": "Celluloid",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "celluloid"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "celluloid"
+        ],
+        "flatpak": [
+          "io.github.celluloid_player.Celluloid"
+        ],
+        "desktop": [
+          "io.github.celluloid_player.Celluloid.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "haruna",
+      "name": "Haruna",
+      "vendor": "KDE",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "haruna"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "haruna"
+        ],
+        "flatpak": [
+          "org.kde.haruna"
+        ],
+        "desktop": [
+          "org.kde.haruna.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "mpc-qt",
+      "name": "Media Player Classic Qute Theater",
+      "aliases": [
+        "mpc-qt"
+      ],
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "mpc-qt"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "mpc-qt"
+        ],
+        "flatpak": [
+          "io.github.mpc_qt.mpc-qt"
+        ],
+        "desktop": [
+          "io.github.mpc_qt.mpc-qt.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "mpc-hc",
+      "name": "MPC-HC",
+      "aliases": [
+        "Media Player Classic"
+      ],
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "mpc hc *"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "mpc-qt",
+          "relation": "alternative",
+          "note": {
+            "en": "Player that reproduces the Media Player Classic interface on top of mpv.",
+            "pt_BR": "Reprodutor que imita a interface do Media Player Classic sobre o mpv."
+          }
+        },
+        {
+          "id": "vlc",
+          "relation": "alternative",
+          "note": {
+            "en": "Plays almost any audio or video format without extra codecs.",
+            "pt_BR": "Reproduz quase qualquer formato de áudio ou vídeo sem codecs extras."
+          }
+        },
+        {
+          "id": "celluloid",
+          "relation": "alternative",
+          "note": {
+            "en": "Simple GTK video player built on mpv.",
+            "pt_BR": "Reprodutor de vídeo GTK simples baseado no mpv."
+          }
+        },
+        {
+          "id": "haruna",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE video player built on mpv.",
+            "pt_BR": "Reprodutor de vídeo do KDE baseado no mpv."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "k-lite-codec-pack",
+      "name": "K-Lite Codec Pack",
+      "vendor": "Codec Guide",
+      "category": "video",
+      "kind": "system",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "k lite codec pack*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "vlc",
+          "relation": "alternative",
+          "note": {
+            "en": "Plays almost any audio or video format without extra codecs.",
+            "pt_BR": "Reproduz quase qualquer formato de áudio ou vídeo sem codecs extras."
+          }
+        },
+        {
+          "id": "mpv",
+          "relation": "alternative",
+          "note": {
+            "en": "Lightweight, keyboard-driven video player.",
+            "pt_BR": "Reprodutor de vídeo leve, controlado pelo teclado."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "not-needed"
+      },
+      "message": {
+        "en": "Linux does not use Windows codec packs: codecs come with the system (FFmpeg/GStreamer) and players like VLC.",
+        "pt_BR": "O Linux não usa pacotes de codecs do Windows: os codecs vêm com o sistema (FFmpeg/GStreamer) e com reprodutores como o VLC."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt"
+      ]
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "vendor": "Spotify AB",
+      "category": "music",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "spotifysetup*",
+          "spotify*installer*"
+        ],
+        "packages": [
+          "spotify-client"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "spotify-launcher",
+          "spotify"
+        ],
+        "flatpak": [
+          "com.spotify.Client"
+        ],
+        "desktop": [
+          "spotify-launcher.desktop",
+          "spotify.desktop",
+          "com.spotify.Client.desktop"
+        ],
+        "website": "https://www.spotify.com/download/linux/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "apple-music",
+      "name": "Apple Music",
+      "vendor": "Apple Inc.",
+      "category": "music",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "apple*music*installer*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://music.apple.com/"
+      },
+      "windows": {
+        "wine": "unknown",
+        "note": {
+          "en": "Apple Music has no Linux app; it works in the browser.",
+          "pt_BR": "O Apple Music não tem aplicativo para Linux; funciona no navegador."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "itunes",
+      "name": "Apple iTunes",
+      "vendor": "Apple Inc.",
+      "category": "music",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "itunes*setup*",
+          "itunes*installer*"
+        ],
+        "products": [
+          "itunes"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "apple-music",
+          "relation": "web",
+          "note": {
+            "en": "Apple Music works in the browser.",
+            "pt_BR": "O Apple Music funciona no navegador."
+          }
+        },
+        {
+          "id": "strawberry",
+          "relation": "alternative",
+          "note": {
+            "en": "Music player and library organizer for local collections.",
+            "pt_BR": "Reprodutor de música e organizador de biblioteca local."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial",
+        "note": {
+          "en": "iTunes is not available for Linux; iPhone sync is not supported by the alternatives.",
+          "pt_BR": "O iTunes não existe para Linux; as alternativas não sincronizam iPhone."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "amazon-music",
+      "name": "Amazon Music",
+      "vendor": "Amazon",
+      "category": "music",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "amazonmusicinstaller*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://music.amazon.com/"
+      },
+      "windows": {
+        "wine": "unknown"
+      },
+      "message": {
+        "en": "Amazon Music has no Linux app; it works in the browser.",
+        "pt_BR": "O Amazon Music não tem aplicativo para Linux; funciona no navegador."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "winamp",
+      "name": "Winamp",
+      "category": "music",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "winamp*"
+        ],
+        "products": [
+          "winamp"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "audacious",
+          "relation": "alternative",
+          "note": {
+            "en": "Lightweight audio player; can use Winamp 2 skins.",
+            "pt_BR": "Reprodutor de áudio leve; aceita skins do Winamp 2."
+          }
+        },
+        {
+          "id": "strawberry",
+          "relation": "alternative",
+          "note": {
+            "en": "Music player and library organizer for local collections.",
+            "pt_BR": "Reprodutor de música e organizador de biblioteca local."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "foobar2000",
+      "name": "foobar2000",
+      "category": "music",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "foobar2000*"
+        ],
+        "products": [
+          "foobar2000"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "deadbeef",
+          "relation": "alternative",
+          "note": {
+            "en": "Lightweight, customizable audio player similar to foobar2000.",
+            "pt_BR": "Reprodutor de áudio leve e personalizável, semelhante ao foobar2000."
+          }
+        },
+        {
+          "id": "strawberry",
+          "relation": "alternative",
+          "note": {
+            "en": "Music player and library organizer for local collections.",
+            "pt_BR": "Reprodutor de música e organizador de biblioteca local."
+          }
+        },
+        {
+          "id": "audacious",
+          "relation": "alternative",
+          "note": {
+            "en": "Lightweight audio player; can use Winamp 2 skins.",
+            "pt_BR": "Reprodutor de áudio leve; aceita skins do Winamp 2."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "audacious",
+      "name": "Audacious",
+      "category": "music",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "audacious * win*"
+        ],
+        "packages": [
+          "audacious"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "audacious"
+        ],
+        "flatpak": [
+          "org.atheme.audacious"
+        ],
+        "desktop": [
+          "audacious.desktop",
+          "org.atheme.audacious.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "strawberry",
+      "name": "Strawberry Music Player",
+      "category": "music",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "strawberrysetup*"
+        ],
+        "packages": [
+          "strawberry"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "strawberry"
+        ],
+        "flatpak": [
+          "org.strawberrymusicplayer.strawberry"
+        ],
+        "desktop": [
+          "org.strawberrymusicplayer.strawberry.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "deadbeef",
+      "name": "DeaDBeeF",
+      "category": "music",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "deadbeef * x86 64*"
+        ],
+        "packages": [
+          "deadbeef"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "deadbeef"
+        ],
+        "website": "https://deadbeef.sourceforge.io/download.html"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "picard",
+      "name": "MusicBrainz Picard",
+      "category": "music",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "picard setup*"
+        ],
+        "packages": [
+          "picard"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "picard"
+        ],
+        "flatpak": [
+          "org.musicbrainz.Picard"
+        ],
+        "desktop": [
+          "org.musicbrainz.Picard.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "plex-media-server",
+      "name": "Plex Media Server",
+      "vendor": "Plex, Inc.",
+      "category": "media-server",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "plexmediaserver*",
+          "plex media server*"
+        ],
+        "packages": [
+          "plexmediaserver"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "plex-media-server"
+        ],
+        "website": "https://www.plex.tv/media-server-downloads/?cat=computer&plat=linux"
+      },
+      "alternatives": [
+        {
+          "id": "jellyfin-server",
+          "relation": "alternative",
+          "note": {
+            "en": "Free and open-source media server.",
+            "pt_BR": "Servidor de mídia livre e de código aberto."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "plex",
+      "name": "Plex Desktop",
+      "vendor": "Plex, Inc.",
+      "category": "media-server",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "plex 1*",
+          "plex setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "plex-desktop"
+        ],
+        "flatpak": [
+          "tv.plex.PlexDesktop"
+        ],
+        "desktop": [
+          "tv.plex.PlexDesktop.desktop"
+        ],
+        "website": "https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=linux"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "jellyfin-server",
+      "name": "Jellyfin Server",
+      "category": "media-server",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "jellyfin 1* windows*"
+        ],
+        "packages": [
+          "jellyfin-server",
+          "jellyfin"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "jellyfin-server"
+        ],
+        "flatpak": [
+          "org.jellyfin.JellyfinServer"
+        ],
+        "desktop": [
+          "org.jellyfin.JellyfinServer.desktop"
+        ],
+        "website": "https://jellyfin.org/downloads/server"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "jellyfin-desktop",
+      "name": "Jellyfin Desktop",
+      "category": "media-server",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "jellyfinmediaplayer*",
+          "jellyfin desktop*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "jellyfin-desktop"
+        ],
+        "flatpak": [
+          "org.jellyfin.JellyfinDesktop"
+        ],
+        "desktop": [
+          "org.jellyfin.JellyfinDesktop.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "kodi",
+      "name": "Kodi",
+      "category": "media-server",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "kodi * x64*",
+          "kodi * x86*"
+        ],
+        "packages": [
+          "kodi"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "kodi"
+        ],
+        "flatpak": [
+          "tv.kodi.Kodi"
+        ],
+        "desktop": [
+          "kodi.desktop",
+          "tv.kodi.Kodi.desktop"
+        ],
+        "website": "https://kodi.tv/download/linux/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "stremio",
+      "name": "Stremio",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "stremiosetup*",
+          "stremio setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "stremio"
+        ],
+        "flatpak": [
+          "com.stremio.Stremio"
+        ],
+        "desktop": [
+          "com.stremio.Stremio.desktop"
+        ],
+        "website": "https://www.stremio.com/downloads"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "audacity",
+      "name": "Audacity",
+      "category": "audio",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "audacity win*"
+        ],
+        "products": [
+          "audacity"
+        ],
+        "packages": [
+          "audacity"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "audacity"
+        ],
+        "flatpak": [
+          "org.audacityteam.Audacity"
+        ],
+        "desktop": [
+          "audacity.desktop",
+          "org.audacityteam.Audacity.desktop"
+        ],
+        "website": "https://www.audacityteam.org/download/linux/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "obs-studio",
+      "name": "OBS Studio",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "obs studio *"
+        ],
+        "products": [
+          "obs studio"
+        ],
+        "packages": [
+          "obs-studio"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "obs-studio"
+        ],
+        "flatpak": [
+          "com.obsproject.Studio"
+        ],
+        "desktop": [
+          "com.obsproject.Studio.desktop"
+        ],
+        "website": "https://obsproject.com/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "bandicam",
+      "name": "Bandicam",
+      "vendor": "Bandicam Company",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "bdcamsetup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "obs-studio",
+          "relation": "alternative",
+          "note": {
+            "en": "Free screen recording and live streaming.",
+            "pt_BR": "Gravação de tela e transmissão ao vivo, grátis."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "handbrake",
+      "name": "HandBrake",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "handbrake * win*"
+        ],
+        "packages": [
+          "handbrake"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "handbrake"
+        ],
+        "flatpak": [
+          "fr.handbrake.ghb"
+        ],
+        "desktop": [
+          "fr.handbrake.ghb.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "kdenlive",
+      "name": "Kdenlive",
+      "vendor": "KDE",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "kdenlive *"
+        ],
+        "packages": [
+          "kdenlive"
+        ],
+        "formats": [
+          "exe",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "kdenlive"
+        ],
+        "flatpak": [
+          "org.kde.kdenlive"
+        ],
+        "desktop": [
+          "org.kde.kdenlive.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "shotcut",
+      "name": "Shotcut",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "shotcut win64*",
+          "shotcut win32*"
+        ],
+        "packages": [
+          "shotcut"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "shotcut"
+        ],
+        "flatpak": [
+          "org.shotcut.Shotcut"
+        ],
+        "desktop": [
+          "org.shotcut.Shotcut.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "openshot",
+      "name": "OpenShot",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "openshot v*"
+        ],
+        "formats": [
+          "exe",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "openshot"
+        ],
+        "flatpak": [
+          "org.openshot.OpenShot"
+        ],
+        "desktop": [
+          "org.openshot.OpenShot.desktop"
+        ],
+        "website": "https://www.openshot.org/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "davinci-resolve",
+      "name": "DaVinci Resolve",
+      "vendor": "Blackmagic Design",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "davinci*resolve*windows*"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "run"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "davinci-resolve"
+        ],
+        "website": "https://www.blackmagicdesign.com/products/davinciresolve"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "Blackmagic publishes an official Linux version; it needs a supported GPU.",
+          "pt_BR": "A Blackmagic publica versão oficial para Linux; ela exige uma GPU compatível."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "lightworks",
+      "name": "Lightworks",
+      "vendor": "LWKS Software",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "lightworks*windows*"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "lightworks"
+        ],
+        "website": "https://lwks.com/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "adobe-premiere",
+      "name": "Adobe Premiere Pro",
+      "vendor": "Adobe Inc.",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "adobe*premiere*installer*",
+          "premiere pro set up*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "kdenlive",
+          "relation": "alternative",
+          "note": {
+            "en": "Free multi-track video editor.",
+            "pt_BR": "Editor de vídeo livre com múltiplas trilhas."
+          }
+        },
+        {
+          "id": "davinci-resolve",
+          "relation": "alternative",
+          "note": {
+            "en": "Professional video editor with an official Linux version.",
+            "pt_BR": "Editor de vídeo profissional com versão oficial para Linux."
+          }
+        },
+        {
+          "id": "shotcut",
+          "relation": "alternative",
+          "note": {
+            "en": "Free cross-platform video editor.",
+            "pt_BR": "Editor de vídeo livre e multiplataforma."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Current Adobe Creative Cloud apps do not run under Wine.",
+          "pt_BR": "Os aplicativos atuais da Adobe Creative Cloud não funcionam no Wine."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "vegas-pro",
+      "name": "VEGAS Pro",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "vegas*pro*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "kdenlive",
+          "relation": "alternative",
+          "note": {
+            "en": "Free multi-track video editor.",
+            "pt_BR": "Editor de vídeo livre com múltiplas trilhas."
+          }
+        },
+        {
+          "id": "davinci-resolve",
+          "relation": "alternative",
+          "note": {
+            "en": "Professional video editor with an official Linux version.",
+            "pt_BR": "Editor de vídeo profissional com versão oficial para Linux."
+          }
+        },
+        {
+          "id": "shotcut",
+          "relation": "alternative",
+          "note": {
+            "en": "Free cross-platform video editor.",
+            "pt_BR": "Editor de vídeo livre e multiplataforma."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "capcut",
+      "name": "CapCut",
+      "vendor": "ByteDance",
+      "category": "video",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "capcut*installer*",
+          "capcut*setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://www.capcut.com/"
+      },
+      "alternatives": [
+        {
+          "id": "kdenlive",
+          "relation": "alternative",
+          "note": {
+            "en": "Free multi-track video editor.",
+            "pt_BR": "Editor de vídeo livre com múltiplas trilhas."
+          }
+        },
+        {
+          "id": "shotcut",
+          "relation": "alternative",
+          "note": {
+            "en": "Free cross-platform video editor.",
+            "pt_BR": "Editor de vídeo livre e multiplataforma."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "fl-studio",
+      "name": "FL Studio",
+      "vendor": "Image-Line",
+      "category": "audio",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "flstudio*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "lmms",
+          "relation": "alternative",
+          "note": {
+            "en": "Free music production with pattern-based sequencing, like FL Studio.",
+            "pt_BR": "Produção musical livre com sequenciamento por padrões, como o FL Studio."
+          }
+        },
+        {
+          "id": "bitwig-studio",
+          "relation": "alternative",
+          "note": {
+            "en": "Commercial DAW with a native Linux version, close to Ableton Live.",
+            "pt_BR": "DAW comercial com versão nativa para Linux, próxima do Ableton Live."
+          }
+        },
+        {
+          "id": "ardour",
+          "relation": "alternative",
+          "note": {
+            "en": "Professional digital audio workstation (DAW).",
+            "pt_BR": "Estação de trabalho de áudio digital (DAW) profissional."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "ableton-live",
+      "name": "Ableton Live",
+      "vendor": "Ableton AG",
+      "category": "audio",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "ableton live*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "bitwig-studio",
+          "relation": "alternative",
+          "note": {
+            "en": "Commercial DAW with a native Linux version, close to Ableton Live.",
+            "pt_BR": "DAW comercial com versão nativa para Linux, próxima do Ableton Live."
+          }
+        },
+        {
+          "id": "ardour",
+          "relation": "alternative",
+          "note": {
+            "en": "Professional digital audio workstation (DAW).",
+            "pt_BR": "Estação de trabalho de áudio digital (DAW) profissional."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "bitwig-studio",
+      "name": "Bitwig Studio",
+      "vendor": "Bitwig GmbH",
+      "category": "audio",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "bitwig studio*"
+        ],
+        "packages": [
+          "bitwig-studio"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "bitwig-studio"
+        ],
+        "flatpak": [
+          "com.bitwig.BitwigStudio"
+        ],
+        "desktop": [
+          "com.bitwig.BitwigStudio.desktop"
+        ],
+        "website": "https://www.bitwig.com/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "ardour",
+      "name": "Ardour",
+      "category": "audio",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "ardour * w64*"
+        ],
+        "packages": [
+          "ardour"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "ardour"
+        ],
+        "flatpak": [
+          "org.ardour.Ardour"
+        ],
+        "desktop": [
+          "ardour9.desktop",
+          "org.ardour.Ardour.desktop"
+        ],
+        "website": "https://ardour.org/download.html"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "lmms",
+      "name": "LMMS",
+      "category": "audio",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "lmms * win*"
+        ],
+        "packages": [
+          "lmms"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "lmms"
+        ],
+        "flatpak": [
+          "io.lmms.LMMS"
+        ],
+        "desktop": [
+          "lmms.desktop",
+          "io.lmms.LMMS.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "musescore",
+      "name": "MuseScore Studio",
+      "category": "music",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "musescore *"
+        ],
+        "packages": [
+          "musescore"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "musescore"
+        ],
+        "flatpak": [
+          "org.musescore.MuseScore"
+        ],
+        "desktop": [
+          "org.musescore.MuseScore.desktop"
+        ],
+        "website": "https://musescore.org/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    }
+  ]
+}

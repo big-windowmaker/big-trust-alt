@@ -1,0 +1,1000 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "firefox",
+      "name": "Mozilla Firefox",
+      "aliases": [
+        "Firefox"
+      ],
+      "vendor": "Mozilla Corporation",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "firefox setup*",
+          "firefox installer*"
+        ],
+        "products": [
+          "firefox",
+          "mozilla firefox"
+        ],
+        "vendors": [
+          "mozilla corporation"
+        ],
+        "packages": [
+          "firefox"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "firefox"
+        ],
+        "flatpak": [
+          "org.mozilla.firefox"
+        ],
+        "desktop": [
+          "firefox.desktop",
+          "org.mozilla.firefox.desktop"
+        ],
+        "website": "https://www.mozilla.org/firefox/linux/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "google-chrome",
+      "name": "Google Chrome",
+      "aliases": [
+        "Chrome"
+      ],
+      "vendor": "Google LLC",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "chromesetup*",
+          "googlechromestandalone*",
+          "chrome installer*",
+          "google chrome stable*"
+        ],
+        "products": [
+          "google chrome",
+          "google chrome installer"
+        ],
+        "vendors": [
+          "google llc",
+          "google inc"
+        ],
+        "packages": [
+          "google-chrome",
+          "google-chrome-stable"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "google-chrome"
+        ],
+        "flatpak": [
+          "com.google.Chrome"
+        ],
+        "desktop": [
+          "google-chrome.desktop",
+          "com.google.Chrome.desktop"
+        ],
+        "website": "https://www.google.com/chrome/"
+      },
+      "alternatives": [
+        {
+          "id": "chromium",
+          "relation": "alternative",
+          "note": {
+            "en": "Open-source browser that Chrome, Edge and others are built on, without vendor services.",
+            "pt_BR": "Navegador de código aberto que serve de base ao Chrome, Edge e outros, sem serviços do fabricante."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Use the Linux version.",
+          "pt_BR": "Use a versão para Linux."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "chromium",
+      "name": "Chromium",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "products": [
+          "chromium"
+        ],
+        "packages": [
+          "chromium",
+          "chromium-browser"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "chromium"
+        ],
+        "flatpak": [
+          "org.chromium.Chromium"
+        ],
+        "desktop": [
+          "chromium.desktop",
+          "org.chromium.Chromium.desktop"
+        ],
+        "website": "https://www.chromium.org/getting-involved/download-chromium/"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "microsoft-edge",
+      "name": "Microsoft Edge",
+      "aliases": [
+        "Edge"
+      ],
+      "vendor": "Microsoft Corporation",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "microsoftedgesetup*",
+          "microsoftedgeenterprise*",
+          "microsoft edge stable*"
+        ],
+        "products": [
+          "microsoft edge"
+        ],
+        "packages": [
+          "microsoft-edge-stable"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "microsoft-edge-stable-bin"
+        ],
+        "flatpak": [
+          "com.microsoft.Edge"
+        ],
+        "desktop": [
+          "microsoft-edge.desktop",
+          "com.microsoft.Edge.desktop"
+        ],
+        "website": "https://www.microsoft.com/edge/download"
+      },
+      "alternatives": [
+        {
+          "id": "chromium",
+          "relation": "alternative",
+          "note": {
+            "en": "Open-source browser that Chrome, Edge and others are built on, without vendor services.",
+            "pt_BR": "Navegador de código aberto que serve de base ao Chrome, Edge e outros, sem serviços do fabricante."
+          }
+        },
+        {
+          "id": "firefox",
+          "relation": "alternative",
+          "note": {
+            "en": "Independent open-source browser by Mozilla, with its own engine.",
+            "pt_BR": "Navegador independente de código aberto da Mozilla, com motor próprio."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Use the Linux version.",
+          "pt_BR": "Use a versão para Linux."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "internet-explorer",
+      "name": "Internet Explorer",
+      "aliases": [
+        "IE11"
+      ],
+      "vendor": "Microsoft Corporation",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "ie11 windows*",
+          "eie11 *"
+        ],
+        "products": [
+          "internet explorer"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "microsoft-edge",
+          "relation": "successor",
+          "note": {
+            "en": "Microsoft replaced Internet Explorer with Edge, which has a Linux version.",
+            "pt_BR": "A Microsoft substituiu o Internet Explorer pelo Edge, que tem versão para Linux."
+          }
+        },
+        {
+          "id": "firefox",
+          "relation": "alternative",
+          "note": {
+            "en": "Independent open-source browser by Mozilla, with its own engine.",
+            "pt_BR": "Navegador independente de código aberto da Mozilla, com motor próprio."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Internet Explorer is retired and part of old Windows versions.",
+          "pt_BR": "O Internet Explorer foi aposentado e fazia parte de versões antigas do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "brave",
+      "name": "Brave",
+      "aliases": [
+        "Brave Browser"
+      ],
+      "vendor": "Brave Software, Inc.",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "bravebrowser*setup*"
+        ],
+        "products": [
+          "brave browser"
+        ],
+        "packages": [
+          "brave-browser"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "brave-browser",
+          "brave-bin"
+        ],
+        "flatpak": [
+          "com.brave.Browser"
+        ],
+        "desktop": [
+          "brave-browser.desktop",
+          "com.brave.Browser.desktop"
+        ],
+        "website": "https://brave.com/linux/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "opera",
+      "name": "Opera",
+      "vendor": "Opera Norway AS",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "operasetup*",
+          "opera 1* setup*"
+        ],
+        "packages": [
+          "opera-stable",
+          "opera"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "opera"
+        ],
+        "flatpak": [
+          "com.opera.Opera"
+        ],
+        "desktop": [
+          "opera.desktop",
+          "com.opera.Opera.desktop"
+        ],
+        "website": "https://www.opera.com/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "opera-gx",
+      "name": "Opera GX",
+      "vendor": "Opera Norway AS",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "operagxsetup*",
+          "opera gx*setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "flatpak": [
+          "com.opera.opera-gx"
+        ],
+        "desktop": [
+          "com.opera.opera-gx.desktop"
+        ],
+        "website": "https://www.opera.com/gx"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "vivaldi",
+      "name": "Vivaldi",
+      "vendor": "Vivaldi Technologies AS",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "vivaldi *"
+        ],
+        "products": [
+          "vivaldi"
+        ],
+        "packages": [
+          "vivaldi-stable",
+          "vivaldi"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "vivaldi"
+        ],
+        "flatpak": [
+          "com.vivaldi.Vivaldi"
+        ],
+        "desktop": [
+          "vivaldi-stable.desktop",
+          "com.vivaldi.Vivaldi.desktop"
+        ],
+        "website": "https://vivaldi.com/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "librewolf",
+      "name": "LibreWolf",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "librewolf *"
+        ],
+        "products": [
+          "librewolf"
+        ],
+        "packages": [
+          "librewolf"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "librewolf"
+        ],
+        "flatpak": [
+          "io.gitlab.librewolf-community"
+        ],
+        "desktop": [
+          "librewolf.desktop",
+          "io.gitlab.librewolf-community.desktop"
+        ],
+        "website": "https://librewolf.net/installation/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "zen-browser",
+      "name": "Zen Browser",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "zen installer*",
+          "zen setup*"
+        ],
+        "products": [
+          "zen browser"
+        ],
+        "formats": [
+          "exe",
+          "appimage",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "zen-browser-bin"
+        ],
+        "flatpak": [
+          "app.zen_browser.zen"
+        ],
+        "desktop": [
+          "app.zen_browser.zen.desktop"
+        ],
+        "website": "https://zen-browser.app/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "arc",
+      "name": "Arc Browser",
+      "vendor": "The Browser Company",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "arcinstaller*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "zen-browser",
+          "relation": "alternative",
+          "note": {
+            "en": "Firefox-based browser with a vertical tab layout and workspaces, similar in spirit.",
+            "pt_BR": "Navegador baseado no Firefox com abas verticais e espaços de trabalho, de proposta parecida."
+          }
+        },
+        {
+          "id": "vivaldi",
+          "relation": "alternative",
+          "note": {
+            "en": "Chromium-based browser with tab stacks and side panels.",
+            "pt_BR": "Navegador baseado no Chromium com pilhas de abas e painéis laterais."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "samsung-internet",
+      "name": "Samsung Internet",
+      "vendor": "Samsung Electronics",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "*samsungbrowsersetup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "brave",
+          "relation": "alternative",
+          "note": {
+            "en": "Chromium-based browser with built-in ad and tracker blocking.",
+            "pt_BR": "Navegador baseado no Chromium com bloqueio de anúncios e rastreadores embutido."
+          }
+        },
+        {
+          "id": "chromium",
+          "relation": "alternative",
+          "note": {
+            "en": "Open-source browser that Chrome, Edge and others are built on, without vendor services.",
+            "pt_BR": "Navegador de código aberto que serve de base ao Chrome, Edge e outros, sem serviços do fabricante."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "comet",
+      "name": "Comet Browser",
+      "vendor": "Perplexity AI",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "comet installer*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "brave",
+          "relation": "alternative",
+          "note": {
+            "en": "Chromium-based browser with built-in ad and tracker blocking.",
+            "pt_BR": "Navegador baseado no Chromium com bloqueio de anúncios e rastreadores embutido."
+          }
+        },
+        {
+          "id": "chromium",
+          "relation": "alternative",
+          "note": {
+            "en": "Open-source browser that Chrome, Edge and others are built on, without vendor services.",
+            "pt_BR": "Navegador de código aberto que serve de base ao Chrome, Edge e outros, sem serviços do fabricante."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "waterfox",
+      "name": "Waterfox",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "waterfox setup*",
+          "waterfox * setup*"
+        ],
+        "products": [
+          "waterfox"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "waterfox-bin"
+        ],
+        "flatpak": [
+          "net.waterfox.waterfox"
+        ],
+        "desktop": [
+          "net.waterfox.waterfox.desktop"
+        ],
+        "website": "https://www.waterfox.com/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "ungoogled-chromium",
+      "name": "Ungoogled Chromium",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "ungoogled chromium*installer*"
+        ],
+        "formats": [
+          "exe",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "ungoogled-chromium-bin",
+          "ungoogled-chromium"
+        ],
+        "flatpak": [
+          "io.github.ungoogled_software.ungoogled_chromium"
+        ],
+        "desktop": [
+          "io.github.ungoogled_software.ungoogled_chromium.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "floorp",
+      "name": "Floorp",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "floorp*installer*",
+          "floorp*setup*"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "floorp-bin",
+          "floorp"
+        ],
+        "flatpak": [
+          "one.ablaze.floorp"
+        ],
+        "desktop": [
+          "one.ablaze.floorp.desktop"
+        ],
+        "website": "https://floorp.app/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "mullvad-browser",
+      "name": "Mullvad Browser",
+      "vendor": "Mullvad VPN AB",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "mullvad browser windows*"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "mullvad-browser-bin"
+        ],
+        "flatpak": [
+          "net.mullvad.MullvadBrowser"
+        ],
+        "desktop": [
+          "net.mullvad.MullvadBrowser.desktop"
+        ],
+        "website": "https://mullvad.net/download/browser/linux"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "tor-browser",
+      "name": "Tor Browser",
+      "vendor": "The Tor Project",
+      "category": "browser",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "tor browser windows*",
+          "torbrowser install*"
+        ],
+        "products": [
+          "tor browser"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "torbrowser-launcher"
+        ],
+        "flatpak": [
+          "org.torproject.torbrowser-launcher"
+        ],
+        "desktop": [
+          "org.torproject.torbrowser-launcher.desktop"
+        ],
+        "website": "https://www.torproject.org/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    }
+  ]
+}

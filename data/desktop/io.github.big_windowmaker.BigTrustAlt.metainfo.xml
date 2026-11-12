@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.big_windowmaker.BigTrustAlt</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Big Trust Alt</name>
+  <summary>Find the best way to use a downloaded program on Linux</summary>
+  <summary xml:lang="pt_BR">Descubra a melhor maneira de usar no Linux um programa baixado</summary>
+  <description>
+    <p>Open a file downloaded from the internet — a Windows installer, a .deb, an .rpm, an AppImage — and Big Trust Alt tells you what it is and how to use it on BigLinux: the native package, Flatpak, AUR, the official Linux download, a functional alternative or, if you choose it, Wine.</p>
+    <p xml:lang="pt_BR">Abra um arquivo baixado da internet — um instalador do Windows, um .deb, um .rpm, um AppImage — e o Big Trust Alt mostra o que ele é e como usá-lo no BigLinux: o pacote nativo, o Flatpak, o AUR, o download oficial para Linux, uma alternativa funcional ou, se você escolher, o Wine.</p>
+    <p>Nothing is executed during the analysis. Running the original file always needs your confirmation.</p>
+    <p xml:lang="pt_BR">Nada é executado durante a análise. Executar o arquivo original sempre exige a sua confirmação.</p>
+  </description>
+  <launchable type="desktop-id">io.github.big_windowmaker.BigTrustAlt.desktop</launchable>
+  <url type="homepage">https://github.com/big-windowmaker/big-trust-alt</url>
+  <url type="bugtracker">https://github.com/big-windowmaker/big-trust-alt/issues</url>
+  <developer id="io.github.big_windowmaker">
+    <name>Big WindowMaker</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+  <provides>
+    <binary>big-trust-alt</binary>
+    <mediatype>application/x-msdownload</mediatype>
+    <mediatype>application/x-msi</mediatype>
+  </provides>
+  <releases>
+    <release version="0.1.0" date="2026-11-12">
+      <description><p>First release.</p></description>
+    </release>
+  </releases>
+</component>

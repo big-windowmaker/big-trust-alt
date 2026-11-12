@@ -1,0 +1,19 @@
+[project]
+name = "big-trust-alt"
+version = "0.1.0"
+description = "Find the best way to use a downloaded program on Linux"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.12"
+authors = [{ name = "Rafael Ruscher", email = "rruscher@gmail.com" },
+           { name = "Barnabé Di Kartola", email = "barnabedikartola@gmail.com" }]
+dependencies = ["PyGObject"]
+
+[project.urls]
+Homepage = "https://github.com/big-windowmaker/big-trust-alt"
+
+[project.scripts]
+big-trust-alt = "big_trust_alt.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

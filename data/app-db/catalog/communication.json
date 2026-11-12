@@ -1,0 +1,875 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "thunderbird",
+      "name": "Mozilla Thunderbird",
+      "aliases": [
+        "Thunderbird"
+      ],
+      "vendor": "Mozilla Foundation",
+      "category": "email",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "thunderbird setup*"
+        ],
+        "products": [
+          "thunderbird",
+          "mozilla thunderbird"
+        ],
+        "packages": [
+          "thunderbird"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "thunderbird"
+        ],
+        "flatpak": [
+          "org.mozilla.thunderbird"
+        ],
+        "desktop": [
+          "org.mozilla.Thunderbird.desktop",
+          "org.mozilla.thunderbird.desktop"
+        ],
+        "website": "https://www.thunderbird.net/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "outlook",
+      "name": "Microsoft Outlook",
+      "aliases": [
+        "Outlook for Windows",
+        "New Outlook"
+      ],
+      "vendor": "Microsoft Corporation",
+      "category": "email",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "outlook*for windows*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://outlook.office.com/"
+      },
+      "alternatives": [
+        {
+          "id": "evolution",
+          "relation": "alternative",
+          "note": {
+            "en": "E-mail and calendar suite that can connect to Microsoft Exchange/365 accounts.",
+            "pt_BR": "Suíte de e-mail e agenda que se conecta a contas Microsoft Exchange/365."
+          }
+        },
+        {
+          "id": "thunderbird",
+          "relation": "alternative",
+          "note": {
+            "en": "Full e-mail, calendar and contacts client by Mozilla.",
+            "pt_BR": "Cliente completo de e-mail, agenda e contatos da Mozilla."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown",
+        "note": {
+          "en": "Outlook is also available in the browser.",
+          "pt_BR": "O Outlook também funciona no navegador."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "evolution",
+      "name": "Evolution",
+      "vendor": "The GNOME Project",
+      "category": "email",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "evolution"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "evolution",
+          "evolution-ews"
+        ],
+        "flatpak": [
+          "org.gnome.Evolution"
+        ],
+        "desktop": [
+          "org.gnome.Evolution.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "mailspring",
+      "name": "Mailspring",
+      "category": "email",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "mailspringsetup*"
+        ],
+        "packages": [
+          "mailspring"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "mailspring-bin",
+          "mailspring"
+        ],
+        "flatpak": [
+          "com.getmailspring.Mailspring"
+        ],
+        "desktop": [
+          "Mailspring.desktop",
+          "com.getmailspring.Mailspring.desktop"
+        ],
+        "website": "https://getmailspring.com/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "skype",
+      "name": "Skype",
+      "vendor": "Microsoft Corporation",
+      "category": "communication",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "skypesetup*",
+          "skype 8*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "microsoft-teams",
+          "relation": "successor",
+          "note": {
+            "en": "Microsoft retired Skype in 2025 and moved its users to Teams.",
+            "pt_BR": "A Microsoft encerrou o Skype em 2025 e migrou os usuários para o Teams."
+          }
+        },
+        {
+          "id": "signal",
+          "relation": "alternative",
+          "note": {
+            "en": "Free, encrypted messaging and calls.",
+            "pt_BR": "Mensagens e chamadas gratuitas e criptografadas."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported"
+      },
+      "message": {
+        "en": "Skype was discontinued by Microsoft in May 2025.",
+        "pt_BR": "O Skype foi descontinuado pela Microsoft em maio de 2025."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "microsoft-teams",
+      "name": "Microsoft Teams",
+      "aliases": [
+        "Teams"
+      ],
+      "vendor": "Microsoft Corporation",
+      "category": "communication",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "msteamssetup*",
+          "msteams x64*",
+          "msteams arm64*",
+          "teams windows x64*",
+          "teamssetup x64*"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "msix"
+        ]
+      },
+      "linux": {
+        "website": "https://teams.microsoft.com/"
+      },
+      "alternatives": [
+        {
+          "id": "teams-for-linux",
+          "relation": "alternative",
+          "note": {
+            "en": "Unofficial desktop wrapper for the Teams web app, with notifications and tray icon.",
+            "pt_BR": "Aplicativo não oficial que empacota o Teams web, com notificações e ícone na bandeja."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Microsoft offers Teams for Linux only in the browser.",
+          "pt_BR": "A Microsoft oferece o Teams para Linux apenas no navegador."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "teams-for-linux",
+      "name": "Teams for Linux",
+      "category": "communication",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "teams-for-linux"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "teams-for-linux-bin",
+          "teams-for-linux"
+        ],
+        "flatpak": [
+          "com.github.IsmaelMartinez.teams_for_linux"
+        ],
+        "desktop": [
+          "com.github.IsmaelMartinez.teams_for_linux.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom Workplace",
+      "aliases": [
+        "Zoom"
+      ],
+      "vendor": "Zoom Communications, Inc.",
+      "category": "communication",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "zoominstaller*",
+          "zoom x64*",
+          "zoom x86*"
+        ],
+        "packages": [
+          "zoom"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "zoom"
+        ],
+        "flatpak": [
+          "us.zoom.Zoom"
+        ],
+        "desktop": [
+          "us.zoom.Zoom.desktop"
+        ],
+        "website": "https://zoom.us/download?os=linux"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram Desktop",
+      "aliases": [
+        "Telegram"
+      ],
+      "category": "communication",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "tsetup *",
+          "tsetup",
+          "telegram setup*"
+        ],
+        "packages": [
+          "telegram-desktop"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "telegram-desktop"
+        ],
+        "flatpak": [
+          "org.telegram.desktop"
+        ],
+        "desktop": [
+          "org.telegram.desktop.desktop"
+        ],
+        "website": "https://desktop.telegram.org/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "signal",
+      "name": "Signal",
+      "vendor": "Signal Messenger, LLC",
+      "category": "communication",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "signalsetup*",
+          "signal desktop win*"
+        ],
+        "packages": [
+          "signal-desktop"
+        ],
+        "formats": [
+          "exe",
+          "deb"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "signal-desktop"
+        ],
+        "flatpak": [
+          "org.signal.Signal"
+        ],
+        "desktop": [
+          "signal.desktop",
+          "org.signal.Signal.desktop"
+        ],
+        "website": "https://signal.org/download/linux/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "vendor": "Discord Inc.",
+      "category": "communication",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "discordsetup*",
+          "discord 0 *"
+        ],
+        "products": [
+          "discord"
+        ],
+        "packages": [
+          "discord"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "discord"
+        ],
+        "flatpak": [
+          "com.discordapp.Discord"
+        ],
+        "desktop": [
+          "discord.desktop",
+          "com.discordapp.Discord.desktop"
+        ],
+        "website": "https://discord.com/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "element",
+      "name": "Element",
+      "vendor": "New Vector Ltd",
+      "category": "communication",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "element setup*",
+          "element * setup*"
+        ],
+        "packages": [
+          "element-desktop"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "element-desktop"
+        ],
+        "flatpak": [
+          "im.riot.Riot"
+        ],
+        "desktop": [
+          "io.element.Element.desktop",
+          "im.riot.Riot.desktop"
+        ],
+        "website": "https://element.io/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "vendor": "Slack Technologies",
+      "category": "communication",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "slacksetup*"
+        ],
+        "packages": [
+          "slack-desktop",
+          "slack"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "slack-desktop"
+        ],
+        "flatpak": [
+          "com.slack.Slack"
+        ],
+        "desktop": [
+          "com.slack.Slack.desktop"
+        ],
+        "website": "https://slack.com/downloads/linux"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "whatsapp",
+      "name": "WhatsApp",
+      "vendor": "Meta Platforms, Inc.",
+      "category": "communication",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "whatsapp installer*",
+          "whatsappsetup*",
+          "whatsapp setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://web.whatsapp.com/"
+      },
+      "alternatives": [
+        {
+          "id": "zapzap",
+          "relation": "alternative",
+          "note": {
+            "en": "Unofficial desktop app for WhatsApp Web, with notifications and tray icon.",
+            "pt_BR": "Aplicativo não oficial para o WhatsApp Web, com notificações e ícone na bandeja."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown",
+        "note": {
+          "en": "WhatsApp has no Linux app; WhatsApp Web works in any browser.",
+          "pt_BR": "O WhatsApp não tem aplicativo para Linux; o WhatsApp Web funciona em qualquer navegador."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "zapzap",
+      "name": "ZapZap",
+      "category": "communication",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "zapzap"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "zapzap"
+        ],
+        "flatpak": [
+          "com.rtosta.zapzap"
+        ],
+        "desktop": [
+          "com.rtosta.zapzap.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "viber",
+      "name": "Viber",
+      "vendor": "Viber Media S.à r.l.",
+      "category": "communication",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "vibersetup*"
+        ],
+        "packages": [
+          "viber"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "viber"
+        ],
+        "flatpak": [
+          "com.viber.Viber"
+        ],
+        "desktop": [
+          "com.viber.Viber.desktop"
+        ],
+        "website": "https://www.viber.com/en/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "webex",
+      "name": "Cisco Webex",
+      "vendor": "Cisco Systems, Inc.",
+      "category": "communication",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "webex*"
+        ],
+        "packages": [
+          "webex"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "webex-bin"
+        ],
+        "website": "https://www.webex.com/downloads.html"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "proton-mail",
+      "name": "Proton Mail",
+      "vendor": "Proton AG",
+      "category": "email",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "protonmail*"
+        ],
+        "packages": [
+          "proton-mail"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "proton-mail-bin"
+        ],
+        "flatpak": [
+          "me.proton.Mail"
+        ],
+        "desktop": [
+          "me.proton.Mail.desktop"
+        ],
+        "website": "https://proton.me/mail/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    }
+  ]
+}

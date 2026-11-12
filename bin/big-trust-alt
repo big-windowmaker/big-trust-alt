@@ -1,0 +1,5 @@
+#!/bin/sh
+# Big Trust Alt launcher. The program lives in /usr/share/big-trust-alt.
+APP_DIR="${BIG_TRUST_ALT_APPDIR:-/usr/share/big-trust-alt}"
+export PYTHONPATH="$APP_DIR${PYTHONPATH:+:$PYTHONPATH}"
+exec python3 -m big_trust_alt "$@"

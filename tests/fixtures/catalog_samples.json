@@ -1,0 +1,1177 @@
+{
+ "samples": {
+  "1password": [
+   "1PasswordSetup-latest.exe"
+  ],
+  "7-zip": [
+   "7z2409-x64.exe",
+   "7z2409.exe",
+   "7z2409-x64.msi",
+   "7z1900-x64.exe"
+  ],
+  "abbyy-finereader": [
+   "ABBYY_FineReader_PDF_16.exe"
+  ],
+  "ableton-live": [
+   "Ableton Live 12 Suite Installer.exe"
+  ],
+  "adobe-acrobat-reader": [
+   "Reader_en_install.exe",
+   "Reader_br_install.exe",
+   "AcroRdrDC2400220759_en_US.exe",
+   "AcroRdrDCx642400420220_MUI.exe"
+  ],
+  "adobe-creative-cloud": [
+   "Creative_Cloud_Set-Up.exe",
+   "Adobe Creative Cloud Installer.exe"
+  ],
+  "adobe-illustrator": [
+   "Adobe Illustrator Installer.exe"
+  ],
+  "adobe-illustrator-cs6": [
+   "Illustrator_16_LS16_CS6.exe"
+  ],
+  "adobe-lightroom": [
+   "Adobe Lightroom Installer.exe"
+  ],
+  "adobe-photoshop": [
+   "Adobe Photoshop Installer.exe",
+   "Photoshop_Set-Up.exe"
+  ],
+  "adobe-photoshop-cs6": [
+   "Photoshop_13_LS16_CS6.exe"
+  ],
+  "adobe-premiere": [
+   "Adobe Premiere Pro Installer.exe"
+  ],
+  "affinity": [
+   "affinity-photo-msi-2.5.7.exe",
+   "Affinity x64.msix"
+  ],
+  "amazon-music": [
+   "AmazonMusicInstaller.exe"
+  ],
+  "amd-adrenalin": [
+   "whql-amd-software-adrenalin-edition-24.12.1-win10-win11-dec-rdna.exe"
+  ],
+  "android-studio": [
+   "android-studio-2024.2.1.12-windows.exe"
+  ],
+  "antigravity": [
+   "Antigravity.exe",
+   "AntigravitySetup-x64.exe"
+  ],
+  "antimicrox": [
+   "antimicrox-3.4.1-win64.msi",
+   "antimicro-2.23-win64.msi"
+  ],
+  "anydesk": [
+   "AnyDesk.exe",
+   "AnyDesk.msi",
+   "AnyDesk (1).exe"
+  ],
+  "anytype": [
+   "Anytype-Setup-0.44.0.exe"
+  ],
+  "apache-openoffice": [
+   "Apache_OpenOffice_4.1.15_Win_x86_install_en-US.exe"
+  ],
+  "appflowy": [
+   "AppFlowy-0.7.6-windows-x86_64.exe"
+  ],
+  "apple-music": [
+   "AppleMusicInstaller.exe"
+  ],
+  "arc": [
+   "ArcInstaller.exe"
+  ],
+  "ardour": [
+   "Ardour-8.10.0-w64-Setup.exe"
+  ],
+  "arduino-ide": [
+   "arduino-ide_2.3.4_Windows_64bit.exe"
+  ],
+  "audacious": [
+   "audacious-4.4.2-win32.exe"
+  ],
+  "audacity": [
+   "audacity-win-3.7.1-64bit.exe"
+  ],
+  "autodesk-sketchbook": [
+   "SketchBook_8_7_1_0_x64.exe"
+  ],
+  "avast": [
+   "avast_free_antivirus_setup_online.exe"
+  ],
+  "avg": [
+   "avg_antivirus_free_setup.exe"
+  ],
+  "avira": [
+   "avira_en_av_ww_spotinstaller.exe"
+  ],
+  "azahar": [
+   "azahar-2121.2-windows-msvc-installer.exe"
+  ],
+  "balena-etcher": [
+   "balenaEtcher-Setup-1.19.25.exe",
+   "balenaEtcher-1.19.25-x64.AppImage"
+  ],
+  "bandicam": [
+   "bdcamsetup.exe"
+  ],
+  "battle-net": [
+   "Battle.net-Setup.exe",
+   "Battle.net-Setup-ptBR.exe"
+  ],
+  "bethesda-launcher": [
+   "BethesdaNetLauncher_Setup.exe"
+  ],
+  "beyond-compare": [
+   "BCompare-5.0.4.30422.exe"
+  ],
+  "bitcoin-core": [
+   "bitcoin-28.0-win64-setup.exe"
+  ],
+  "bitdefender": [
+   "bitdefender_avfree.exe",
+   "bitdefender_tsecurity.exe"
+  ],
+  "bittorrent": [
+   "BitTorrent.exe",
+   "BitTorrent Web Installer.exe"
+  ],
+  "bitvise-ssh": [
+   "BvSshClient-Inst.exe"
+  ],
+  "bitwarden": [
+   "Bitwarden-Installer-2024.12.1.exe",
+   "Bitwarden-Setup-2024.12.1.exe"
+  ],
+  "bitwig-studio": [
+   "Bitwig Studio 5.2.7.msi"
+  ],
+  "bleachbit": [
+   "BleachBit-4.6.2-setup.exe"
+  ],
+  "blender": [
+   "blender-4.3.2-windows-x64.msi"
+  ],
+  "bluestacks": [
+   "BlueStacksInstaller_5.21.650.1063_native.exe",
+   "BlueStacksFullInstaller.exe"
+  ],
+  "brackets": [
+   "Brackets.Release.2.2.1.64-bit.exe"
+  ],
+  "brave": [
+   "BraveBrowserSetup-BRV010.exe",
+   "BraveBrowserStandaloneSetup.exe"
+  ],
+  "calibre": [
+   "calibre-64bit-7.22.0.msi",
+   "calibre-portable-installer-7.22.0.exe"
+  ],
+  "canva": [
+   "Canva Setup 1.98.0.exe",
+   "CanvaSetup.exe"
+  ],
+  "capcut": [
+   "CapCut_installer.exe"
+  ],
+  "ccleaner": [
+   "ccsetup631.exe"
+  ],
+  "chatgpt": [
+   "ChatGPT Installer.exe"
+  ],
+  "cinema-4d": [
+   "Cinema4D_2025_Win.exe"
+  ],
+  "citra": [
+   "citra-setup-windows.exe"
+  ],
+  "citrix-workspace": [
+   "CitrixWorkspaceApp.exe",
+   "CitrixWorkspaceAppWeb.exe"
+  ],
+  "claude": [
+   "Claude Setup.exe"
+  ],
+  "clion": [
+   "CLion-2024.3.1.exe"
+  ],
+  "comet": [
+   "comet_installer_latest.exe"
+  ],
+  "cpu-z": [
+   "cpu-z_2.13-en.exe"
+  ],
+  "cursor": [
+   "CursorUserSetup-x64-0.44.11.exe"
+  ],
+  "cyberghost": [
+   "CyberGhostVPNSetup.exe"
+  ],
+  "darktable": [
+   "darktable-5.0.0-win64.exe"
+  ],
+  "datagrip": [
+   "datagrip-2024.3.3.exe"
+  ],
+  "dataspell": [
+   "dataspell-2024.3.1.exe"
+  ],
+  "davinci-resolve": [
+   "DaVinci_Resolve_19.1.2_Windows.exe"
+  ],
+  "dbeaver": [
+   "dbeaver-ce-24.3.1-x86_64-setup.exe"
+  ],
+  "deadbeef": [
+   "deadbeef-1.9.6-windows-x86_64.exe"
+  ],
+  "directx": [
+   "dxwebsetup.exe",
+   "directx_Jun2010_redist.exe"
+  ],
+  "discord": [
+   "DiscordSetup.exe",
+   "discord-0.0.76.deb"
+  ],
+  "distance": [
+   "distance_windows_setup.exe"
+  ],
+  "docker-desktop": [
+   "Docker Desktop Installer.exe"
+  ],
+  "dolphin-emu": [
+   "dolphin-2412-x64.exe"
+  ],
+  "dotnet-desktop-runtime": [
+   "windowsdesktop-runtime-8.0.11-win-x64.exe"
+  ],
+  "dotnet-framework": [
+   "ndp48-x86-x64-allos-enu.exe",
+   "NDP481-Web.exe",
+   "dotNetFx35setup.exe"
+  ],
+  "dotnet-runtime": [
+   "dotnet-runtime-8.0.11-win-x64.exe",
+   "aspnetcore-runtime-8.0.11-win-x64.exe",
+   "dotnet-hosting-8.0.11-win.exe"
+  ],
+  "dotnet-sdk": [
+   "dotnet-sdk-8.0.404-win-x64.exe"
+  ],
+  "drawio": [
+   "draw.io-25.0.2-windows-installer.exe"
+  ],
+  "dropbox": [
+   "DropboxInstaller.exe",
+   "Dropbox 214.4.5719 Offline Installer.x64.exe"
+  ],
+  "duckstation": [
+   "duckstation-windows-x64-release.zip"
+  ],
+  "ea-app": [
+   "EAappInstaller.exe"
+  ],
+  "eclipse": [
+   "eclipse-inst-jre-win64.exe"
+  ],
+  "element": [
+   "Element Setup.exe",
+   "Element Setup 1.11.89.exe"
+  ],
+  "emacs": [
+   "emacs-30.1-installer.exe"
+  ],
+  "epic-games-launcher": [
+   "EpicInstaller-17.2.0.msi",
+   "EpicGamesLauncherInstaller.msi"
+  ],
+  "eset": [
+   "eset_nod32_antivirus_live_installer.exe",
+   "eset_internet_security_live_installer.exe"
+  ],
+  "evernote": [
+   "Evernote-latest.exe",
+   "Evernote-10.120.4-win-ddl-ga.exe"
+  ],
+  "expressvpn": [
+   "expressvpn_windows_12.94.0.11_release.exe"
+  ],
+  "f-lux": [
+   "flux-setup.exe"
+  ],
+  "figma": [
+   "FigmaSetup.exe"
+  ],
+  "filezilla": [
+   "FileZilla_3.68.1_win64-setup.exe",
+   "FileZilla_3.68.1_win64_sponsored2-setup.exe"
+  ],
+  "final-draft": [
+   "FinalDraftSetup.exe"
+  ],
+  "firefox": [
+   "Firefox Setup 133.0.exe",
+   "Firefox Installer.exe",
+   "Firefox Setup 128.5.1esr.msi"
+  ],
+  "fl-studio": [
+   "flstudio_win64_24.2.0.4503.exe"
+  ],
+  "flameshot": [
+   "Flameshot-12.1.0-win64.msi"
+  ],
+  "flash-player": [
+   "flashplayer32_xa_install.exe",
+   "install_flash_player.exe"
+  ],
+  "floorp": [
+   "floorp-win64.installer.exe"
+  ],
+  "foobar2000": [
+   "foobar2000-x64_v2.24.1.exe"
+  ],
+  "foxit-pdf-reader": [
+   "FoxitPDFReader20242_L10N_Setup_Prom.exe",
+   "foxit-pdf-reader-setup.exe"
+  ],
+  "freecad": [
+   "FreeCAD_1.0.0-conda-Windows-x86_64-installer-1.exe"
+  ],
+  "geany": [
+   "geany-2.0_setup.exe"
+  ],
+  "geforce-now": [
+   "GeForceNOW-release.exe"
+  ],
+  "genymotion": [
+   "genymotion-3.8.0-windows.exe"
+  ],
+  "gimp": [
+   "gimp-3.0.0-setup.exe",
+   "gimp-2.10.38-setup-1.exe"
+  ],
+  "git": [
+   "Git-2.47.1-64-bit.exe",
+   "Git-2.47.1-arm64.exe",
+   "PortableGit-2.47.1-64-bit.7z.exe"
+  ],
+  "github-desktop": [
+   "GitHubDesktopSetup-x64.exe",
+   "GitHubDesktopSetup-x64.msi"
+  ],
+  "gog-galaxy": [
+   "GOG_Galaxy_2.0.exe"
+  ],
+  "goland": [
+   "goland-2024.3.1.exe"
+  ],
+  "google-chrome": [
+   "ChromeSetup.exe",
+   "GoogleChromeStandaloneEnterprise64.msi",
+   "google-chrome-stable_current_amd64.deb"
+  ],
+  "google-drive": [
+   "GoogleDriveSetup.exe"
+  ],
+  "google-earth-pro": [
+   "GoogleEarthProWin-x64.exe",
+   "GoogleEarthProSetup.exe"
+  ],
+  "grammarly": [
+   "GrammarlyInstaller.cWin.exe"
+  ],
+  "greenshot": [
+   "Greenshot-INSTALLER-1.2.10.6-RELEASE.exe"
+  ],
+  "handbrake": [
+   "HandBrake-1.9.0-x86_64-Win_GUI.exe"
+  ],
+  "heroic": [
+   "Heroic-2.15.2-Setup-x64.exe"
+  ],
+  "hp-printer-software": [
+   "HPEasyStart-13.6.5-LJM42x_51.2.4931_4_Webpack.exe"
+  ],
+  "ia-writer": [
+   "iAWriterInstaller.exe"
+  ],
+  "inkscape": [
+   "inkscape-1.4_2024-10-11_86a8ad7-x64.msi",
+   "inkscape-1.4_2024-10-11_86a8ad7-x64.exe"
+  ],
+  "insomnia": [
+   "Insomnia.Core-10.3.0.exe"
+  ],
+  "intellij-idea": [
+   "ideaIC-2024.3.1.exe",
+   "ideaIU-2024.3.1.exe",
+   "idea-2025.2.exe"
+  ],
+  "internet-explorer": [
+   "IE11-Windows6.1-x64-en-us.exe",
+   "EIE11_EN-US_MCM_WIN764.EXE"
+  ],
+  "ipvanish": [
+   "ipvanish-setup.exe"
+  ],
+  "irfanview": [
+   "iview470g_x64_setup.exe"
+  ],
+  "itch": [
+   "itch-setup.exe"
+  ],
+  "itunes": [
+   "iTunes64Setup.exe",
+   "iTunesSetup.exe"
+  ],
+  "java-jdk": [
+   "jdk-21_windows-x64_bin.exe",
+   "OpenJDK21U-jdk_x64_windows_hotspot_21.0.5_11.msi",
+   "microsoft-jdk-21.0.5-windows-x64.msi",
+   "zulu21.38.21-ca-jdk21.0.5-win_x64.msi"
+  ],
+  "java-runtime": [
+   "jre-8u431-windows-x64.exe",
+   "JavaSetup8u431.exe",
+   "jre-8u431-windows-i586.exe",
+   "OpenJDK21U-jre_x64_windows_hotspot_21.0.5_11.msi"
+  ],
+  "jdownloader": [
+   "JDownloader2Setup_windows-x64_jre17.exe"
+  ],
+  "jellyfin-desktop": [
+   "JellyfinMediaPlayer-1.11.1-windows-x64.exe",
+   "jellyfin-desktop-2.0.0-windows-x64.exe"
+  ],
+  "jellyfin-server": [
+   "jellyfin_10.10.3_windows-x64.exe"
+  ],
+  "jgrasp": [
+   "jgrasp207_05.exe"
+  ],
+  "joplin": [
+   "Joplin-Setup-3.1.24.exe"
+  ],
+  "k-lite-codec-pack": [
+   "K-Lite_Codec_Pack_1875_Standard.exe"
+  ],
+  "kaspersky": [
+   "kaspersky4win.exe"
+  ],
+  "kdenlive": [
+   "kdenlive-24.12.0.exe"
+  ],
+  "keepass": [
+   "KeePass-2.57.1-Setup.exe"
+  ],
+  "keepassxc": [
+   "KeePassXC-2.7.9-Win64.msi"
+  ],
+  "kindle": [
+   "KindleForPC-installer-2.4.70904.exe"
+  ],
+  "kodi": [
+   "kodi-21.1-Omega-x64.exe"
+  ],
+  "krita": [
+   "krita-x64-5.2.6-setup.exe"
+  ],
+  "lastpass": [
+   "LastPassInstaller.exe"
+  ],
+  "league-of-legends": [
+   "Install League of Legends br.exe"
+  ],
+  "libreoffice": [
+   "LibreOffice_24.8.3_Win_x86-64.msi",
+   "LibreOffice_25.2.0_Windows_x86-64.msi"
+  ],
+  "librewolf": [
+   "librewolf-133.0-1-windows-x86_64-setup.exe"
+  ],
+  "lightworks": [
+   "lightworks_2023.2_r146240_Windows.exe"
+  ],
+  "lmms": [
+   "lmms-1.2.2-win64.exe"
+  ],
+  "mailspring": [
+   "MailspringSetup.exe"
+  ],
+  "malwarebytes": [
+   "MBSetup.exe"
+  ],
+  "mame": [
+   "mame0272b_64bit.exe"
+  ],
+  "masterpdfeditor": [
+   "MasterPDFEditor-setup.exe"
+  ],
+  "mcafee": [
+   "McAfee_Installer_x64.exe"
+  ],
+  "meld": [
+   "Meld-3.22.2-mingw.msi"
+  ],
+  "microsoft-365-copilot": [
+   "Microsoft 365 Copilot Installer.exe"
+  ],
+  "microsoft-copilot": [
+   "Microsoft Copilot Installer.exe"
+  ],
+  "microsoft-edge": [
+   "MicrosoftEdgeSetup.exe",
+   "MicrosoftEdgeEnterpriseX64.msi",
+   "microsoft-edge-stable_131.0.2903.86-1_amd64.deb"
+  ],
+  "microsoft-office": [
+   "OfficeSetup.exe",
+   "Setup.X64.en-US_O365ProPlusRetail_abc_TX_PR_Platform_def_.exe"
+  ],
+  "microsoft-teams": [
+   "MSTeamsSetup.exe",
+   "MSTeams-x64.msix",
+   "Teams_windows_x64.exe"
+  ],
+  "minecraft": [
+   "MinecraftInstaller.msi",
+   "MinecraftInstaller.exe"
+  ],
+  "mpc-hc": [
+   "MPC-HC.2.3.8.x64.exe"
+  ],
+  "mullvad-browser": [
+   "mullvad-browser-windows-x86_64-14.0.3.exe"
+  ],
+  "mullvad-vpn": [
+   "MullvadVPN-2024.8.exe"
+  ],
+  "musescore": [
+   "MuseScore-Studio-4.4.4.243461245-x86_64.msi"
+  ],
+  "naps2": [
+   "naps2-7.5.3-win-x64.exe"
+  ],
+  "nextcloud": [
+   "Nextcloud-3.15.2-x64.msi"
+  ],
+  "nitro-pdf": [
+   "nitro_pro14_x64.msi"
+  ],
+  "nmap": [
+   "nmap-7.95-setup.exe"
+  ],
+  "nodejs": [
+   "node-v22.12.0-x64.msi",
+   "node-v20.18.1-x86.msi"
+  ],
+  "nordvpn": [
+   "NordVPNSetup.exe",
+   "NordInstaller.exe"
+  ],
+  "norton": [
+   "Norton_Setup.exe",
+   "NortonInstaller_ESD.exe"
+  ],
+  "notepad-plus-plus": [
+   "npp.8.7.4.Installer.x64.exe",
+   "npp.8.7.4.portable.x64.zip"
+  ],
+  "notepadnext": [
+   "NotepadNext-v0.9-Installer.exe"
+  ],
+  "notion": [
+   "Notion Setup 4.4.0.exe"
+  ],
+  "nvidia-driver": [
+   "581.57-desktop-win10-win11-64bit-international-dch-whql.exe",
+   "NVIDIA_app_v11.0.1.189.exe"
+  ],
+  "obs-studio": [
+   "OBS-Studio-31.0.0-Windows-Installer.exe",
+   "OBS-Studio-30.2.3-Full-Installer-x64.exe"
+  ],
+  "obsidian": [
+   "Obsidian-1.7.7.exe",
+   "Obsidian.1.7.7.exe"
+  ],
+  "ollama": [
+   "OllamaSetup.exe"
+  ],
+  "onedrive": [
+   "OneDriveSetup.exe"
+  ],
+  "onlyoffice": [
+   "DesktopEditors_x64.exe",
+   "DesktopEditors_x64.msi",
+   "onlyoffice-desktopeditors_amd64.deb"
+  ],
+  "openrgb": [
+   "OpenRGB_0.9_Windows_64_b5f46e3.zip"
+  ],
+  "openshot": [
+   "OpenShot-v3.2.1-x86_64.exe"
+  ],
+  "opera": [
+   "OperaSetup.exe",
+   "Opera_119.0.5497.88_Setup_x64.exe"
+  ],
+  "opera-gx": [
+   "OperaGXSetup.exe",
+   "Opera_GX_119.0.5497.88_Setup_x64.exe"
+  ],
+  "origin": [
+   "OriginThinSetup.exe"
+  ],
+  "outlook": [
+   "Outlook for Windows Installer.exe"
+  ],
+  "overwatch": [
+   "Overwatch-Setup.exe"
+  ],
+  "paint-net": [
+   "paint.net.5.1.2.install.anycpu.web.exe",
+   "paint.net.5.1.2.winmsi.x64.msi"
+  ],
+  "pcsx2": [
+   "pcsx2-v2.2.0-windows-x64-installer.exe"
+  ],
+  "peazip": [
+   "peazip-10.2.0.WIN64.exe"
+  ],
+  "penpot": [
+   "Penpot-Desktop-0.10.0-win-x64.exe"
+  ],
+  "perplexity": [
+   "Perplexity Setup 1.0.0.exe"
+  ],
+  "photoscape": [
+   "PhotoScapeSetup_V3.7.exe"
+  ],
+  "phpstorm": [
+   "PhpStorm-2024.3.1.exe"
+  ],
+  "picard": [
+   "picard-setup-2.13.3.exe"
+  ],
+  "pinta": [
+   "pinta-3.0.exe"
+  ],
+  "plex": [
+   "Plex-1.104.0.536-1ab3a5fb-x86_64.exe"
+  ],
+  "plex-media-server": [
+   "PlexMediaServer-1.41.3.9314-a0bfb8370-x86_64.exe"
+  ],
+  "podman-desktop": [
+   "podman-desktop-1.15.0-setup-x64.exe"
+  ],
+  "postman": [
+   "Postman-win64-Setup.exe",
+   "Postman-win64-11.27.4-Setup.exe"
+  ],
+  "powertoys": [
+   "PowerToysSetup-0.87.1-x64.exe",
+   "PowerToysUserSetup-0.87.1-x64.exe"
+  ],
+  "ppsspp": [
+   "PPSSPPSetup.exe"
+  ],
+  "private-internet-access": [
+   "pia-windows-x64-3.6.1-08339.exe"
+  ],
+  "project64": [
+   "Setup Project64 3.0.1.exe"
+  ],
+  "proton-drive": [
+   "proton-drive-setup.exe",
+   "ProtonDriveSetup-x64.exe"
+  ],
+  "proton-mail": [
+   "ProtonMailSetup.exe"
+  ],
+  "proton-pass": [
+   "ProtonPass_Setup_1.27.2.exe"
+  ],
+  "proton-vpn": [
+   "ProtonVPN_v4.0.0_x64.exe"
+  ],
+  "purevpn": [
+   "purevpn_setup.exe"
+  ],
+  "putty": [
+   "putty-64bit-0.82-installer.msi",
+   "putty.exe"
+  ],
+  "pycharm": [
+   "pycharm-community-2024.3.1.exe",
+   "pycharm-professional-2024.3.1.exe",
+   "pycharm-2025.2.exe"
+  ],
+  "python": [
+   "python-3.13.1-amd64.exe",
+   "python-3.12.8.exe",
+   "python-2.7.18.amd64.msi"
+  ],
+  "qbittorrent": [
+   "qbittorrent_5.0.3_x64_setup.exe"
+  ],
+  "rawtherapee": [
+   "RawTherapee_5.11_win64_release.exe"
+  ],
+  "razer-synapse": [
+   "RazerSynapseInstaller_V1.18.1.98.exe"
+  ],
+  "retroarch": [
+   "RetroArch-Win64-setup.exe"
+  ],
+  "rider": [
+   "JetBrains.Rider-2024.3.3.exe"
+  ],
+  "roblox": [
+   "RobloxPlayerLauncher.exe",
+   "RobloxPlayerInstaller.exe"
+  ],
+  "roblox-studio": [
+   "RobloxStudioLauncherBeta.exe",
+   "RobloxStudioInstaller.exe"
+  ],
+  "rpcs3": [
+   "rpcs3-v0.0.34-17322-4a0f2b8b_win64.exe"
+  ],
+  "rubymine": [
+   "RubyMine-2024.3.1.exe"
+  ],
+  "rufus": [
+   "rufus-4.6.exe",
+   "rufus-4.6p.exe"
+  ],
+  "rustdesk": [
+   "rustdesk-1.3.6-x86_64.exe",
+   "rustdesk-1.3.6-x86_64.msi"
+  ],
+  "rustrover": [
+   "RustRover-2024.3.2.exe"
+  ],
+  "samsung-internet": [
+   "SamsungBrowserSetup.exe"
+  ],
+  "scratch": [
+   "Scratch 3.29.1 Setup.exe"
+  ],
+  "scribus": [
+   "scribus-1.6.3-windows-x64.exe"
+  ],
+  "scrivener": [
+   "Scrivener-installer.exe"
+  ],
+  "sharex": [
+   "ShareX-17.0.0-setup.exe"
+  ],
+  "shotcut": [
+   "shotcut-win64-24.11.17.exe"
+  ],
+  "signal": [
+   "signal-desktop-win-7.36.0.exe",
+   "SignalSetup.exe"
+  ],
+  "simplenote": [
+   "Simplenote-win-2.23.0-x64.exe"
+  ],
+  "skype": [
+   "SkypeSetup.exe",
+   "Skype-8.134.0.202.exe"
+  ],
+  "slack": [
+   "SlackSetup.exe",
+   "SlackSetup.msi"
+  ],
+  "snes9x": [
+   "snes9x-1.63-win32-x64.zip"
+  ],
+  "sophos": [
+   "SophosSetup.exe"
+  ],
+  "speccy": [
+   "spsetup132.exe"
+  ],
+  "spotify": [
+   "SpotifySetup.exe",
+   "Spotify Installer.exe"
+  ],
+  "standard-notes": [
+   "standard-notes-3.195.13-win.exe"
+  ],
+  "steam": [
+   "SteamSetup.exe"
+  ],
+  "strawberry": [
+   "StrawberrySetup-1.2.3-msvc-x64.exe"
+  ],
+  "stremio": [
+   "StremioSetup-v4.4.168.exe"
+  ],
+  "sublime-text": [
+   "Sublime Text Build 4189 x64 Setup.exe"
+  ],
+  "sumatra-pdf": [
+   "SumatraPDF-3.5.2-64-install.exe",
+   "SumatraPDF-3.5.2-64.exe"
+  ],
+  "surfshark": [
+   "SurfsharkSetup.exe"
+  ],
+  "syncthing": [
+   "syncthing-windows-setup.exe"
+  ],
+  "teamviewer": [
+   "TeamViewer_Setup_x64.exe",
+   "TeamViewer_Host_Setup_x64.exe",
+   "TeamViewerQS_x64.exe"
+  ],
+  "telegram": [
+   "tsetup-x64.5.9.0.exe",
+   "tsetup.5.9.0.exe"
+  ],
+  "thunderbird": [
+   "Thunderbird Setup 128.5.2esr.exe"
+  ],
+  "todoist": [
+   "Todoist-Setup.exe"
+  ],
+  "tor-browser": [
+   "tor-browser-windows-x86_64-portable-14.0.3.exe",
+   "torbrowser-install-win64-12.0.1_ALL.exe"
+  ],
+  "transmission": [
+   "transmission-4.0.6-x64.msi"
+  ],
+  "treesize": [
+   "TreeSizeFreeSetup.exe"
+  ],
+  "trello": [
+   "Trello Installer.exe"
+  ],
+  "tunnelbear": [
+   "TunnelBear-Installer.exe"
+  ],
+  "turbowarp": [
+   "TurboWarp-Setup-1.13.1-x64.exe"
+  ],
+  "ubisoft-connect": [
+   "UbisoftConnectInstaller.exe",
+   "UplayInstaller.exe"
+  ],
+  "ultimaker-cura": [
+   "UltiMaker-Cura-5.9.0-win64-X64.exe"
+  ],
+  "ungoogled-chromium": [
+   "ungoogled-chromium_131.0.6778.85-1.1_installer_x64.exe"
+  ],
+  "utorrent": [
+   "uTorrent.exe",
+   "utweb_installer.exe"
+  ],
+  "vcredist": [
+   "vc_redist.x64.exe",
+   "VC_redist.x86.exe",
+   "vcredist_x86.exe",
+   "VC_redist.arm64.exe"
+  ],
+  "vegas-pro": [
+   "VEGAS_Pro_22.0.0.194_x64.exe"
+  ],
+  "ventoy": [
+   "ventoy-1.0.99-windows.zip"
+  ],
+  "viber": [
+   "ViberSetup.exe"
+  ],
+  "vim": [
+   "gvim_9.1.0000_x64.exe"
+  ],
+  "virtualbox": [
+   "VirtualBox-7.1.4-165100-Win.exe"
+  ],
+  "visual-studio": [
+   "VisualStudioSetup.exe",
+   "vs_community.exe",
+   "vs_BuildTools.exe"
+  ],
+  "vivaldi": [
+   "Vivaldi.7.0.3495.6.x64.exe",
+   "vivaldi-stable_7.0.3495.6-1_amd64.deb"
+  ],
+  "vlc": [
+   "vlc-3.0.21-win64.exe",
+   "vlc-3.0.21-win32.msi"
+  ],
+  "vmware-workstation": [
+   "VMware-workstation-full-17.6.2-24409262.exe"
+  ],
+  "vscode": [
+   "VSCodeUserSetup-x64-1.96.2.exe",
+   "VSCodeSetup-x64-1.96.2.exe",
+   "code_1.96.2-1734607745_amd64.deb"
+  ],
+  "vscodium": [
+   "VSCodiumUserSetup-x64-1.96.2.24355.exe"
+  ],
+  "warframe": [
+   "Warframe.msi"
+  ],
+  "waterfox": [
+   "Waterfox Setup 6.5.0.exe"
+  ],
+  "webex": [
+   "Webex.msi",
+   "WebexApp.msi"
+  ],
+  "webstorm": [
+   "WebStorm-2024.3.1.exe"
+  ],
+  "webview2": [
+   "MicrosoftEdgeWebview2Setup.exe"
+  ],
+  "whatsapp": [
+   "WhatsApp Installer.exe",
+   "WhatsAppSetup.exe"
+  ],
+  "winamp": [
+   "winamp5666_full_all.exe",
+   "Winamp_Installer.exe"
+  ],
+  "windirstat": [
+   "WinDirStat-x64.msi",
+   "windirstat1_1_2_setup.exe"
+  ],
+  "windows-iso": [
+   "Win11_24H2_BrazilianPortuguese_x64.iso",
+   "MediaCreationTool22H2.exe",
+   "Windows11InstallationAssistant.exe",
+   "Win10_22H2_English_x64v1.iso"
+  ],
+  "windsurf": [
+   "WindsurfUserSetup-x64-1.1.0.exe"
+  ],
+  "winmerge": [
+   "WinMerge-2.16.44-x64-Setup.exe"
+  ],
+  "winrar": [
+   "winrar-x64-711br.exe",
+   "wrar711.exe"
+  ],
+  "winscp": [
+   "WinSCP-6.3.6-Setup.exe",
+   "WinSCP-6.3.6-Portable.zip"
+  ],
+  "winzip": [
+   "winzip29-downwz.exe"
+  ],
+  "wireshark": [
+   "Wireshark-4.4.2-x64.exe",
+   "Wireshark-latest-x64.msi"
+  ],
+  "world-of-warcraft": [
+   "World-of-Warcraft-Setup.exe"
+  ],
+  "wps-office": [
+   "wps_office_inst.exe",
+   "WPSSetup.exe"
+  ],
+  "xampp": [
+   "xampp-windows-x64-8.2.12-0-VS16-installer.exe"
+  ],
+  "xemu": [
+   "xemu-0.8.5-win-x86_64-release.zip"
+  ],
+  "xmind": [
+   "Xmind-for-Windows-x64bit-25.01.01061-202501070704.exe"
+  ],
+  "xna-framework": [
+   "xnafx40_redist.msi"
+  ],
+  "xnview-mp": [
+   "XnViewMP-win-x64.exe",
+   "XnView-win-full.exe"
+  ],
+  "xournalpp": [
+   "xournalpp-1.2.5-windows.exe"
+  ],
+  "xpadder": [
+   "Xpadder.exe"
+  ],
+  "yuzu": [
+   "yuzu_install.exe"
+  ],
+  "zen-browser": [
+   "zen.installer.exe",
+   "zen.installer-arm64.exe"
+  ],
+  "zoom": [
+   "ZoomInstallerFull.exe",
+   "ZoomInstallerFull.msi",
+   "zoom_x64.msi"
+  ]
+ },
+ "negatives": {
+  "chromedriver_win32.zip": [],
+  "chromedriver-win64.zip": [],
+  "mini_installer.exe": [],
+  "setup.exe": [],
+  "install.exe": [],
+  "Setup (1).exe": [],
+  "installer.msi": [],
+  "uninstall.exe": [],
+  "update.exe": [],
+  "driver.exe": [],
+  "python-docs-html.zip": [],
+  "node.exe": [],
+  "gimp-help-2.10.0-en-setup.exe": [
+   "gimp"
+  ],
+  "WhatsApp Image 2024-01-01 at 10.00.00.jpeg": [],
+  "teams-for-linux_1.12.0_amd64.deb": [],
+  "MicrosoftEdgeWebview2Setup.exe": [
+   "webview2"
+  ],
+  "OperaGXSetup.exe": [
+   "opera-gx"
+  ],
+  "OpenJDK21U-jre_x64_windows_hotspot_21.0.5_11.msi": [
+   "java-runtime"
+  ],
+  "codium_1.96.2_amd64.deb": [],
+  "Git-Credential-Manager.exe": [],
+  "GitHubDesktopSetup-x64.exe": [
+   "github-desktop"
+  ],
+  "gitkraken-amd64.deb": [],
+  "steamcmd.zip": [],
+  "SteamSetup.exe": [
+   "steam"
+  ],
+  "EpicGamesLauncherInstaller.msi": [
+   "epic-games-launcher"
+  ],
+  "VSCodeUserSetup-arm64-1.96.2.exe": [
+   "vscode"
+  ],
+  "vlc-3.0.21-win64.exe": [
+   "vlc"
+  ],
+  "vlc-skins.zip": [],
+  "chrome_proxy.exe": [],
+  "Chromium.exe": [],
+  "chrome.exe": [],
+  "firefox.exe": [],
+  "nodejs-docs.zip": [],
+  "Win11_24H2_English_x64.iso": [
+   "windows-iso"
+  ],
+  "windows-update-kb5034441.msu": [],
+  "office-deployment-tool.exe": [],
+  "Microsoft.WindowsTerminal_1.21.msixbundle": [],
+  "OneDriveSetup.exe": [
+   "onedrive"
+  ],
+  "Telegram.exe": [],
+  "tsetup-x64.5.9.0.exe": [
+   "telegram"
+  ],
+  "Zoom.exe": [],
+  "ZoomInstallerFull.exe": [
+   "zoom"
+  ],
+  "zoomit.zip": [],
+  "ZoomIt64.exe": [],
+  "putty-64bit-0.82-installer.msi": [
+   "putty"
+  ],
+  "puttygen.exe": [],
+  "plink.exe": [],
+  "pageant.exe": [],
+  "7z2409-x64.exe": [
+   "7-zip"
+  ],
+  "7zr.exe": [],
+  "7z.dll": [],
+  "rar.exe": [],
+  "unrar.exe": [],
+  "nvidia-smi.exe": [],
+  "NVIDIA_app_v11.0.1.189.exe": [
+   "nvidia-driver"
+  ],
+  "amdgpu-install_6.2.60204-1_all.deb": [],
+  "Docker Desktop Installer.exe": [
+   "docker-desktop"
+  ],
+  "docker-compose-windows-x86_64.exe": [],
+  "Overwatch-Setup.exe": [
+   "overwatch"
+  ],
+  "Discord.exe": [],
+  "DiscordSetup.exe": [
+   "discord"
+  ],
+  "discord-ptb-0.0.120.deb": [],
+  "avast_free_antivirus_setup_online.exe": [
+   "avast"
+  ],
+  "avgui.exe": [],
+  "Norton Commander.exe": [],
+  "python-3.13.1-embed-amd64.zip": [
+   "python"
+  ],
+  "pythonw.exe": [],
+  "Python 3.13 docs.zip": [
+   "python"
+  ],
+  "node-v22.12.0-x64.msi": [
+   "nodejs"
+  ],
+  "nodemon.exe": [],
+  "jre.zip": [],
+  "jdk.zip": [],
+  "vc_redist.x64.exe": [
+   "vcredist"
+  ],
+  "VC_redist.x86.exe": [
+   "vcredist"
+  ],
+  "dxwebsetup.exe": [
+   "directx"
+  ],
+  "spotify-1.2.50.deb": [],
+  "SpotifySetup.exe": [
+   "spotify"
+  ],
+  "obs-studio-portable.zip": [
+   "obs-studio"
+  ],
+  "OBS-Studio-31.0.0-Windows-Installer.exe": [
+   "obs-studio"
+  ],
+  "Krita-x64-5.2.6.zip": [],
+  "krita-x64-5.2.6-setup.exe": [
+   "krita"
+  ],
+  "blender-4.3.2-linux-x64.tar.xz": [],
+  "Inkscape-1.4.AppImage": [],
+  "gimp-3.0.0-x86_64.AppImage": [],
+  "winget.exe": [],
+  "msedge.exe": [],
+  "Teams.exe": [],
+  "skype.exe": [],
+  "notepad++.exe": [],
+  "ide.exe": [],
+  "idea64.exe": [],
+  "pycharm64.exe": [],
+  "rider64.exe": []
+ }
+}

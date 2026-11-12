@@ -1,0 +1,2274 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "vscode",
+      "name": "Visual Studio Code",
+      "aliases": [
+        "VS Code"
+      ],
+      "vendor": "Microsoft Corporation",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "vscodesetup*",
+          "vscodeusersetup*",
+          "code * amd64*"
+        ],
+        "products": [
+          "visual studio code"
+        ],
+        "packages": [
+          "code"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "visual-studio-code-bin",
+          "code"
+        ],
+        "flatpak": [
+          "com.visualstudio.code"
+        ],
+        "desktop": [
+          "code.desktop",
+          "code-oss.desktop",
+          "com.visualstudio.code.desktop"
+        ],
+        "website": "https://code.visualstudio.com/download"
+      },
+      "alternatives": [
+        {
+          "id": "vscodium",
+          "relation": "alternative",
+          "note": {
+            "en": "VS Code built from the open-source code, without Microsoft telemetry.",
+            "pt_BR": "VS Code compilado do código aberto, sem a telemetria da Microsoft."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "vscodium",
+      "name": "VSCodium",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "vscodiumsetup*",
+          "vscodiumusersetup*"
+        ],
+        "packages": [
+          "codium"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "vscodium-bin",
+          "vscodium"
+        ],
+        "flatpak": [
+          "com.vscodium.codium"
+        ],
+        "desktop": [
+          "codium.desktop",
+          "com.vscodium.codium.desktop"
+        ],
+        "website": "https://vscodium.com/#install"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "vendor": "Anysphere Inc.",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "cursorusersetup*",
+          "cursorsetup*"
+        ],
+        "formats": [
+          "exe",
+          "appimage",
+          "deb"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "cursor-bin"
+        ],
+        "website": "https://cursor.com/download"
+      },
+      "alternatives": [
+        {
+          "id": "vscode",
+          "relation": "alternative",
+          "note": {
+            "en": "Microsoft's code editor, available natively for Linux.",
+            "pt_BR": "Editor de código da Microsoft, disponível nativamente para Linux."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "windsurfusersetup*",
+          "windsurfsetup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://windsurf.com/download/editor"
+      },
+      "alternatives": [
+        {
+          "id": "vscode",
+          "relation": "alternative",
+          "note": {
+            "en": "Microsoft's code editor, available natively for Linux.",
+            "pt_BR": "Editor de código da Microsoft, disponível nativamente para Linux."
+          }
+        },
+        {
+          "id": "vscodium",
+          "relation": "alternative",
+          "note": {
+            "en": "VS Code built from the open-source code, without Microsoft telemetry.",
+            "pt_BR": "VS Code compilado do código aberto, sem a telemetria da Microsoft."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "antigravity",
+      "name": "Google Antigravity",
+      "vendor": "Google LLC",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "antigravity*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "antigravity"
+        ],
+        "website": "https://antigravity.google/download/linux"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "sublime-text",
+      "name": "Sublime Text",
+      "vendor": "Sublime HQ Pty Ltd",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "sublime text build*"
+        ],
+        "packages": [
+          "sublime-text"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "sublime-text-4"
+        ],
+        "flatpak": [
+          "com.sublimehq.SublimeText"
+        ],
+        "desktop": [
+          "com.sublimehq.SublimeText.desktop"
+        ],
+        "website": "https://www.sublimetext.com/docs/linux_repositories.html"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "notepad-plus-plus",
+      "name": "Notepad++",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "npp * installer*",
+          "npp * portable*"
+        ],
+        "products": [
+          "notepad++"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "notepadnext",
+          "relation": "alternative",
+          "note": {
+            "en": "Cross-platform reimplementation of Notepad++.",
+            "pt_BR": "Reimplementação multiplataforma do Notepad++."
+          }
+        },
+        {
+          "id": "kate",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE's advanced text editor with tabs, sessions and syntax highlighting.",
+            "pt_BR": "Editor de texto avançado do KDE com abas, sessões e realce de sintaxe."
+          }
+        },
+        {
+          "id": "geany",
+          "relation": "alternative",
+          "note": {
+            "en": "Light and fast text editor and IDE.",
+            "pt_BR": "Editor de texto e IDE leve e rápido."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "works",
+        "note": {
+          "en": "Notepad++ runs in Wine, but the native alternatives integrate better with the system.",
+          "pt_BR": "O Notepad++ roda no Wine, mas as alternativas nativas se integram melhor ao sistema."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "notepadnext",
+      "name": "Notepad Next",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "notepadnext*"
+        ],
+        "packages": [
+          "notepadnext"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "notepadnext"
+        ],
+        "flatpak": [
+          "com.github.dail8859.NotepadNext"
+        ],
+        "desktop": [
+          "com.github.dail8859.NotepadNext.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "kate",
+      "name": "Kate",
+      "vendor": "KDE",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "kate"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "kate"
+        ],
+        "flatpak": [
+          "org.kde.kate"
+        ],
+        "desktop": [
+          "org.kde.kate.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "geany",
+      "name": "Geany",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "geany * setup*"
+        ],
+        "packages": [
+          "geany"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "geany"
+        ],
+        "flatpak": [
+          "org.geany.Geany"
+        ],
+        "desktop": [
+          "geany.desktop",
+          "org.geany.Geany.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "eclipse",
+      "name": "Eclipse IDE",
+      "vendor": "Eclipse Foundation",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "eclipse inst*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "flatpak": [
+          "org.eclipse.Java"
+        ],
+        "desktop": [
+          "org.eclipse.Java.desktop"
+        ],
+        "website": "https://www.eclipse.org/downloads/packages/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "jgrasp",
+      "name": "jGRASP",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "jgrasp*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "jgrasp"
+        ],
+        "website": "https://www.jgrasp.org/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "vim",
+      "name": "Vim",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "gvim *"
+        ],
+        "packages": [
+          "vim",
+          "gvim"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "gvim",
+          "vim"
+        ],
+        "flatpak": [
+          "org.vim.Vim"
+        ],
+        "desktop": [
+          "gvim.desktop",
+          "vim.desktop",
+          "org.vim.Vim.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "emacs",
+      "name": "GNU Emacs",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "emacs * installer*"
+        ],
+        "packages": [
+          "emacs"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "emacs"
+        ],
+        "flatpak": [
+          "org.gnu.emacs"
+        ],
+        "desktop": [
+          "emacs.desktop",
+          "org.gnu.emacs.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "git",
+      "name": "Git for Windows",
+      "aliases": [
+        "Git"
+      ],
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "git 2 * bit",
+          "git 2 * arm64",
+          "portablegit 2*"
+        ],
+        "packages": [
+          "git"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "git"
+        ],
+        "website": "https://git-scm.com/downloads/linux"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "Git is a native Linux tool and is usually already installed.",
+          "pt_BR": "O Git é uma ferramenta nativa do Linux e normalmente já vem instalado."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "github-desktop",
+      "name": "GitHub Desktop",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "githubdesktopsetup*"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "github-desktop-bin"
+        ],
+        "flatpak": [
+          "io.github.shiftey.Desktop"
+        ],
+        "desktop": [
+          "io.github.shiftey.Desktop.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "docker-desktop",
+      "name": "Docker Desktop",
+      "vendor": "Docker Inc.",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "docker desktop installer*"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm",
+          "arch-package"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "docker-desktop"
+        ],
+        "instructions": "https://docs.docker.com/desktop/setup/install/linux/archlinux/"
+      },
+      "alternatives": [
+        {
+          "id": "docker",
+          "relation": "alternative",
+          "note": {
+            "en": "Docker Engine runs natively on Linux, without a virtual machine.",
+            "pt_BR": "O Docker Engine roda nativamente no Linux, sem máquina virtual."
+          }
+        },
+        {
+          "id": "podman-desktop",
+          "relation": "alternative",
+          "note": {
+            "en": "Open-source graphical tool for containers (Podman and Docker).",
+            "pt_BR": "Ferramenta gráfica de código aberto para contêineres (Podman e Docker)."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "docker",
+      "name": "Docker Engine",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "docker",
+          "docker-ce"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "docker",
+          "docker-compose"
+        ],
+        "instructions": "https://wiki.archlinux.org/title/Docker"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "podman-desktop",
+      "name": "Podman Desktop",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "podman desktop * setup*"
+        ],
+        "packages": [
+          "podman-desktop"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "podman-desktop"
+        ],
+        "flatpak": [
+          "io.podman_desktop.PodmanDesktop"
+        ],
+        "desktop": [
+          "io.podman_desktop.PodmanDesktop.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "vendor": "Python Software Foundation",
+      "category": "development",
+      "kind": "runtime",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "python 3 *",
+          "python 2 7*"
+        ],
+        "packages": [
+          "python",
+          "python3"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "python",
+          "python-pip"
+        ],
+        "website": "https://www.python.org/downloads/source/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "Python is already part of BigLinux; use pacman or a virtual environment (python -m venv) for extra packages.",
+          "pt_BR": "O Python já faz parte do BigLinux; use o pacman ou um ambiente virtual (python -m venv) para pacotes extras."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "vendor": "OpenJS Foundation",
+      "category": "development",
+      "kind": "runtime",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "node v*"
+        ],
+        "packages": [
+          "nodejs"
+        ],
+        "formats": [
+          "msi",
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "nodejs",
+          "nodejs-lts-jod",
+          "npm"
+        ],
+        "website": "https://nodejs.org/en/download/package-manager"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "Install the Linux Node.js from the repositories instead.",
+          "pt_BR": "Instale o Node.js para Linux pelos repositórios."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "filezilla",
+      "name": "FileZilla",
+      "vendor": "Tim Kosse",
+      "category": "file-transfer",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "filezilla 3*"
+        ],
+        "products": [
+          "filezilla"
+        ],
+        "packages": [
+          "filezilla"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "filezilla"
+        ],
+        "flatpak": [
+          "org.filezillaproject.Filezilla"
+        ],
+        "desktop": [
+          "filezilla.desktop",
+          "org.filezillaproject.Filezilla.desktop"
+        ],
+        "website": "https://filezilla-project.org/download.php?show_all=1"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "putty",
+      "name": "PuTTY",
+      "category": "network",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "putty * installer*",
+          "putty"
+        ],
+        "products": [
+          "putty"
+        ],
+        "packages": [
+          "putty"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "putty"
+        ],
+        "flatpak": [
+          "uk.org.greenend.chiark.sgtatham.putty"
+        ],
+        "desktop": [
+          "putty.desktop",
+          "uk.org.greenend.chiark.sgtatham.putty.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "bitvise-ssh",
+      "name": "Bitvise SSH Client",
+      "category": "network",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "bvsshclient inst*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "putty",
+          "relation": "alternative",
+          "note": {
+            "en": "The same PuTTY SSH client, native on Linux; the terminal's ssh command also works.",
+            "pt_BR": "O mesmo cliente SSH PuTTY, nativo no Linux; o comando ssh do terminal também funciona."
+          }
+        },
+        {
+          "id": "remmina",
+          "relation": "alternative",
+          "note": {
+            "en": "Remote desktop client that also handles SSH and SFTP.",
+            "pt_BR": "Cliente de área de trabalho remota que também faz SSH e SFTP."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "winscp",
+      "name": "WinSCP",
+      "category": "file-transfer",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "winscp * setup*",
+          "winscp * portable*"
+        ],
+        "products": [
+          "winscp"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "filezilla",
+          "relation": "alternative",
+          "note": {
+            "en": "FTP, FTPS and SFTP client with a two-pane interface.",
+            "pt_BR": "Cliente FTP, FTPS e SFTP com interface de dois painéis."
+          }
+        },
+        {
+          "id": "dolphin",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE's file manager opens sftp:// addresses directly.",
+            "pt_BR": "O gerenciador de arquivos do KDE abre endereços sftp:// diretamente."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "dolphin",
+      "name": "Dolphin",
+      "vendor": "KDE",
+      "category": "utilities",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "dolphin"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "dolphin"
+        ],
+        "desktop": [
+          "org.kde.dolphin.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman"
+      ]
+    },
+    {
+      "id": "android-studio",
+      "name": "Android Studio",
+      "vendor": "Google LLC",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "android studio * windows*"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "android-studio"
+        ],
+        "flatpak": [
+          "com.google.AndroidStudio"
+        ],
+        "desktop": [
+          "com.google.AndroidStudio.desktop"
+        ],
+        "website": "https://developer.android.com/studio"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "arduino-ide",
+      "name": "Arduino IDE",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "arduino ide *"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "arduino-ide-bin",
+          "arduino-ide"
+        ],
+        "flatpak": [
+          "cc.arduino.IDE2"
+        ],
+        "desktop": [
+          "cc.arduino.IDE2.desktop"
+        ],
+        "website": "https://www.arduino.cc/en/software"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "intellij-idea",
+      "name": "IntelliJ IDEA",
+      "vendor": "JetBrains s.r.o.",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "ideaic 20*",
+          "ideaiu 20*",
+          "idea 20*"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "intellij-idea-community-edition",
+          "intellij-idea-ultimate-edition"
+        ],
+        "flatpak": [
+          "com.jetbrains.IntelliJ-IDEA-Community",
+          "com.jetbrains.IntelliJ-IDEA-Ultimate"
+        ],
+        "desktop": [
+          "idea.desktop",
+          "com.jetbrains.IntelliJ-IDEA-Community.desktop",
+          "com.jetbrains.IntelliJ-IDEA-Ultimate.desktop"
+        ],
+        "website": "https://www.jetbrains.com/toolbox-app/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "pycharm",
+      "name": "PyCharm",
+      "vendor": "JetBrains s.r.o.",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "pycharm *"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "pycharm-community-edition"
+        ],
+        "flatpak": [
+          "com.jetbrains.PyCharm-Community",
+          "com.jetbrains.PyCharm-Professional"
+        ],
+        "desktop": [
+          "pycharm.desktop",
+          "com.jetbrains.PyCharm-Community.desktop",
+          "com.jetbrains.PyCharm-Professional.desktop"
+        ],
+        "website": "https://www.jetbrains.com/toolbox-app/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "phpstorm",
+      "name": "PhpStorm",
+      "vendor": "JetBrains s.r.o.",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "phpstorm 20*"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "phpstorm"
+        ],
+        "flatpak": [
+          "com.jetbrains.PhpStorm"
+        ],
+        "desktop": [
+          "com.jetbrains.PhpStorm.desktop"
+        ],
+        "website": "https://www.jetbrains.com/toolbox-app/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "goland",
+      "name": "GoLand",
+      "vendor": "JetBrains s.r.o.",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "goland 20*"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "goland"
+        ],
+        "flatpak": [
+          "com.jetbrains.GoLand"
+        ],
+        "desktop": [
+          "com.jetbrains.GoLand.desktop"
+        ],
+        "website": "https://www.jetbrains.com/toolbox-app/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "rider",
+      "name": "JetBrains Rider",
+      "vendor": "JetBrains s.r.o.",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "jetbrains rider 20*"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "rider"
+        ],
+        "flatpak": [
+          "com.jetbrains.Rider"
+        ],
+        "desktop": [
+          "com.jetbrains.Rider.desktop"
+        ],
+        "website": "https://www.jetbrains.com/toolbox-app/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "clion",
+      "name": "CLion",
+      "vendor": "JetBrains s.r.o.",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "clion 20*"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "clion"
+        ],
+        "flatpak": [
+          "com.jetbrains.CLion"
+        ],
+        "desktop": [
+          "com.jetbrains.CLion.desktop"
+        ],
+        "website": "https://www.jetbrains.com/toolbox-app/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "rustrover",
+      "name": "RustRover",
+      "vendor": "JetBrains s.r.o.",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "rustrover 20*"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "rustrover"
+        ],
+        "flatpak": [
+          "com.jetbrains.RustRover"
+        ],
+        "desktop": [
+          "com.jetbrains.RustRover.desktop"
+        ],
+        "website": "https://www.jetbrains.com/toolbox-app/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "webstorm",
+      "name": "WebStorm",
+      "vendor": "JetBrains s.r.o.",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "webstorm 20*"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "webstorm"
+        ],
+        "flatpak": [
+          "com.jetbrains.WebStorm"
+        ],
+        "desktop": [
+          "com.jetbrains.WebStorm.desktop"
+        ],
+        "website": "https://www.jetbrains.com/toolbox-app/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "rubymine",
+      "name": "RubyMine",
+      "vendor": "JetBrains s.r.o.",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "rubymine 20*"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "rubymine"
+        ],
+        "website": "https://www.jetbrains.com/toolbox-app/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "datagrip",
+      "name": "DataGrip",
+      "vendor": "JetBrains s.r.o.",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "datagrip 20*"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "datagrip"
+        ],
+        "flatpak": [
+          "com.jetbrains.DataGrip"
+        ],
+        "desktop": [
+          "com.jetbrains.DataGrip.desktop"
+        ],
+        "website": "https://www.jetbrains.com/toolbox-app/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "dataspell",
+      "name": "DataSpell",
+      "vendor": "JetBrains s.r.o.",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "dataspell 20*"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "dataspell"
+        ],
+        "website": "https://www.jetbrains.com/toolbox-app/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "visual-studio",
+      "name": "Microsoft Visual Studio",
+      "vendor": "Microsoft Corporation",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "visualstudiosetup*",
+          "vs community*",
+          "vs professional*",
+          "vs enterprise*",
+          "vs buildtools*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "rider",
+          "relation": "alternative",
+          "note": {
+            "en": "Cross-platform .NET and C# IDE by JetBrains.",
+            "pt_BR": "IDE multiplataforma para .NET e C# da JetBrains."
+          }
+        },
+        {
+          "id": "vscode",
+          "relation": "alternative",
+          "note": {
+            "en": "Microsoft's code editor, available natively for Linux.",
+            "pt_BR": "Editor de código da Microsoft, disponível nativamente para Linux."
+          }
+        },
+        {
+          "id": "qtcreator",
+          "relation": "alternative",
+          "note": {
+            "en": "C and C++ IDE with CMake support.",
+            "pt_BR": "IDE para C e C++ com suporte a CMake."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "qtcreator",
+      "name": "Qt Creator",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "qtcreator"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "qtcreator"
+        ],
+        "desktop": [
+          "org.qt-project.qtcreator.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman"
+      ]
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "postman win64*",
+          "postman setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "postman-bin"
+        ],
+        "flatpak": [
+          "com.getpostman.Postman"
+        ],
+        "desktop": [
+          "com.getpostman.Postman.desktop"
+        ],
+        "website": "https://www.postman.com/downloads/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "insomnia",
+      "name": "Insomnia",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "insomnia core*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "insomnia-bin",
+          "insomnia"
+        ],
+        "flatpak": [
+          "rest.insomnia.Insomnia"
+        ],
+        "desktop": [
+          "rest.insomnia.Insomnia.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "dbeaver",
+      "name": "DBeaver Community",
+      "category": "database",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "dbeaver ce*"
+        ],
+        "packages": [
+          "dbeaver"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "dbeaver"
+        ],
+        "flatpak": [
+          "io.dbeaver.DBeaverCommunity"
+        ],
+        "desktop": [
+          "io.dbeaver.DBeaver.desktop",
+          "io.dbeaver.DBeaverCommunity.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "xampp",
+      "name": "XAMPP",
+      "vendor": "Apache Friends",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "xampp windows*"
+        ],
+        "formats": [
+          "exe",
+          "run"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "xampp"
+        ],
+        "website": "https://www.apachefriends.org/download.html"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "winmerge",
+      "name": "WinMerge",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "winmerge * setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "meld",
+          "relation": "alternative",
+          "note": {
+            "en": "Visual diff and merge tool for files and folders.",
+            "pt_BR": "Ferramenta visual de comparação e mesclagem de arquivos e pastas."
+          }
+        },
+        {
+          "id": "kdiff3",
+          "relation": "alternative",
+          "note": {
+            "en": "Compares and merges up to three files or folders.",
+            "pt_BR": "Compara e mescla até três arquivos ou pastas."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "meld",
+      "name": "Meld",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "meld * mingw*"
+        ],
+        "packages": [
+          "meld"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "meld"
+        ],
+        "flatpak": [
+          "org.gnome.meld"
+        ],
+        "desktop": [
+          "org.gnome.Meld.desktop",
+          "org.gnome.meld.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "kdiff3",
+      "name": "KDiff3",
+      "vendor": "KDE",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "kdiff3"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "kdiff3"
+        ],
+        "desktop": [
+          "org.kde.kdiff3.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman"
+      ]
+    },
+    {
+      "id": "beyond-compare",
+      "name": "Beyond Compare",
+      "vendor": "Scooter Software",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "bcompare *"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "bcompare"
+        ],
+        "website": "https://www.scootersoftware.com/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "brackets",
+      "name": "Brackets",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "brackets release*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "vscode",
+          "relation": "alternative",
+          "note": {
+            "en": "Microsoft's code editor, available natively for Linux.",
+            "pt_BR": "Editor de código da Microsoft, disponível nativamente para Linux."
+          }
+        },
+        {
+          "id": "vscodium",
+          "relation": "alternative",
+          "note": {
+            "en": "VS Code built from the open-source code, without Microsoft telemetry.",
+            "pt_BR": "VS Code compilado do código aberto, sem a telemetria da Microsoft."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "message": {
+        "en": "Brackets is no longer actively maintained.",
+        "pt_BR": "O Brackets não é mais mantido ativamente."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    }
+  ]
+}

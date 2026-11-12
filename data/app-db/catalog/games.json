@@ -1,0 +1,1995 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "steam",
+      "name": "Steam",
+      "vendor": "Valve Corporation",
+      "category": "game-launcher",
+      "kind": "launcher",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "steamsetup*"
+        ],
+        "products": [
+          "steam"
+        ],
+        "packages": [
+          "steam",
+          "steam-installer",
+          "steam-launcher"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "steam"
+        ],
+        "flatpak": [
+          "com.valvesoftware.Steam"
+        ],
+        "desktop": [
+          "steam.desktop",
+          "com.valvesoftware.Steam.desktop"
+        ],
+        "website": "https://store.steampowered.com/about/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "Steam is native on Linux and runs Windows games through Proton.",
+          "pt_BR": "A Steam é nativa no Linux e roda jogos do Windows pelo Proton."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "heroic",
+      "name": "Heroic Games Launcher",
+      "category": "game-launcher",
+      "kind": "launcher",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "heroic * setup*"
+        ],
+        "packages": [
+          "heroic"
+        ],
+        "formats": [
+          "exe",
+          "appimage",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "heroic-games-launcher",
+          "heroic-games-launcher-bin"
+        ],
+        "flatpak": [
+          "com.heroicgameslauncher.hgl"
+        ],
+        "desktop": [
+          "com.heroicgameslauncher.hgl.desktop"
+        ],
+        "website": "https://heroicgameslauncher.com/downloads"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "lutris",
+      "name": "Lutris",
+      "category": "game-launcher",
+      "kind": "launcher",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "lutris"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "lutris"
+        ],
+        "flatpak": [
+          "net.lutris.Lutris"
+        ],
+        "desktop": [
+          "net.lutris.Lutris.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "bottles",
+      "name": "Bottles",
+      "category": "game-launcher",
+      "kind": "launcher",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "bottles"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "bottles"
+        ],
+        "flatpak": [
+          "com.usebottles.bottles"
+        ],
+        "desktop": [
+          "com.usebottles.bottles.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "minigalaxy",
+      "name": "Minigalaxy",
+      "category": "game-launcher",
+      "kind": "launcher",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "minigalaxy"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "minigalaxy"
+        ],
+        "flatpak": [
+          "io.github.sharkwouter.Minigalaxy"
+        ],
+        "desktop": [
+          "io.github.sharkwouter.Minigalaxy.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "epic-games-launcher",
+      "name": "Epic Games Launcher",
+      "vendor": "Epic Games, Inc.",
+      "category": "game-launcher",
+      "kind": "launcher",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "epicinstaller*",
+          "epicgameslauncherinstaller*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "heroic",
+          "relation": "launcher",
+          "note": {
+            "en": "Native launcher for Epic, GOG and Amazon games, running them with Wine/Proton.",
+            "pt_BR": "Lançador nativo para jogos da Epic, GOG e Amazon, executados com Wine/Proton."
+          }
+        },
+        {
+          "id": "lutris",
+          "relation": "launcher",
+          "note": {
+            "en": "Game manager with install scripts for many Windows launchers.",
+            "pt_BR": "Gerenciador de jogos com scripts de instalação para vários lançadores do Windows."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial",
+        "note": {
+          "en": "Heroic gives a native front end to the Epic library.",
+          "pt_BR": "O Heroic oferece uma interface nativa para a biblioteca da Epic."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "gog-galaxy",
+      "name": "GOG GALAXY",
+      "vendor": "GOG sp. z o.o.",
+      "category": "game-launcher",
+      "kind": "launcher",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "gog galaxy*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "heroic",
+          "relation": "launcher",
+          "note": {
+            "en": "Native launcher for Epic, GOG and Amazon games, running them with Wine/Proton.",
+            "pt_BR": "Lançador nativo para jogos da Epic, GOG e Amazon, executados com Wine/Proton."
+          }
+        },
+        {
+          "id": "minigalaxy",
+          "relation": "launcher",
+          "note": {
+            "en": "Simple native client for GOG games.",
+            "pt_BR": "Cliente nativo simples para jogos da GOG."
+          }
+        },
+        {
+          "id": "lutris",
+          "relation": "launcher",
+          "note": {
+            "en": "Game manager with install scripts for many Windows launchers.",
+            "pt_BR": "Gerenciador de jogos com scripts de instalação para vários lançadores do Windows."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "battle-net",
+      "name": "Battle.net",
+      "vendor": "Blizzard Entertainment",
+      "category": "game-launcher",
+      "kind": "launcher",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "battle net*setup*",
+          "battle net*installer*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "lutris",
+          "relation": "launcher",
+          "note": {
+            "en": "Game manager with install scripts for many Windows launchers.",
+            "pt_BR": "Gerenciador de jogos com scripts de instalação para vários lançadores do Windows."
+          }
+        },
+        {
+          "id": "bottles",
+          "relation": "launcher",
+          "note": {
+            "en": "Runs Windows programs and launchers in managed Wine prefixes.",
+            "pt_BR": "Executa programas e lançadores do Windows em prefixos Wine gerenciados."
+          }
+        },
+        {
+          "id": "steam",
+          "relation": "launcher",
+          "note": {
+            "en": "Add the installer as a non-Steam game and run it with Proton.",
+            "pt_BR": "Adicione o instalador como jogo de fora da Steam e execute-o com o Proton."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "ea-app",
+      "name": "EA app",
+      "vendor": "Electronic Arts",
+      "category": "game-launcher",
+      "kind": "launcher",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "eaappinstaller*",
+          "ea app installer*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "lutris",
+          "relation": "launcher",
+          "note": {
+            "en": "Game manager with install scripts for many Windows launchers.",
+            "pt_BR": "Gerenciador de jogos com scripts de instalação para vários lançadores do Windows."
+          }
+        },
+        {
+          "id": "bottles",
+          "relation": "launcher",
+          "note": {
+            "en": "Runs Windows programs and launchers in managed Wine prefixes.",
+            "pt_BR": "Executa programas e lançadores do Windows em prefixos Wine gerenciados."
+          }
+        },
+        {
+          "id": "steam",
+          "relation": "launcher",
+          "note": {
+            "en": "If you own the game on Steam, Proton runs it directly.",
+            "pt_BR": "Se você tem o jogo na Steam, o Proton o executa diretamente."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt"
+      ]
+    },
+    {
+      "id": "origin",
+      "name": "Origin",
+      "vendor": "Electronic Arts",
+      "category": "game-launcher",
+      "kind": "launcher",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "originthinsetup*",
+          "originsetup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "lutris",
+          "relation": "launcher",
+          "note": {
+            "en": "Game manager with install scripts for many Windows launchers.",
+            "pt_BR": "Gerenciador de jogos com scripts de instalação para vários lançadores do Windows."
+          }
+        },
+        {
+          "id": "bottles",
+          "relation": "launcher",
+          "note": {
+            "en": "Runs Windows programs and launchers in managed Wine prefixes.",
+            "pt_BR": "Executa programas e lançadores do Windows em prefixos Wine gerenciados."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial"
+      },
+      "message": {
+        "en": "EA replaced Origin with the EA app in 2022.",
+        "pt_BR": "A EA substituiu o Origin pelo EA app em 2022."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "ubisoft-connect",
+      "name": "Ubisoft Connect",
+      "vendor": "Ubisoft",
+      "category": "game-launcher",
+      "kind": "launcher",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "ubisoftconnectinstaller*",
+          "uplayinstaller*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "lutris",
+          "relation": "launcher",
+          "note": {
+            "en": "Game manager with install scripts for many Windows launchers.",
+            "pt_BR": "Gerenciador de jogos com scripts de instalação para vários lançadores do Windows."
+          }
+        },
+        {
+          "id": "bottles",
+          "relation": "launcher",
+          "note": {
+            "en": "Runs Windows programs and launchers in managed Wine prefixes.",
+            "pt_BR": "Executa programas e lançadores do Windows em prefixos Wine gerenciados."
+          }
+        },
+        {
+          "id": "steam",
+          "relation": "launcher",
+          "note": {
+            "en": "If you own the game on Steam, Proton runs it directly.",
+            "pt_BR": "Se você tem o jogo na Steam, o Proton o executa diretamente."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "bethesda-launcher",
+      "name": "Bethesda.net Launcher",
+      "vendor": "Bethesda Softworks",
+      "category": "game-launcher",
+      "kind": "launcher",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "bethesdanetlauncher setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "steam",
+          "relation": "launcher",
+          "note": {
+            "en": "If you own the game on Steam, Proton runs it directly.",
+            "pt_BR": "Se você tem o jogo na Steam, o Proton o executa diretamente."
+          }
+        },
+        {
+          "id": "lutris",
+          "relation": "launcher",
+          "note": {
+            "en": "Game manager with install scripts for many Windows launchers.",
+            "pt_BR": "Gerenciador de jogos com scripts de instalação para vários lançadores do Windows."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "message": {
+        "en": "The Bethesda.net Launcher was shut down in 2022; its games moved to Steam.",
+        "pt_BR": "O Bethesda.net Launcher foi desativado em 2022; os jogos foram para a Steam."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "itch",
+      "name": "itch",
+      "category": "game-launcher",
+      "kind": "launcher",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "itch setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "itch-setup-bin"
+        ],
+        "flatpak": [
+          "io.itch.itch"
+        ],
+        "desktop": [
+          "io.itch.itch.desktop"
+        ],
+        "website": "https://itch.io/app"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "geforce-now",
+      "name": "NVIDIA GeForce NOW",
+      "vendor": "NVIDIA Corporation",
+      "category": "game-launcher",
+      "kind": "launcher",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "geforcenow*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://www.nvidia.com/en-us/geforce-now/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "GeForce NOW is a cloud service; use NVIDIA's Linux option or the browser.",
+          "pt_BR": "O GeForce NOW é um serviço na nuvem; use a opção para Linux da NVIDIA ou o navegador."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "minecraft",
+      "name": "Minecraft Launcher",
+      "vendor": "Mojang Studios",
+      "category": "games",
+      "kind": "game",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "minecraft*install*",
+          "minecraft launcher*"
+        ],
+        "packages": [
+          "minecraft-launcher"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "minecraft-launcher"
+        ],
+        "flatpak": [
+          "com.mojang.Minecraft"
+        ],
+        "desktop": [
+          "com.mojang.Minecraft.desktop"
+        ],
+        "website": "https://www.minecraft.net/download"
+      },
+      "alternatives": [
+        {
+          "id": "prismlauncher",
+          "relation": "alternative",
+          "note": {
+            "en": "Open-source launcher for Minecraft: Java Edition with mod and instance management.",
+            "pt_BR": "Lançador de código aberto para o Minecraft: Java Edition com gerenciamento de mods e instâncias."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "prismlauncher",
+      "name": "Prism Launcher",
+      "category": "games",
+      "kind": "launcher",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "prismlauncher"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "prismlauncher"
+        ],
+        "flatpak": [
+          "org.prismlauncher.PrismLauncher"
+        ],
+        "desktop": [
+          "org.prismlauncher.PrismLauncher.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "roblox",
+      "name": "Roblox Player",
+      "vendor": "Roblox Corporation",
+      "category": "games",
+      "kind": "game",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "robloxplayerlauncher*",
+          "robloxplayerinstaller*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "sober",
+          "relation": "alternative",
+          "note": {
+            "en": "Unofficial Linux runtime for the Roblox Android client.",
+            "pt_BR": "Ambiente não oficial para Linux que roda o cliente Android do Roblox."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Roblox's anti-cheat blocks Wine.",
+          "pt_BR": "O antitrapaça do Roblox bloqueia o Wine."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "sober",
+      "name": "Sober",
+      "category": "games",
+      "kind": "launcher",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "sober"
+        ]
+      },
+      "linux": {
+        "flatpak": [
+          "org.vinegarhq.Sober"
+        ],
+        "desktop": [
+          "org.vinegarhq.Sober.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "flathub"
+      ]
+    },
+    {
+      "id": "roblox-studio",
+      "name": "Roblox Studio",
+      "vendor": "Roblox Corporation",
+      "category": "development",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "robloxstudiolauncher*",
+          "robloxstudioinstaller*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "vinegar",
+          "relation": "launcher",
+          "note": {
+            "en": "Runs Roblox Studio on Linux through Wine.",
+            "pt_BR": "Executa o Roblox Studio no Linux pelo Wine."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "vinegar",
+      "name": "Vinegar",
+      "category": "development",
+      "kind": "launcher",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "vinegar"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "vinegar"
+        ],
+        "flatpak": [
+          "org.vinegarhq.Vinegar"
+        ],
+        "desktop": [
+          "org.vinegarhq.Vinegar.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "league-of-legends",
+      "name": "League of Legends",
+      "vendor": "Riot Games",
+      "category": "games",
+      "kind": "game",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "*league of legends*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Its anti-cheat blocks Linux and Wine/Proton.",
+          "pt_BR": "O sistema antitrapaça bloqueia Linux e Wine/Proton."
+        }
+      },
+      "message": {
+        "en": "League of Legends uses Riot Vanguard, which does not allow Linux. It cannot be played on Linux.",
+        "pt_BR": "League of Legends usa o Riot Vanguard, que não permite Linux. O jogo não roda no Linux."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "overwatch",
+      "name": "Overwatch 2",
+      "vendor": "Blizzard Entertainment",
+      "category": "games",
+      "kind": "game",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "overwatch*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "steam": "2357570"
+      },
+      "alternatives": [
+        {
+          "id": "lutris",
+          "relation": "launcher",
+          "note": {
+            "en": "Game manager with install scripts for many Windows launchers.",
+            "pt_BR": "Gerenciador de jogos com scripts de instalação para vários lançadores do Windows."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "warframe",
+      "name": "Warframe",
+      "vendor": "Digital Extremes",
+      "category": "games",
+      "kind": "game",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "warframe*"
+        ],
+        "formats": [
+          "msi",
+          "exe"
+        ]
+      },
+      "linux": {
+        "steam": "230410"
+      },
+      "alternatives": [
+        {
+          "id": "lutris",
+          "relation": "launcher",
+          "note": {
+            "en": "Game manager with install scripts for many Windows launchers.",
+            "pt_BR": "Gerenciador de jogos com scripts de instalação para vários lançadores do Windows."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "world-of-warcraft",
+      "name": "World of Warcraft",
+      "vendor": "Blizzard Entertainment",
+      "category": "games",
+      "kind": "game",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "world of warcraft*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "lutris",
+          "relation": "launcher",
+          "note": {
+            "en": "Game manager with install scripts for many Windows launchers.",
+            "pt_BR": "Gerenciador de jogos com scripts de instalação para vários lançadores do Windows."
+          }
+        },
+        {
+          "id": "bottles",
+          "relation": "launcher",
+          "note": {
+            "en": "Runs Windows programs and launchers in managed Wine prefixes.",
+            "pt_BR": "Executa programas e lançadores do Windows em prefixos Wine gerenciados."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "distance",
+      "name": "Distance",
+      "category": "games",
+      "kind": "game",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "*distance*windows setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "steam": "233610"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "Distance has a native Linux version on Steam.",
+          "pt_BR": "Distance tem versão nativa para Linux na Steam."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "bluestacks",
+      "name": "BlueStacks",
+      "vendor": "BlueStacks",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "bluestacks*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "waydroid",
+          "relation": "alternative",
+          "note": {
+            "en": "Runs a full Android system in a container (needs Wayland).",
+            "pt_BR": "Roda um Android completo em contêiner (exige Wayland)."
+          }
+        },
+        {
+          "id": "genymotion",
+          "relation": "alternative",
+          "note": {
+            "en": "Commercial Android emulator with a Linux version.",
+            "pt_BR": "Emulador de Android comercial com versão para Linux."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "waydroid",
+      "name": "Waydroid",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "waydroid"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "waydroid"
+        ],
+        "desktop": [
+          "Waydroid.desktop"
+        ],
+        "website": "https://waydro.id/"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "genymotion",
+      "name": "Genymotion Desktop",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "genymotion * windows*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "genymotion"
+        ],
+        "website": "https://www.genymotion.com/product-desktop/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "antimicrox",
+      "name": "AntiMicroX",
+      "category": "games",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "antimicrox * win*",
+          "antimicro * win*"
+        ],
+        "packages": [
+          "antimicrox"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "antimicrox"
+        ],
+        "flatpak": [
+          "io.github.antimicrox.antimicrox"
+        ],
+        "desktop": [
+          "io.github.antimicrox.antimicrox.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "xpadder",
+      "name": "Xpadder",
+      "category": "games",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "xpadder*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "antimicrox",
+          "relation": "alternative",
+          "note": {
+            "en": "Maps gamepad buttons to keyboard and mouse.",
+            "pt_BR": "Mapeia botões do controle para teclado e mouse."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "retroarch",
+      "name": "RetroArch",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "retroarch * setup*",
+          "retroarch setup*"
+        ],
+        "packages": [
+          "retroarch"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "retroarch"
+        ],
+        "flatpak": [
+          "org.libretro.RetroArch"
+        ],
+        "desktop": [
+          "com.libretro.RetroArch.desktop",
+          "org.libretro.RetroArch.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "pcsx2",
+      "name": "PCSX2",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "pcsx2 *"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "pcsx2"
+        ],
+        "flatpak": [
+          "net.pcsx2.PCSX2"
+        ],
+        "desktop": [
+          "net.pcsx2.PCSX2.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "dolphin-emu",
+      "name": "Dolphin Emulator",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "dolphin * x64*",
+          "dolphin master*"
+        ],
+        "packages": [
+          "dolphin-emu"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "dolphin-emu"
+        ],
+        "flatpak": [
+          "org.DolphinEmu.dolphin-emu"
+        ],
+        "desktop": [
+          "dolphin-emu.desktop",
+          "org.DolphinEmu.dolphin-emu.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "ppsspp",
+      "name": "PPSSPP",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "ppssppsetup*",
+          "ppsspp * windows*"
+        ],
+        "packages": [
+          "ppsspp"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "ppsspp"
+        ],
+        "flatpak": [
+          "org.ppsspp.PPSSPP"
+        ],
+        "desktop": [
+          "PPSSPPSDL.desktop",
+          "org.ppsspp.PPSSPP.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "rpcs3",
+      "name": "RPCS3",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "rpcs3 *win64*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "rpcs3-bin"
+        ],
+        "flatpak": [
+          "net.rpcs3.RPCS3"
+        ],
+        "desktop": [
+          "net.rpcs3.RPCS3.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "duckstation",
+      "name": "DuckStation",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "duckstation*windows*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "duckstation-qt-bin"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur"
+      ]
+    },
+    {
+      "id": "mame",
+      "name": "MAME",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "mame0*"
+        ],
+        "packages": [
+          "mame"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "mame"
+        ],
+        "flatpak": [
+          "org.mamedev.MAME"
+        ],
+        "desktop": [
+          "mame.desktop",
+          "org.mamedev.MAME.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "snes9x",
+      "name": "Snes9x",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "snes9x * win*"
+        ],
+        "packages": [
+          "snes9x-gtk"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "snes9x-gtk"
+        ],
+        "flatpak": [
+          "com.snes9x.Snes9x"
+        ],
+        "desktop": [
+          "snes9x-gtk.desktop",
+          "com.snes9x.Snes9x.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "xemu",
+      "name": "xemu",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "xemu *win*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "xemu-bin",
+          "xemu"
+        ],
+        "flatpak": [
+          "app.xemu.xemu"
+        ],
+        "desktop": [
+          "app.xemu.xemu.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "project64",
+      "name": "Project64",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "setup project64*",
+          "project64*setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "retroarch",
+          "relation": "alternative",
+          "note": {
+            "en": "Multi-system emulator front end with many cores.",
+            "pt_BR": "Interface de emulação multissistema com vários núcleos."
+          }
+        },
+        {
+          "id": "simple64",
+          "relation": "alternative",
+          "note": {
+            "en": "Nintendo 64 emulator based on mupen64plus.",
+            "pt_BR": "Emulador de Nintendo 64 baseado no mupen64plus."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "simple64",
+      "name": "simple64",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "simple64"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "simple64"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur"
+      ]
+    },
+    {
+      "id": "yuzu",
+      "name": "yuzu",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "yuzu*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "ryujinx",
+          "relation": "alternative",
+          "note": {
+            "en": "Community-maintained Switch emulator (Ryubing fork).",
+            "pt_BR": "Emulador de Switch mantido pela comunidade (fork Ryubing)."
+          }
+        },
+        {
+          "id": "eden",
+          "relation": "successor",
+          "note": {
+            "en": "Community fork that continues yuzu's code.",
+            "pt_BR": "Fork da comunidade que continua o código do yuzu."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "message": {
+        "en": "yuzu was discontinued in 2024.",
+        "pt_BR": "O yuzu foi descontinuado em 2024."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "ryujinx",
+      "name": "Ryujinx",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "ryujinx"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "ryujinx"
+        ],
+        "flatpak": [
+          "io.github.ryubing.Ryujinx"
+        ],
+        "desktop": [
+          "io.github.ryubing.Ryujinx.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "eden",
+      "name": "Eden",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "eden"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "eden"
+        ],
+        "flatpak": [
+          "dev.eden_emu.eden"
+        ],
+        "desktop": [
+          "dev.eden_emu.eden.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "citra",
+      "name": "Citra",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "citra setup windows*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "azahar",
+          "relation": "successor",
+          "note": {
+            "en": "Azahar continues the Citra project.",
+            "pt_BR": "O Azahar dá continuidade ao projeto Citra."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "message": {
+        "en": "Citra was discontinued in 2024.",
+        "pt_BR": "O Citra foi descontinuado em 2024."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "azahar",
+      "name": "Azahar",
+      "category": "emulator",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "azahar * windows*"
+        ],
+        "packages": [
+          "azahar"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "azahar"
+        ],
+        "flatpak": [
+          "org.azahar_emu.Azahar"
+        ],
+        "desktop": [
+          "org.azahar_emu.Azahar.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "flash-player",
+      "name": "Adobe Flash Player",
+      "vendor": "Adobe",
+      "category": "runtime",
+      "kind": "runtime",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "*flash*player*",
+          "install flash player*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "ruffle",
+          "relation": "alternative",
+          "note": {
+            "en": "Flash Player emulator that runs most old SWF content safely.",
+            "pt_BR": "Emulador do Flash Player que roda a maior parte do conteúdo SWF antigo com segurança."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported"
+      },
+      "message": {
+        "en": "Flash Player reached end of life in 2020 and should not be installed.",
+        "pt_BR": "O Flash Player chegou ao fim da vida em 2020 e não deve ser instalado."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "ruffle",
+      "name": "Ruffle",
+      "category": "runtime",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "ruffle"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "ruffle"
+        ],
+        "flatpak": [
+          "rs.ruffle.Ruffle"
+        ],
+        "desktop": [
+          "rs.ruffle.Ruffle.desktop"
+        ],
+        "website": "https://ruffle.rs/"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    }
+  ]
+}

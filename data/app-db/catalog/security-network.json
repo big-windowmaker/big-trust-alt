@@ -1,0 +1,1311 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "avast",
+      "name": "Avast Antivirus",
+      "vendor": "Gen Digital",
+      "category": "security",
+      "kind": "security",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "avast*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "clamtk",
+          "relation": "alternative",
+          "note": {
+            "en": "Graphical front end for the ClamAV scanner, to check files and USB drives on demand.",
+            "pt_BR": "Interface gráfica do antivírus ClamAV, para verificar arquivos e pendrives quando quiser."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Antivirus software cannot work through Wine.",
+          "pt_BR": "Antivírus não funciona pelo Wine."
+        }
+      },
+      "message": {
+        "en": "Windows antivirus software does not run on Linux and cannot protect it. Keep BigLinux updated, install software from the official repositories, and use ClamAV/ClamTk if you need to scan files (for example, files you will share with Windows users).",
+        "pt_BR": "Antivírus para Windows não roda no Linux e não o protege. Mantenha o BigLinux atualizado, instale programas dos repositórios oficiais e use o ClamAV/ClamTk se precisar verificar arquivos (por exemplo, arquivos que serão enviados a usuários de Windows)."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "avg",
+      "name": "AVG AntiVirus",
+      "vendor": "Gen Digital",
+      "category": "security",
+      "kind": "security",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "avg antivirus*",
+          "avg internet security*",
+          "avg setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "clamtk",
+          "relation": "alternative",
+          "note": {
+            "en": "Graphical front end for the ClamAV scanner, to check files and USB drives on demand.",
+            "pt_BR": "Interface gráfica do antivírus ClamAV, para verificar arquivos e pendrives quando quiser."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Antivirus software cannot work through Wine.",
+          "pt_BR": "Antivírus não funciona pelo Wine."
+        }
+      },
+      "message": {
+        "en": "Windows antivirus software does not run on Linux and cannot protect it. Keep BigLinux updated, install software from the official repositories, and use ClamAV/ClamTk if you need to scan files (for example, files you will share with Windows users).",
+        "pt_BR": "Antivírus para Windows não roda no Linux e não o protege. Mantenha o BigLinux atualizado, instale programas dos repositórios oficiais e use o ClamAV/ClamTk se precisar verificar arquivos (por exemplo, arquivos que serão enviados a usuários de Windows)."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "avira",
+      "name": "Avira Antivirus",
+      "vendor": "Gen Digital",
+      "category": "security",
+      "kind": "security",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "avira*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "clamtk",
+          "relation": "alternative",
+          "note": {
+            "en": "Graphical front end for the ClamAV scanner, to check files and USB drives on demand.",
+            "pt_BR": "Interface gráfica do antivírus ClamAV, para verificar arquivos e pendrives quando quiser."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Antivirus software cannot work through Wine.",
+          "pt_BR": "Antivírus não funciona pelo Wine."
+        }
+      },
+      "message": {
+        "en": "Windows antivirus software does not run on Linux and cannot protect it. Keep BigLinux updated, install software from the official repositories, and use ClamAV/ClamTk if you need to scan files (for example, files you will share with Windows users).",
+        "pt_BR": "Antivírus para Windows não roda no Linux e não o protege. Mantenha o BigLinux atualizado, instale programas dos repositórios oficiais e use o ClamAV/ClamTk se precisar verificar arquivos (por exemplo, arquivos que serão enviados a usuários de Windows)."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "kaspersky",
+      "name": "Kaspersky",
+      "vendor": "Kaspersky Lab",
+      "category": "security",
+      "kind": "security",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "kaspersky*",
+          "startup kaspersky*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "clamtk",
+          "relation": "alternative",
+          "note": {
+            "en": "Graphical front end for the ClamAV scanner, to check files and USB drives on demand.",
+            "pt_BR": "Interface gráfica do antivírus ClamAV, para verificar arquivos e pendrives quando quiser."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Antivirus software cannot work through Wine.",
+          "pt_BR": "Antivírus não funciona pelo Wine."
+        }
+      },
+      "message": {
+        "en": "Windows antivirus software does not run on Linux and cannot protect it. Keep BigLinux updated, install software from the official repositories, and use ClamAV/ClamTk if you need to scan files (for example, files you will share with Windows users).",
+        "pt_BR": "Antivírus para Windows não roda no Linux e não o protege. Mantenha o BigLinux atualizado, instale programas dos repositórios oficiais e use o ClamAV/ClamTk se precisar verificar arquivos (por exemplo, arquivos que serão enviados a usuários de Windows)."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "mcafee",
+      "name": "McAfee",
+      "vendor": "McAfee, LLC",
+      "category": "security",
+      "kind": "security",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "mcafee*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "clamtk",
+          "relation": "alternative",
+          "note": {
+            "en": "Graphical front end for the ClamAV scanner, to check files and USB drives on demand.",
+            "pt_BR": "Interface gráfica do antivírus ClamAV, para verificar arquivos e pendrives quando quiser."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Antivirus software cannot work through Wine.",
+          "pt_BR": "Antivírus não funciona pelo Wine."
+        }
+      },
+      "message": {
+        "en": "Windows antivirus software does not run on Linux and cannot protect it. Keep BigLinux updated, install software from the official repositories, and use ClamAV/ClamTk if you need to scan files (for example, files you will share with Windows users).",
+        "pt_BR": "Antivírus para Windows não roda no Linux e não o protege. Mantenha o BigLinux atualizado, instale programas dos repositórios oficiais e use o ClamAV/ClamTk se precisar verificar arquivos (por exemplo, arquivos que serão enviados a usuários de Windows)."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "malwarebytes",
+      "name": "Malwarebytes",
+      "vendor": "Malwarebytes Inc.",
+      "category": "security",
+      "kind": "security",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "mbsetup*",
+          "malwarebytes*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "clamtk",
+          "relation": "alternative",
+          "note": {
+            "en": "Graphical front end for the ClamAV scanner, to check files and USB drives on demand.",
+            "pt_BR": "Interface gráfica do antivírus ClamAV, para verificar arquivos e pendrives quando quiser."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Antivirus software cannot work through Wine.",
+          "pt_BR": "Antivírus não funciona pelo Wine."
+        }
+      },
+      "message": {
+        "en": "Windows antivirus software does not run on Linux and cannot protect it. Keep BigLinux updated, install software from the official repositories, and use ClamAV/ClamTk if you need to scan files (for example, files you will share with Windows users).",
+        "pt_BR": "Antivírus para Windows não roda no Linux e não o protege. Mantenha o BigLinux atualizado, instale programas dos repositórios oficiais e use o ClamAV/ClamTk se precisar verificar arquivos (por exemplo, arquivos que serão enviados a usuários de Windows)."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "norton",
+      "name": "Norton Antivirus",
+      "vendor": "Gen Digital",
+      "category": "security",
+      "kind": "security",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "norton*setup*",
+          "norton*installer*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "clamtk",
+          "relation": "alternative",
+          "note": {
+            "en": "Graphical front end for the ClamAV scanner, to check files and USB drives on demand.",
+            "pt_BR": "Interface gráfica do antivírus ClamAV, para verificar arquivos e pendrives quando quiser."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Antivirus software cannot work through Wine.",
+          "pt_BR": "Antivírus não funciona pelo Wine."
+        }
+      },
+      "message": {
+        "en": "Windows antivirus software does not run on Linux and cannot protect it. Keep BigLinux updated, install software from the official repositories, and use ClamAV/ClamTk if you need to scan files (for example, files you will share with Windows users).",
+        "pt_BR": "Antivírus para Windows não roda no Linux e não o protege. Mantenha o BigLinux atualizado, instale programas dos repositórios oficiais e use o ClamAV/ClamTk se precisar verificar arquivos (por exemplo, arquivos que serão enviados a usuários de Windows)."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "sophos",
+      "name": "Sophos Home",
+      "vendor": "Sophos Ltd",
+      "category": "security",
+      "kind": "security",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "sophos*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "clamtk",
+          "relation": "alternative",
+          "note": {
+            "en": "Graphical front end for the ClamAV scanner, to check files and USB drives on demand.",
+            "pt_BR": "Interface gráfica do antivírus ClamAV, para verificar arquivos e pendrives quando quiser."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Antivirus software cannot work through Wine.",
+          "pt_BR": "Antivírus não funciona pelo Wine."
+        }
+      },
+      "message": {
+        "en": "Windows antivirus software does not run on Linux and cannot protect it. Keep BigLinux updated, install software from the official repositories, and use ClamAV/ClamTk if you need to scan files (for example, files you will share with Windows users).",
+        "pt_BR": "Antivírus para Windows não roda no Linux e não o protege. Mantenha o BigLinux atualizado, instale programas dos repositórios oficiais e use o ClamAV/ClamTk se precisar verificar arquivos (por exemplo, arquivos que serão enviados a usuários de Windows)."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "bitdefender",
+      "name": "Bitdefender",
+      "vendor": "Bitdefender SRL",
+      "category": "security",
+      "kind": "security",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "bitdefender*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "clamtk",
+          "relation": "alternative",
+          "note": {
+            "en": "Graphical front end for the ClamAV scanner, to check files and USB drives on demand.",
+            "pt_BR": "Interface gráfica do antivírus ClamAV, para verificar arquivos e pendrives quando quiser."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Antivirus software cannot work through Wine.",
+          "pt_BR": "Antivírus não funciona pelo Wine."
+        }
+      },
+      "message": {
+        "en": "Windows antivirus software does not run on Linux and cannot protect it. Keep BigLinux updated, install software from the official repositories, and use ClamAV/ClamTk if you need to scan files (for example, files you will share with Windows users).",
+        "pt_BR": "Antivírus para Windows não roda no Linux e não o protege. Mantenha o BigLinux atualizado, instale programas dos repositórios oficiais e use o ClamAV/ClamTk se precisar verificar arquivos (por exemplo, arquivos que serão enviados a usuários de Windows)."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt"
+      ]
+    },
+    {
+      "id": "eset",
+      "name": "ESET Security",
+      "vendor": "ESET, spol. s r.o.",
+      "category": "security",
+      "kind": "security",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "eset nod32*",
+          "eset internet security*",
+          "eset smart security*",
+          "eset*live installer*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "clamtk",
+          "relation": "alternative",
+          "note": {
+            "en": "Graphical front end for the ClamAV scanner, to check files and USB drives on demand.",
+            "pt_BR": "Interface gráfica do antivírus ClamAV, para verificar arquivos e pendrives quando quiser."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Antivirus software cannot work through Wine.",
+          "pt_BR": "Antivírus não funciona pelo Wine."
+        }
+      },
+      "message": {
+        "en": "Windows antivirus software does not run on Linux and cannot protect it. Keep BigLinux updated, install software from the official repositories, and use ClamAV/ClamTk if you need to scan files (for example, files you will share with Windows users).",
+        "pt_BR": "Antivírus para Windows não roda no Linux e não o protege. Mantenha o BigLinux atualizado, instale programas dos repositórios oficiais e use o ClamAV/ClamTk se precisar verificar arquivos (por exemplo, arquivos que serão enviados a usuários de Windows)."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt"
+      ]
+    },
+    {
+      "id": "clamtk",
+      "name": "ClamTk",
+      "category": "security",
+      "kind": "security",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "clamtk"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "clamtk",
+          "clamav"
+        ],
+        "desktop": [
+          "clamtk.desktop"
+        ],
+        "website": "https://docs.clamav.net/"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "keepass",
+      "name": "KeePass",
+      "category": "password-manager",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "keepass * setup*"
+        ],
+        "packages": [
+          "keepass"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "keepass"
+        ],
+        "desktop": [
+          "keepass.desktop"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "keepassxc",
+          "relation": "alternative",
+          "note": {
+            "en": "Offline password manager compatible with KeePass .kdbx databases.",
+            "pt_BR": "Gerenciador de senhas offline compatível com bancos .kdbx do KeePass."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman"
+      ]
+    },
+    {
+      "id": "keepassxc",
+      "name": "KeePassXC",
+      "category": "password-manager",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "keepassxc * win64*"
+        ],
+        "packages": [
+          "keepassxc"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "keepassxc"
+        ],
+        "flatpak": [
+          "org.keepassxc.KeePassXC"
+        ],
+        "desktop": [
+          "org.keepassxc.KeePassXC.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "bitwarden",
+      "name": "Bitwarden",
+      "vendor": "Bitwarden Inc.",
+      "category": "password-manager",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "bitwarden installer*",
+          "bitwarden setup*"
+        ],
+        "packages": [
+          "bitwarden"
+        ],
+        "formats": [
+          "exe",
+          "appimage",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "bitwarden"
+        ],
+        "flatpak": [
+          "com.bitwarden.desktop"
+        ],
+        "desktop": [
+          "bitwarden.desktop",
+          "com.bitwarden.desktop.desktop"
+        ],
+        "website": "https://bitwarden.com/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "1password",
+      "name": "1Password",
+      "vendor": "AgileBits Inc.",
+      "category": "password-manager",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "1passwordsetup*"
+        ],
+        "packages": [
+          "1password"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "1password"
+        ],
+        "website": "https://1password.com/downloads/linux/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "lastpass",
+      "name": "LastPass",
+      "vendor": "LastPass US LP",
+      "category": "password-manager",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "lastpassinstaller*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://www.lastpass.com/"
+      },
+      "alternatives": [
+        {
+          "id": "bitwarden",
+          "relation": "alternative",
+          "note": {
+            "en": "Open-source password manager with cloud sync.",
+            "pt_BR": "Gerenciador de senhas de código aberto com sincronização na nuvem."
+          }
+        },
+        {
+          "id": "keepassxc",
+          "relation": "alternative",
+          "note": {
+            "en": "Offline password manager compatible with KeePass .kdbx databases.",
+            "pt_BR": "Gerenciador de senhas offline compatível com bancos .kdbx do KeePass."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "message": {
+        "en": "LastPass has no Linux desktop app; use its browser extension.",
+        "pt_BR": "O LastPass não tem aplicativo de desktop para Linux; use a extensão do navegador."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "proton-pass",
+      "name": "Proton Pass",
+      "vendor": "Proton AG",
+      "category": "password-manager",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "protonpass*setup*",
+          "proton pass*setup*"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "proton-pass-bin"
+        ],
+        "flatpak": [
+          "me.proton.Pass"
+        ],
+        "desktop": [
+          "me.proton.Pass.desktop"
+        ],
+        "website": "https://proton.me/pass/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "proton-vpn",
+      "name": "Proton VPN",
+      "vendor": "Proton AG",
+      "category": "vpn",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "protonvpn*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "proton-vpn-gtk-app"
+        ],
+        "flatpak": [
+          "com.protonvpn.www"
+        ],
+        "desktop": [
+          "proton.vpn.app.gtk.desktop",
+          "com.protonvpn.www.desktop"
+        ],
+        "website": "https://protonvpn.com/support/linux-vpn-arch"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "surfshark",
+      "name": "Surfshark",
+      "vendor": "Surfshark B.V.",
+      "category": "vpn",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "surfsharksetup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "surfshark-client"
+        ],
+        "flatpak": [
+          "com.surfshark.Surfshark"
+        ],
+        "desktop": [
+          "surfshark.desktop",
+          "com.surfshark.Surfshark.desktop"
+        ],
+        "website": "https://surfshark.com/download/linux"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "vendor": "Nord Security",
+      "category": "vpn",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "nordvpnsetup*",
+          "nordinstaller*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "nordvpn-bin"
+        ],
+        "website": "https://nordvpn.com/download/linux/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "expressvpn",
+      "name": "ExpressVPN",
+      "vendor": "Express Technologies Ltd.",
+      "category": "vpn",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "expressvpn*windows*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "expressvpn"
+        ],
+        "website": "https://www.expressvpn.com/support/vpn-setup/app-for-linux/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "purevpn",
+      "name": "PureVPN",
+      "vendor": "GZ Systems",
+      "category": "vpn",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "purevpn setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://www.purevpn.com/download/linux-vpn"
+      },
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "mullvad-vpn",
+      "name": "Mullvad VPN",
+      "vendor": "Mullvad VPN AB",
+      "category": "vpn",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "mullvadvpn*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "mullvad-vpn"
+        ],
+        "desktop": [
+          "mullvad-vpn.desktop"
+        ],
+        "website": "https://mullvad.net/download/vpn/linux"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "tunnelbear",
+      "name": "TunnelBear",
+      "vendor": "TunnelBear LLC",
+      "category": "vpn",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "tunnelbear installer*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://www.tunnelbear.com/blog/setting-up-tunnelbear-on-linux/"
+      },
+      "alternatives": [
+        {
+          "id": "networkmanager-openvpn",
+          "relation": "alternative",
+          "note": {
+            "en": "Import the provider's OpenVPN files into the system network settings.",
+            "pt_BR": "Importe os arquivos OpenVPN do provedor nas configurações de rede do sistema."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "private-internet-access",
+      "name": "Private Internet Access",
+      "vendor": "Private Internet Access, Inc.",
+      "category": "vpn",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "pia windows*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "piavpn-bin"
+        ],
+        "website": "https://www.privateinternetaccess.com/download/linux-vpn"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "ipvanish",
+      "name": "IPVanish",
+      "vendor": "Ziff Davis",
+      "category": "vpn",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "ipvanish setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://support.ipvanish.com/hc/en-us/articles/31805500046235-OpenVPN-setup-in-Ubuntu"
+      },
+      "alternatives": [
+        {
+          "id": "networkmanager-openvpn",
+          "relation": "alternative",
+          "note": {
+            "en": "Import the provider's OpenVPN files into the system network settings.",
+            "pt_BR": "Importe os arquivos OpenVPN do provedor nas configurações de rede do sistema."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "cyberghost",
+      "name": "CyberGhost VPN",
+      "vendor": "Kape Technologies",
+      "category": "vpn",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "cyberghostvpnsetup*",
+          "cyberghost*setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "cyberghostvpn"
+        ],
+        "website": "https://www.cyberghostvpn.com/download/linux-vpn"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "networkmanager-openvpn",
+      "name": "NetworkManager OpenVPN",
+      "category": "vpn",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "networkmanager-openvpn"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "networkmanager-openvpn",
+          "openvpn"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman"
+      ]
+    },
+    {
+      "id": "wireshark",
+      "name": "Wireshark",
+      "category": "network",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "wireshark *"
+        ],
+        "products": [
+          "wireshark"
+        ],
+        "packages": [
+          "wireshark-qt",
+          "wireshark"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "wireshark-qt"
+        ],
+        "flatpak": [
+          "org.wireshark.Wireshark"
+        ],
+        "desktop": [
+          "org.wireshark.Wireshark.desktop"
+        ],
+        "website": "https://www.wireshark.org/download.html"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "nmap",
+      "name": "Nmap",
+      "category": "network",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "nmap * setup*"
+        ],
+        "packages": [
+          "nmap"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "nmap",
+          "zenmap"
+        ],
+        "flatpak": [
+          "org.nmap.Zenmap"
+        ],
+        "desktop": [
+          "zenmap.desktop",
+          "org.nmap.Zenmap.desktop"
+        ],
+        "website": "https://nmap.org/download.html"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/big-windowmaker/big-trust-alt/data/schemas/catalog-v1.schema.json",
+  "title": "Big Trust Alt catalog file, schema version 1",
+  "description": "Documentation for editors. The authoritative validator is src/big_trust_alt/database/schema.py (tools/validate_catalog.py).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "entries"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "category",
+        "kind",
+        "match",
+        "verified",
+        "provenance"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9.+-]{0,63}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "aliases": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 32,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          }
+        },
+        "vendor": {
+          "type": "string",
+          "maxLength": 160
+        },
+        "category": {
+          "enum": [
+            "3d",
+            "ai",
+            "archive",
+            "audio",
+            "browser",
+            "cloud-storage",
+            "communication",
+            "database",
+            "design",
+            "development",
+            "documents",
+            "education",
+            "email",
+            "emulator",
+            "file-transfer",
+            "finance",
+            "game-launcher",
+            "games",
+            "graphics",
+            "hardware",
+            "media-server",
+            "music",
+            "network",
+            "notes",
+            "office",
+            "password-manager",
+            "photo",
+            "remote-desktop",
+            "runtime",
+            "science",
+            "security",
+            "system",
+            "utilities",
+            "video",
+            "virtualization",
+            "vpn"
+          ]
+        },
+        "kind": {
+          "enum": [
+            "application",
+            "game",
+            "launcher",
+            "runtime",
+            "security",
+            "system"
+          ]
+        },
+        "platforms": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "linux",
+              "macos",
+              "web",
+              "windows"
+            ]
+          }
+        },
+        "match": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "filenames": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 32,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z0-9 *?+]{2,64}$"
+              },
+              "description": "fnmatch globs on the normalized file name (lowercase, [a-z0-9+] words separated by one space, extension removed); at least 3 literal characters, at most 4 wildcards"
+            },
+            "products": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 32,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              }
+            },
+            "vendors": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 32,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              }
+            },
+            "packages": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 32,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z0-9@_+][a-z0-9@._+-]{0,127}$"
+              }
+            },
+            "formats": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "appimage",
+                  "appx",
+                  "arch-package",
+                  "bat",
+                  "bin",
+                  "cmd",
+                  "deb",
+                  "dmg",
+                  "exe",
+                  "flatpak",
+                  "flatpakref",
+                  "jar",
+                  "msi",
+                  "msix",
+                  "ps1",
+                  "rpm",
+                  "run",
+                  "sh",
+                  "tarball"
+                ]
+              }
+            }
+          }
+        },
+        "linux": {
+          "type": "object",
+          "additionalProperties": false,
+          "minProperties": 1,
+          "properties": {
+            "packages": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 8,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z0-9@_+][a-z0-9@._+-]{0,127}$"
+              }
+            },
+            "flatpak": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_-]*(\\.[A-Za-z0-9_-]+){2,}$"
+              }
+            },
+            "desktop": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 8,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}\\.desktop$"
+              }
+            },
+            "website": {
+              "type": "string",
+              "pattern": "^https://"
+            },
+            "instructions": {
+              "type": "string",
+              "pattern": "^https://"
+            },
+            "steam": {
+              "type": "string",
+              "pattern": "^[0-9]+$"
+            }
+          }
+        },
+        "alternatives": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "relation"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "relation": {
+                "enum": [
+                  "alternative",
+                  "launcher",
+                  "successor",
+                  "web"
+                ]
+              },
+              "note": {
+                "type": "object",
+                "required": [
+                  "en"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "en": {
+                    "type": "string",
+                    "maxLength": 400
+                  },
+                  "pt_BR": {
+                    "type": "string",
+                    "maxLength": 400
+                  }
+                }
+              }
+            }
+          }
+        },
+        "windows": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "wine"
+          ],
+          "properties": {
+            "wine": {
+              "enum": [
+                "not-needed",
+                "partial",
+                "unknown",
+                "unsupported",
+                "works"
+              ]
+            },
+            "note": {
+              "type": "object",
+              "required": [
+                "en"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "maxLength": 400
+                },
+                "pt_BR": {
+                  "type": "string",
+                  "maxLength": 400
+                }
+              }
+            }
+          }
+        },
+        "message": {
+          "type": "object",
+          "required": [
+            "en"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "en": {
+              "type": "string",
+              "maxLength": 400
+            },
+            "pt_BR": {
+              "type": "string",
+              "maxLength": 400
+            }
+          }
+        },
+        "verified": {
+          "type": "string",
+          "format": "date"
+        },
+        "provenance": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "appstream",
+              "aur",
+              "big-trust-alt",
+              "flathub",
+              "pacman",
+              "user-attachment",
+              "vendor",
+              "zorin-exec-guard-app-db"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

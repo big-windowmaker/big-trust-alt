@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <title>Big Trust Alt</title>
+  <defs>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d8bfd"/>
+      <stop offset="1" stop-color="#1a5fb4"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#99c1f1"/>
+      <stop offset="1" stop-color="#1c4f8f"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#57e389"/>
+      <stop offset="1" stop-color="#26a269"/>
+    </linearGradient>
+  </defs>
+  <!-- shield -->
+  <path d="M64 10 L108 25 C108 66 94 96 64 116 C34 96 20 66 20 25 Z" fill="url(#rim)"/>
+  <path d="M64 16 L102 29 C101 65 89 91 64 109 C39 91 27 65 26 29 Z" fill="url(#shield)"/>
+  <path d="M64 16 L102 29 C101.6 42 100 53 97 63 C86 52 66 46 30 48 C28.5 42 26.5 36 26 29 Z" fill="#ffffff" opacity="0.10"/>
+  <!-- one path in, two ways out: the file and the better alternative -->
+  <g fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M64 92 V64"/>
+    <path d="M64 64 C64 52 52 48 44 42"/>
+    <path d="M64 64 C64 52 76 48 84 42"/>
+  </g>
+  <g fill="#ffffff">
+    <path d="M36 36 L50 36 L41 47 Z" transform="rotate(-8 43 41)"/>
+    <path d="M92 36 L78 36 L87 47 Z" transform="rotate(8 85 41)"/>
+  </g>
+  <!-- trust check -->
+  <circle cx="96" cy="94" r="20" fill="#ffffff"/>
+  <circle cx="96" cy="94" r="17" fill="url(#badge)"/>
+  <path d="M87 94 L93.5 100.5 L105.5 87.5" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

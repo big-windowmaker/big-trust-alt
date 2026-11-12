@@ -1,0 +1,1747 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "libreoffice",
+      "name": "LibreOffice",
+      "vendor": "The Document Foundation",
+      "category": "office",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "libreoffice * win *",
+          "libreoffice * windows*"
+        ],
+        "products": [
+          "libreoffice"
+        ],
+        "formats": [
+          "msi",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "libreoffice-fresh",
+          "libreoffice-still"
+        ],
+        "flatpak": [
+          "org.libreoffice.LibreOffice"
+        ],
+        "desktop": [
+          "libreoffice-startcenter.desktop",
+          "org.libreoffice.LibreOffice.desktop"
+        ],
+        "website": "https://www.libreoffice.org/download/download-libreoffice/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "apache-openoffice",
+      "name": "Apache OpenOffice",
+      "vendor": "Apache Software Foundation",
+      "category": "office",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "apache openoffice*"
+        ],
+        "products": [
+          "openoffice"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "libreoffice",
+          "relation": "successor",
+          "note": {
+            "en": "LibreOffice continued OpenOffice's code and is actively developed.",
+            "pt_BR": "O LibreOffice continuou o código do OpenOffice e é desenvolvido ativamente."
+          }
+        },
+        {
+          "id": "onlyoffice",
+          "relation": "alternative",
+          "note": {
+            "en": "Office suite with an interface close to Microsoft Office and good DOCX/XLSX/PPTX compatibility.",
+            "pt_BR": "Suíte de escritório com interface parecida com o Microsoft Office e boa compatibilidade com DOCX/XLSX/PPTX."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "onlyoffice",
+      "name": "ONLYOFFICE Desktop Editors",
+      "vendor": "Ascensio System SIA",
+      "category": "office",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "desktopeditors *",
+          "onlyoffice desktopeditors*"
+        ],
+        "packages": [
+          "onlyoffice-desktopeditors"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "onlyoffice-bin"
+        ],
+        "flatpak": [
+          "org.onlyoffice.desktopeditors"
+        ],
+        "desktop": [
+          "onlyoffice-desktopeditors.desktop",
+          "org.onlyoffice.desktopeditors.desktop"
+        ],
+        "website": "https://www.onlyoffice.com/download-desktop.aspx"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "wps-office",
+      "name": "WPS Office",
+      "vendor": "Kingsoft",
+      "category": "office",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "wps office inst*",
+          "wpssetup*"
+        ],
+        "packages": [
+          "wps-office"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "wps-office"
+        ],
+        "flatpak": [
+          "com.wps.Office"
+        ],
+        "desktop": [
+          "com.wps.Office.desktop"
+        ],
+        "website": "https://www.wps.com/office/linux/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "microsoft-office",
+      "name": "Microsoft 365 / Office",
+      "aliases": [
+        "Microsoft Office",
+        "Office 365"
+      ],
+      "vendor": "Microsoft Corporation",
+      "category": "office",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "officesetup*",
+          "setup*o365*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://www.office.com/"
+      },
+      "alternatives": [
+        {
+          "id": "libreoffice",
+          "relation": "alternative",
+          "note": {
+            "en": "Free office suite that opens and saves Word, Excel and PowerPoint files.",
+            "pt_BR": "Suíte de escritório livre que abre e salva arquivos do Word, Excel e PowerPoint."
+          }
+        },
+        {
+          "id": "onlyoffice",
+          "relation": "alternative",
+          "note": {
+            "en": "Office suite with an interface close to Microsoft Office and good DOCX/XLSX/PPTX compatibility.",
+            "pt_BR": "Suíte de escritório com interface parecida com o Microsoft Office e boa compatibilidade com DOCX/XLSX/PPTX."
+          }
+        },
+        {
+          "id": "wps-office",
+          "relation": "alternative",
+          "note": {
+            "en": "Proprietary office suite with a Microsoft Office-like interface.",
+            "pt_BR": "Suíte de escritório proprietária com interface semelhante ao Microsoft Office."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial",
+        "note": {
+          "en": "Recent Office versions are not supported by Wine; the web version works in the browser.",
+          "pt_BR": "Versões recentes do Office não funcionam no Wine; a versão web funciona no navegador."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "microsoft-365-copilot",
+      "name": "Microsoft 365 Copilot app",
+      "vendor": "Microsoft Corporation",
+      "category": "office",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "microsoft 365 copilot*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "microsoft-office",
+          "relation": "web",
+          "note": {
+            "en": "Word, Excel and PowerPoint on the web with a Microsoft account.",
+            "pt_BR": "Word, Excel e PowerPoint na web com uma conta Microsoft."
+          }
+        },
+        {
+          "id": "libreoffice",
+          "relation": "alternative",
+          "note": {
+            "en": "Free office suite that opens and saves Word, Excel and PowerPoint files.",
+            "pt_BR": "Suíte de escritório livre que abre e salva arquivos do Word, Excel e PowerPoint."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "adobe-acrobat-reader",
+      "name": "Adobe Acrobat Reader",
+      "aliases": [
+        "Adobe Reader"
+      ],
+      "vendor": "Adobe Inc.",
+      "category": "documents",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "reader ?? install*",
+          "acrordr*",
+          "acrobat reader*"
+        ],
+        "products": [
+          "adobe acrobat reader",
+          "adobe acrobat reader dc"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "okular",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE document viewer: PDF, annotations, forms and signatures.",
+            "pt_BR": "Visualizador de documentos do KDE: PDF, anotações, formulários e assinaturas."
+          }
+        },
+        {
+          "id": "papers",
+          "relation": "alternative",
+          "note": {
+            "en": "Simple GNOME document viewer for PDF files.",
+            "pt_BR": "Visualizador de documentos simples do GNOME para PDF."
+          }
+        },
+        {
+          "id": "xournalpp",
+          "relation": "alternative",
+          "note": {
+            "en": "Handwriting and annotation app that can fill and sign PDFs.",
+            "pt_BR": "Aplicativo de anotações à mão que preenche e assina PDFs."
+          }
+        },
+        {
+          "id": "masterpdfeditor",
+          "relation": "alternative",
+          "note": {
+            "en": "Proprietary PDF editor with text editing; the free edition has limits.",
+            "pt_BR": "Editor de PDF proprietário com edição de texto; a edição gratuita tem limitações."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial",
+        "note": {
+          "en": "Native PDF viewers cover reading, forms and annotations.",
+          "pt_BR": "Visualizadores nativos cobrem leitura, formulários e anotações."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "sumatra-pdf",
+      "name": "Sumatra PDF",
+      "category": "documents",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "sumatrapdf*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "okular",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE document viewer: PDF, annotations, forms and signatures.",
+            "pt_BR": "Visualizador de documentos do KDE: PDF, anotações, formulários e assinaturas."
+          }
+        },
+        {
+          "id": "papers",
+          "relation": "alternative",
+          "note": {
+            "en": "Simple GNOME document viewer for PDF files.",
+            "pt_BR": "Visualizador de documentos simples do GNOME para PDF."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "foxit-pdf-reader",
+      "name": "Foxit PDF Reader",
+      "vendor": "Foxit Software Inc.",
+      "category": "documents",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "foxitpdfreader*",
+          "foxit pdf reader*",
+          "foxitreader*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "okular",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE document viewer: PDF, annotations, forms and signatures.",
+            "pt_BR": "Visualizador de documentos do KDE: PDF, anotações, formulários e assinaturas."
+          }
+        },
+        {
+          "id": "papers",
+          "relation": "alternative",
+          "note": {
+            "en": "Simple GNOME document viewer for PDF files.",
+            "pt_BR": "Visualizador de documentos simples do GNOME para PDF."
+          }
+        },
+        {
+          "id": "masterpdfeditor",
+          "relation": "alternative",
+          "note": {
+            "en": "Proprietary PDF editor with text editing; the free edition has limits.",
+            "pt_BR": "Editor de PDF proprietário com edição de texto; a edição gratuita tem limitações."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "nitro-pdf",
+      "name": "Nitro PDF Pro",
+      "vendor": "Nitro Software",
+      "category": "documents",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "nitro pro*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "masterpdfeditor",
+          "relation": "alternative",
+          "note": {
+            "en": "Proprietary PDF editor with text editing; the free edition has limits.",
+            "pt_BR": "Editor de PDF proprietário com edição de texto; a edição gratuita tem limitações."
+          }
+        },
+        {
+          "id": "pdfarranger",
+          "relation": "alternative",
+          "note": {
+            "en": "Merge, split, rotate and reorder PDF pages.",
+            "pt_BR": "Junta, divide, gira e reorganiza páginas de PDF."
+          }
+        },
+        {
+          "id": "libreoffice",
+          "relation": "alternative",
+          "note": {
+            "en": "LibreOffice Draw can open and edit simple PDFs.",
+            "pt_BR": "O LibreOffice Draw abre e edita PDFs simples."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "abbyy-finereader",
+      "name": "ABBYY FineReader PDF",
+      "vendor": "ABBYY",
+      "category": "documents",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "abbyy finereader*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "naps2",
+          "relation": "alternative",
+          "note": {
+            "en": "Scan documents and turn them into searchable PDFs with OCR.",
+            "pt_BR": "Digitaliza documentos e gera PDFs pesquisáveis com OCR."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "naps2",
+      "name": "NAPS2",
+      "category": "documents",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "naps2 *"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm",
+          "flatpak"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "naps2-bin",
+          "naps2"
+        ],
+        "website": "https://www.naps2.com/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "masterpdfeditor",
+      "name": "Master PDF Editor",
+      "vendor": "Code Industry",
+      "category": "documents",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "masterpdfeditor*",
+          "master pdf editor*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "masterpdfeditor"
+        ],
+        "flatpak": [
+          "net.code_industry.MasterPDFEditor"
+        ],
+        "desktop": [
+          "net.code_industry.MasterPDFEditor.desktop"
+        ],
+        "website": "https://code-industry.net/free-pdf-editor/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "okular",
+      "name": "Okular",
+      "vendor": "KDE",
+      "category": "documents",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "okular"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "okular"
+        ],
+        "flatpak": [
+          "org.kde.okular"
+        ],
+        "desktop": [
+          "org.kde.okular.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "papers",
+      "name": "Papers",
+      "vendor": "The GNOME Project",
+      "category": "documents",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "papers"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "papers"
+        ],
+        "flatpak": [
+          "org.gnome.Papers"
+        ],
+        "desktop": [
+          "org.gnome.Papers.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "pdfarranger",
+      "name": "PDF Arranger",
+      "category": "documents",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "pdfarranger"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "pdfarranger"
+        ],
+        "flatpak": [
+          "com.github.jeromerobert.pdfarranger"
+        ],
+        "desktop": [
+          "com.github.jeromerobert.pdfarranger.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "xournalpp",
+      "name": "Xournal++",
+      "category": "notes",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "xournalpp *"
+        ],
+        "packages": [
+          "xournalpp"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "xournalpp"
+        ],
+        "flatpak": [
+          "com.github.xournalpp.xournalpp"
+        ],
+        "desktop": [
+          "com.github.xournalpp.xournalpp.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "calibre",
+      "name": "calibre",
+      "category": "documents",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "calibre 64bit*",
+          "calibre portable*"
+        ],
+        "packages": [
+          "calibre"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "calibre"
+        ],
+        "flatpak": [
+          "com.calibre_ebook.calibre"
+        ],
+        "desktop": [
+          "calibre-gui.desktop",
+          "com.calibre_ebook.calibre.desktop"
+        ],
+        "website": "https://calibre-ebook.com/download_linux"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "foliate",
+      "name": "Foliate",
+      "category": "documents",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "foliate"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "foliate"
+        ],
+        "flatpak": [
+          "com.github.johnfactotum.Foliate"
+        ],
+        "desktop": [
+          "com.github.johnfactotum.Foliate.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "kindle",
+      "name": "Amazon Kindle for PC",
+      "vendor": "Amazon",
+      "category": "documents",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "kindleforpc*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://read.amazon.com/"
+      },
+      "alternatives": [
+        {
+          "id": "calibre",
+          "relation": "alternative",
+          "note": {
+            "en": "Manage and read DRM-free e-books; does not open Kindle DRM books.",
+            "pt_BR": "Gerencia e lê e-books sem DRM; não abre livros com DRM da Kindle."
+          }
+        },
+        {
+          "id": "foliate",
+          "relation": "alternative",
+          "note": {
+            "en": "Clean e-book reader for EPUB and other DRM-free formats.",
+            "pt_BR": "Leitor de e-books simples para EPUB e outros formatos sem DRM."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "obsidian",
+      "name": "Obsidian",
+      "vendor": "Dynalist Inc.",
+      "category": "notes",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "obsidian 1*"
+        ],
+        "packages": [
+          "obsidian"
+        ],
+        "formats": [
+          "exe",
+          "appimage",
+          "deb"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "obsidian"
+        ],
+        "flatpak": [
+          "md.obsidian.Obsidian"
+        ],
+        "desktop": [
+          "obsidian.desktop",
+          "md.obsidian.Obsidian.desktop"
+        ],
+        "website": "https://obsidian.md/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "joplin",
+      "name": "Joplin",
+      "category": "notes",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "joplin setup*"
+        ],
+        "formats": [
+          "exe",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "joplin-desktop",
+          "joplin-appimage"
+        ],
+        "flatpak": [
+          "net.cozic.joplin_desktop"
+        ],
+        "desktop": [
+          "net.cozic.joplin_desktop.desktop"
+        ],
+        "website": "https://joplinapp.org/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "standard-notes",
+      "name": "Standard Notes",
+      "category": "notes",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "standard notes*"
+        ],
+        "formats": [
+          "exe",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "flatpak": [
+          "org.standardnotes.standardnotes"
+        ],
+        "desktop": [
+          "org.standardnotes.standardnotes.desktop"
+        ],
+        "website": "https://standardnotes.com/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "simplenote",
+      "name": "Simplenote",
+      "vendor": "Automattic",
+      "category": "notes",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "simplenote*win*",
+          "simplenote*installer*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "simplenote-electron-bin"
+        ],
+        "flatpak": [
+          "com.simplenote.Simplenote"
+        ],
+        "desktop": [
+          "com.simplenote.Simplenote.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "xmind",
+      "name": "Xmind",
+      "category": "notes",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "xmind for windows*"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "xmind"
+        ],
+        "flatpak": [
+          "net.xmind.XMind"
+        ],
+        "desktop": [
+          "net.xmind.XMind.desktop"
+        ],
+        "website": "https://xmind.com/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "anytype",
+      "name": "Anytype",
+      "category": "notes",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "anytype*setup*"
+        ],
+        "formats": [
+          "exe",
+          "appimage",
+          "deb"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "anytype-bin"
+        ],
+        "flatpak": [
+          "io.anytype.anytype"
+        ],
+        "desktop": [
+          "io.anytype.anytype.desktop"
+        ],
+        "website": "https://download.anytype.io/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "appflowy",
+      "name": "AppFlowy",
+      "category": "notes",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "appflowy *windows*"
+        ],
+        "formats": [
+          "exe",
+          "appimage",
+          "deb"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "appflowy-bin",
+          "appflowy"
+        ],
+        "flatpak": [
+          "io.appflowy.AppFlowy"
+        ],
+        "desktop": [
+          "io.appflowy.AppFlowy.desktop"
+        ],
+        "website": "https://appflowy.com/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "vendor": "Notion Labs, Inc.",
+      "category": "notes",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "notion setup*",
+          "notion * setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://www.notion.com/"
+      },
+      "alternatives": [
+        {
+          "id": "anytype",
+          "relation": "alternative",
+          "note": {
+            "en": "Local-first workspace of pages, databases and notes.",
+            "pt_BR": "Espaço de trabalho local de páginas, bancos de dados e notas."
+          }
+        },
+        {
+          "id": "appflowy",
+          "relation": "alternative",
+          "note": {
+            "en": "Open-source workspace for docs, wikis and kanban boards.",
+            "pt_BR": "Espaço de trabalho de código aberto para documentos, wikis e quadros kanban."
+          }
+        },
+        {
+          "id": "obsidian",
+          "relation": "alternative",
+          "note": {
+            "en": "Markdown notes stored as local files, with links and plugins.",
+            "pt_BR": "Notas em Markdown guardadas em arquivos locais, com links e plugins."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown",
+        "note": {
+          "en": "Notion works in the browser on Linux.",
+          "pt_BR": "O Notion funciona no navegador no Linux."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "evernote",
+      "name": "Evernote",
+      "vendor": "Evernote Corporation",
+      "category": "notes",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "evernote*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://www.evernote.com/"
+      },
+      "alternatives": [
+        {
+          "id": "joplin",
+          "relation": "alternative",
+          "note": {
+            "en": "Open-source notes with sync and encryption; imports Evernote files.",
+            "pt_BR": "Notas de código aberto com sincronização e criptografia; importa arquivos do Evernote."
+          }
+        },
+        {
+          "id": "obsidian",
+          "relation": "alternative",
+          "note": {
+            "en": "Markdown notes stored as local files, with links and plugins.",
+            "pt_BR": "Notas em Markdown guardadas em arquivos locais, com links e plugins."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown",
+        "note": {
+          "en": "Evernote works in the browser on Linux.",
+          "pt_BR": "O Evernote funciona no navegador no Linux."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "todoist",
+      "name": "Todoist",
+      "vendor": "Doist",
+      "category": "notes",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "todoist*setup*",
+          "todoist*installer*"
+        ],
+        "formats": [
+          "exe",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "todoist-appimage"
+        ],
+        "flatpak": [
+          "com.todoist.Todoist"
+        ],
+        "desktop": [
+          "com.todoist.Todoist.desktop"
+        ],
+        "website": "https://todoist.com/downloads"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "trello",
+      "name": "Trello",
+      "vendor": "Atlassian",
+      "category": "notes",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "trello*installer*",
+          "trello*setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://trello.com/"
+      },
+      "windows": {
+        "wine": "unknown"
+      },
+      "message": {
+        "en": "Trello has no Linux app; it works fully in the browser.",
+        "pt_BR": "O Trello não tem aplicativo para Linux; funciona totalmente no navegador."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "vendor": "Grammarly, Inc.",
+      "category": "utilities",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "grammarlyinstaller*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://www.grammarly.com/"
+      },
+      "windows": {
+        "wine": "unknown"
+      },
+      "message": {
+        "en": "Grammarly has no Linux app; use its web editor or browser extension.",
+        "pt_BR": "O Grammarly não tem aplicativo para Linux; use o editor web ou a extensão do navegador."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "drawio",
+      "name": "draw.io Desktop",
+      "aliases": [
+        "diagrams.net"
+      ],
+      "category": "office",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "draw io * windows*"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "drawio-desktop"
+        ],
+        "flatpak": [
+          "com.jgraph.drawio.desktop"
+        ],
+        "desktop": [
+          "drawio.desktop",
+          "com.jgraph.drawio.desktop.desktop"
+        ],
+        "website": "https://github.com/jgraph/drawio-desktop/releases"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "final-draft",
+      "name": "Final Draft",
+      "vendor": "Final Draft, Inc.",
+      "category": "office",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "finaldraftsetup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "trelby",
+          "relation": "alternative",
+          "note": {
+            "en": "Free screenwriting program with industry-standard script formatting.",
+            "pt_BR": "Programa livre para roteiros com formatação padrão da indústria."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "trelby",
+      "name": "Trelby",
+      "category": "office",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "trelby"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "trelby"
+        ],
+        "flatpak": [
+          "org.trelby.Trelby"
+        ],
+        "desktop": [
+          "org.trelby.Trelby.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "scrivener",
+      "name": "Scrivener",
+      "vendor": "Literature & Latte",
+      "category": "office",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "scrivener*installer*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "manuskript",
+          "relation": "alternative",
+          "note": {
+            "en": "Open-source tool for planning and writing novels.",
+            "pt_BR": "Ferramenta de código aberto para planejar e escrever romances."
+          }
+        },
+        {
+          "id": "trelby",
+          "relation": "alternative",
+          "note": {
+            "en": "Free screenwriting program.",
+            "pt_BR": "Programa livre para roteiros."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "manuskript",
+      "name": "Manuskript",
+      "category": "office",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "manuskript"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "manuskript"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur"
+      ]
+    },
+    {
+      "id": "ia-writer",
+      "name": "iA Writer",
+      "vendor": "Information Architects",
+      "category": "office",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "iawriter*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "apostrophe",
+          "relation": "alternative",
+          "note": {
+            "en": "Distraction-free Markdown editor.",
+            "pt_BR": "Editor de Markdown sem distrações."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "apostrophe",
+      "name": "Apostrophe",
+      "category": "office",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "apostrophe"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "apostrophe"
+        ],
+        "flatpak": [
+          "org.gnome.gitlab.somas.Apostrophe"
+        ],
+        "desktop": [
+          "org.gnome.gitlab.somas.Apostrophe.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    }
+  ]
+}

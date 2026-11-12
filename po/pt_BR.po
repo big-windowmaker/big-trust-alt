@@ -1,0 +1,1063 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: big-trust-alt\n"
+"PO-Revision-Date: 2026-11-12 00:00-0300\n"
+"Last-Translator: Rafael Ruscher <rruscher@gmail.com>\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/big_trust_alt/cli.py:18
+msgid ""
+"Identify downloaded programs and find the best way to use them on Linux."
+msgstr "Identifique programas baixados e descubra a melhor maneira de usá-los no Linux."
+
+#: src/big_trust_alt/cli.py:20
+msgid "files to open in the window"
+msgstr "arquivos para abrir na janela"
+
+#: src/big_trust_alt/cli.py:21
+msgid "analyze a file and print the result"
+msgstr "analisa um arquivo e mostra o resultado"
+
+#: src/big_trust_alt/cli.py:22
+msgid "search the catalog for a program"
+msgstr "procura um programa no catálogo"
+
+#: src/big_trust_alt/cli.py:23
+msgid "machine-readable output"
+msgstr "saída para outros programas (JSON)"
+
+#: src/big_trust_alt/cli.py:24
+msgid "do not query the AUR over the network"
+msgstr "não consulta o AUR pela rede"
+
+#: src/big_trust_alt/cli.py:25
+msgid "show the file associations"
+msgstr "mostra as associações de arquivos"
+
+#: src/big_trust_alt/cli.py:27
+msgid ""
+"make Big Trust Alt the default for Windows programs (previous choices are "
+"saved)"
+msgstr "torna o Big Trust Alt o padrão para programas do Windows (as escolhas anteriores são guardadas)"
+
+#: src/big_trust_alt/cli.py:28
+msgid "restore the previous file associations"
+msgstr "restaura as associações de arquivos anteriores"
+
+#: src/big_trust_alt/cli.py:29
+msgid "print a diagnostics report without personal data"
+msgstr "mostra um relatório de diagnóstico sem dados pessoais"
+
+#: src/big_trust_alt/cli.py:44 src/big_trust_alt/ui/preferences.py:62
+#, python-brace-format
+msgid "Associated: {n} file types."
+msgstr "Associados: {n} tipos de arquivo."
+
+#: src/big_trust_alt/cli.py:47 src/big_trust_alt/ui/preferences.py:65
+#, python-brace-format
+msgid "Restored: {n} file types."
+msgstr "Restaurados: {n} tipos de arquivo."
+
+#: src/big_trust_alt/cli.py:83 src/big_trust_alt/ui/window.py:488
+msgid "Type"
+msgstr "Tipo"
+
+#: src/big_trust_alt/cli.py:88 src/big_trust_alt/ui/window.py:493
+msgid "Downloaded from"
+msgstr "Baixado de"
+
+#: src/big_trust_alt/cli.py:89
+msgid "Identification"
+msgstr "Identificação"
+
+#: src/big_trust_alt/cli.py:100
+msgid "Recommended"
+msgstr "Recomendado"
+
+#: src/big_trust_alt/cli.py:106 src/big_trust_alt/ui/window.py:430
+#, python-brace-format
+msgid "Not consulted (offline or unavailable): {names}"
+msgstr "Não consultados (sem rede ou indisponíveis): {names}"
+
+#: src/big_trust_alt/cli.py:122
+#, python-brace-format
+msgid "Nothing found for “{text}”."
+msgstr "Nada encontrado para “{text}”."
+
+#: src/big_trust_alt/core/messages.py:11
+msgid ""
+"The name hides characters that change how it is displayed. The real "
+"extension may not be the one you see."
+msgstr "O nome esconde caracteres que mudam o jeito como ele aparece. A extensão real pode não ser a que você vê."
+
+#: src/big_trust_alt/core/messages.py:13
+msgid "The name contains invisible control characters."
+msgstr "O nome contém caracteres de controle invisíveis."
+
+#: src/big_trust_alt/core/messages.py:14
+#, python-brace-format
+msgid "Double extension ({detail}): a program disguised as a document?"
+msgstr "Extensão dupla ({detail}): um programa disfarçado de documento?"
+
+#: src/big_trust_alt/core/messages.py:15
+msgid "Very long file name."
+msgstr "Nome de arquivo muito longo."
+
+#: src/big_trust_alt/core/messages.py:16
+#, python-brace-format
+msgid "The extension says document, but the content is a program ({detail})."
+msgstr "A extensão diz documento, mas o conteúdo é um programa ({detail})."
+
+#: src/big_trust_alt/core/messages.py:17
+#, python-brace-format
+msgid "The extension does not match the content ({detail})."
+msgstr "A extensão não corresponde ao conteúdo ({detail})."
+
+#: src/big_trust_alt/core/messages.py:18
+#, python-brace-format
+msgid "Built for another processor ({detail})."
+msgstr "Feito para outro processador ({detail})."
+
+#: src/big_trust_alt/core/messages.py:19
+msgid "No digital signature."
+msgstr "Sem assinatura digital."
+
+#: src/big_trust_alt/core/messages.py:20
+msgid "Has a digital signature; it was not verified here."
+msgstr "Tem assinatura digital; ela não foi verificada aqui."
+
+#: src/big_trust_alt/core/messages.py:21
+msgid "Asks Windows for administrator rights when it runs."
+msgstr "Pede ao Windows permissão de administrador ao ser executado."
+
+#: src/big_trust_alt/core/messages.py:22
+msgid "Uses .NET (Mono or wine-mono needed to run it under Wine)."
+msgstr "Usa .NET (precisa do Mono ou do wine-mono para rodar no Wine)."
+
+#: src/big_trust_alt/core/messages.py:23
+#, python-brace-format
+msgid "The file looks damaged or truncated ({detail})."
+msgstr "O arquivo parece danificado ou incompleto ({detail})."
+
+#: src/big_trust_alt/core/messages.py:24
+msgid "The file is empty."
+msgstr "O arquivo está vazio."
+
+#: src/big_trust_alt/core/messages.py:25
+#, python-brace-format
+msgid "Opened through a symbolic link to {detail}."
+msgstr "Aberto por um link simbólico para {detail}."
+
+#: src/big_trust_alt/core/messages.py:26
+msgid "Other users can change this file."
+msgstr "Outros usuários podem alterar este arquivo."
+
+#: src/big_trust_alt/core/messages.py:27
+#, python-brace-format
+msgid "Adds packages from a third-party Flatpak remote ({detail})."
+msgstr "Adiciona pacotes de um repositório Flatpak de terceiros ({detail})."
+
+#: src/big_trust_alt/core/messages.py:28
+msgid "Contains Windows libraries: may not work on Linux."
+msgstr "Contém bibliotecas do Windows: pode não funcionar no Linux."
+
+#: src/big_trust_alt/core/messages.py:29
+#, python-brace-format
+msgid "Contains Windows programs: {detail}."
+msgstr "Contém programas do Windows: {detail}."
+
+#: src/big_trust_alt/core/messages.py:30
+msgid "Downloads and runs code from the internet."
+msgstr "Baixa e executa código da internet."
+
+#: src/big_trust_alt/core/messages.py:31
+msgid "Asks for administrator rights (sudo/pkexec)."
+msgstr "Pede permissão de administrador (sudo/pkexec)."
+
+#: src/big_trust_alt/core/messages.py:32
+msgid "Deletes folders recursively."
+msgstr "Apaga pastas com todo o conteúdo."
+
+#: src/big_trust_alt/core/messages.py:33
+msgid "Writes to disks or partitions directly."
+msgstr "Grava diretamente em discos ou partições."
+
+#: src/big_trust_alt/core/messages.py:34
+msgid "Changes system files."
+msgstr "Altera arquivos do sistema."
+
+#: src/big_trust_alt/core/messages.py:35
+msgid "Makes files writable by everyone (chmod 777)."
+msgstr "Deixa arquivos graváveis por todos (chmod 777)."
+
+#: src/big_trust_alt/core/messages.py:36
+msgid "Contains hidden or encoded code."
+msgstr "Contém código escondido ou codificado."
+
+#: src/big_trust_alt/core/messages.py:37
+msgid "Configures something to start automatically."
+msgstr "Configura algo para iniciar automaticamente."
+
+#: src/big_trust_alt/core/messages.py:38
+msgid "Carries an embedded binary payload."
+msgstr "Carrega um conteúdo binário embutido."
+
+#: src/big_trust_alt/core/messages.py:46
+msgid "The file does not exist (it may have been moved or deleted)."
+msgstr "O arquivo não existe (pode ter sido movido ou apagado)."
+
+#: src/big_trust_alt/core/messages.py:47
+msgid "You do not have permission to read this file."
+msgstr "Você não tem permissão para ler este arquivo."
+
+#: src/big_trust_alt/core/messages.py:48
+msgid "This is not a regular file (folder, device or pipe)."
+msgstr "Não é um arquivo comum (pasta, dispositivo ou pipe)."
+
+#: src/big_trust_alt/core/messages.py:49
+msgid "The file could not be read."
+msgstr "Não foi possível ler o arquivo."
+
+#: src/big_trust_alt/core/messages.py:50
+msgid "Analysis cancelled."
+msgstr "Análise cancelada."
+
+#: src/big_trust_alt/core/messages.py:56
+msgid "Confirmed match"
+msgstr "Correspondência confirmada"
+
+#: src/big_trust_alt/core/messages.py:57
+msgid "Probable match"
+msgstr "Correspondência provável"
+
+#: src/big_trust_alt/core/messages.py:58
+msgid "More than one possible program"
+msgstr "Mais de um programa possível"
+
+#: src/big_trust_alt/core/messages.py:59
+msgid "Program not identified"
+msgstr "Programa não identificado"
+
+#: src/big_trust_alt/core/messages.py:65 src/big_trust_alt/ui/window.py:802
+msgid "Same program"
+msgstr "Mesmo programa"
+
+#: src/big_trust_alt/core/messages.py:66
+msgid "Successor"
+msgstr "Sucessor"
+
+#: src/big_trust_alt/core/messages.py:67
+msgid "Functional alternative"
+msgstr "Alternativa funcional"
+
+#: src/big_trust_alt/core/messages.py:68
+msgid "Web version"
+msgstr "Versão web"
+
+#: src/big_trust_alt/core/messages.py:69
+msgid "Game launcher"
+msgstr "Lançador de jogos"
+
+#: src/big_trust_alt/core/messages.py:70
+msgid "Compatibility layer"
+msgstr "Camada de compatibilidade"
+
+#: src/big_trust_alt/core/messages.py:71
+msgid "This file"
+msgstr "Este arquivo"
+
+#: src/big_trust_alt/core/messages.py:77 src/big_trust_alt/core/messages.py:87
+#: src/big_trust_alt/ui/window.py:642
+msgid "Open"
+msgstr "Abrir"
+
+#: src/big_trust_alt/core/messages.py:78 src/big_trust_alt/core/messages.py:79
+#: src/big_trust_alt/core/messages.py:81 src/big_trust_alt/core/messages.py:83
+msgid "Install"
+msgstr "Instalar"
+
+#: src/big_trust_alt/core/messages.py:80
+msgid "Build and install"
+msgstr "Compilar e instalar"
+
+#: src/big_trust_alt/core/messages.py:82
+msgid "Convert and install"
+msgstr "Converter e instalar"
+
+#: src/big_trust_alt/core/messages.py:84
+msgid "Open website"
+msgstr "Abrir site"
+
+#: src/big_trust_alt/core/messages.py:85
+msgid "Open in Steam"
+msgstr "Abrir no Steam"
+
+#: src/big_trust_alt/core/messages.py:86 src/big_trust_alt/core/messages.py:88
+#: src/big_trust_alt/core/messages.py:89
+msgid "Run…"
+msgstr "Executar…"
+
+#: src/big_trust_alt/core/messages.py:103
+msgid "Windows library (DLL)"
+msgstr "Biblioteca do Windows (DLL)"
+
+#: src/big_trust_alt/core/messages.py:105
+#, python-brace-format
+msgid "Windows installer ({builder})"
+msgstr "Instalador do Windows ({builder})"
+
+#: src/big_trust_alt/core/messages.py:109
+msgid "Windows installer"
+msgstr "Instalador do Windows"
+
+#: src/big_trust_alt/core/messages.py:110
+msgid "Windows program"
+msgstr "Programa do Windows"
+
+#: src/big_trust_alt/core/messages.py:112
+#, python-brace-format
+msgid "Script ({interpreter})"
+msgstr "Script ({interpreter})"
+
+#: src/big_trust_alt/core/messages.py:114
+msgid "DOS program"
+msgstr "Programa do DOS"
+
+#: src/big_trust_alt/core/messages.py:115
+msgid "Windows Installer package (MSI)"
+msgstr "Pacote do Windows Installer (MSI)"
+
+#: src/big_trust_alt/core/messages.py:116
+msgid "Windows app package (MSIX/AppX)"
+msgstr "Pacote de aplicativo do Windows (MSIX/AppX)"
+
+#: src/big_trust_alt/core/messages.py:117
+msgid "Windows script"
+msgstr "Script do Windows"
+
+#: src/big_trust_alt/core/messages.py:118
+msgid "Linux program"
+msgstr "Programa do Linux"
+
+#: src/big_trust_alt/core/messages.py:119
+msgid "AppImage"
+msgstr "AppImage"
+
+#: src/big_trust_alt/core/messages.py:120
+msgid "Debian/Ubuntu package (.deb)"
+msgstr "Pacote do Debian/Ubuntu (.deb)"
+
+#: src/big_trust_alt/core/messages.py:121
+msgid "Fedora/openSUSE package (.rpm)"
+msgstr "Pacote do Fedora/openSUSE (.rpm)"
+
+#: src/big_trust_alt/core/messages.py:122
+msgid "Arch Linux package"
+msgstr "Pacote do Arch Linux"
+
+#: src/big_trust_alt/core/messages.py:123
+msgid "Java application (.jar)"
+msgstr "Aplicativo Java (.jar)"
+
+#: src/big_trust_alt/core/messages.py:124
+msgid "Flatpak reference"
+msgstr "Referência Flatpak"
+
+#: src/big_trust_alt/core/messages.py:125
+msgid "Flatpak bundle"
+msgstr "Pacote Flatpak avulso"
+
+#: src/big_trust_alt/core/messages.py:126
+msgid "Self-extracting installer (shell)"
+msgstr "Instalador autoextraível (shell)"
+
+#: src/big_trust_alt/core/messages.py:127
+msgid "Compressed archive (tar)"
+msgstr "Arquivo compactado (tar)"
+
+#: src/big_trust_alt/core/messages.py:128
+msgid "ZIP archive"
+msgstr "Arquivo ZIP"
+
+#: src/big_trust_alt/core/messages.py:129
+msgid "Text file"
+msgstr "Arquivo de texto"
+
+#: src/big_trust_alt/core/messages.py:130
+msgid "Office/OLE document"
+msgstr "Documento do Office/OLE"
+
+#: src/big_trust_alt/core/messages.py:131
+msgid "Unknown file"
+msgstr "Arquivo desconhecido"
+
+#: src/big_trust_alt/installers/runner.py:97
+#: src/big_trust_alt/resolvers/resolver.py:237
+msgid "Pamac is not installed."
+msgstr "O Pamac não está instalado."
+
+#: src/big_trust_alt/installers/runner.py:102
+msgid "Review the changes in the Pamac window…"
+msgstr "Revise as mudanças na janela do Pamac…"
+
+#: src/big_trust_alt/installers/runner.py:108
+msgid "Pamac did not apply the changes (cancelled or failed)."
+msgstr "O Pamac não aplicou as mudanças (cancelado ou com erro)."
+
+#: src/big_trust_alt/installers/runner.py:111
+msgid "Pamac finished, but the package is not installed."
+msgstr "O Pamac terminou, mas o pacote não está instalado."
+
+#: src/big_trust_alt/installers/runner.py:116
+#: src/big_trust_alt/resolvers/resolver.py:166
+#: src/big_trust_alt/resolvers/resolver.py:244
+#: src/big_trust_alt/resolvers/resolver.py:252
+msgid "Flatpak is not installed on this system."
+msgstr "O Flatpak não está instalado neste sistema."
+
+#: src/big_trust_alt/installers/runner.py:127
+msgid "Installation cancelled. Flatpak removes partial downloads."
+msgstr "Instalação cancelada. O Flatpak remove os downloads incompletos."
+
+#: src/big_trust_alt/installers/runner.py:129
+#, python-brace-format
+msgid "Flatpak reported an error (code {code})."
+msgstr "O Flatpak informou um erro (código {code})."
+
+#: src/big_trust_alt/installers/runner.py:133
+msgid "Flatpak finished, but the app is not installed."
+msgstr "O Flatpak terminou, mas o aplicativo não está instalado."
+
+#: src/big_trust_alt/installers/runner.py:156
+msgid "The file changed after it was analyzed. Analyze it again."
+msgstr "O arquivo mudou depois da análise. Analise-o de novo."
+
+#: src/big_trust_alt/installers/runner.py:162
+msgid "The file is not executable. Allow it to be run first."
+msgstr "O arquivo não é executável. Permita a execução primeiro."
+
+#: src/big_trust_alt/installers/runner.py:167
+#, python-brace-format
+msgid "{tool} is not installed."
+msgstr "{tool} não está instalado."
+
+#: src/big_trust_alt/installers/runner.py:171
+msgid "No terminal emulator was found."
+msgstr "Nenhum emulador de terminal foi encontrado."
+
+#: src/big_trust_alt/resolvers/resolver.py:116
+#: src/big_trust_alt/resolvers/resolver.py:145
+msgid "Installed on this computer"
+msgstr "Instalado neste computador"
+
+#: src/big_trust_alt/resolvers/resolver.py:125
+msgid "Installed on this computer (Flatpak)"
+msgstr "Instalado neste computador (Flatpak)"
+
+#: src/big_trust_alt/resolvers/resolver.py:147
+msgid ""
+"Already installed. It has no menu entry: use it from the terminal or from "
+"other programs."
+msgstr "Já está instalado. Não tem atalho no menu: use-o pelo terminal ou por outros programas."
+
+#: src/big_trust_alt/resolvers/resolver.py:152
+#: src/big_trust_alt/resolvers/resolver.py:285
+#, python-brace-format
+msgid "BigLinux repositories ({repo})"
+msgstr "Repositórios do BigLinux ({repo})"
+
+#: src/big_trust_alt/resolvers/resolver.py:177
+msgid "Steam is not installed."
+msgstr "O Steam não está instalado."
+
+#: src/big_trust_alt/resolvers/resolver.py:191
+msgid ""
+"Community package: its build script is not reviewed by BigLinux. Read it "
+"before building."
+msgstr "Pacote da comunidade: o script de compilação não é revisado pelo BigLinux. Leia-o antes de compilar."
+
+#: src/big_trust_alt/resolvers/resolver.py:194
+msgid "Marked out of date."
+msgstr "Marcado como desatualizado."
+
+#: src/big_trust_alt/resolvers/resolver.py:196
+msgid "Without a maintainer."
+msgstr "Sem mantenedor."
+
+#: src/big_trust_alt/resolvers/resolver.py:204
+msgid "Official website"
+msgstr "Site oficial"
+
+#: src/big_trust_alt/resolvers/resolver.py:204
+msgid "Installation instructions"
+msgstr "Instruções de instalação"
+
+#: src/big_trust_alt/resolvers/resolver.py:227
+msgid ""
+"Converts the package to the Arch format and installs it. Prefer a native "
+"package when there is one."
+msgstr "Converte o pacote para o formato do Arch e o instala. Prefira um pacote nativo quando houver."
+
+#: src/big_trust_alt/resolvers/resolver.py:229
+msgid "big-pkg-installer is not installed."
+msgstr "O big-pkg-installer não está instalado."
+
+#: src/big_trust_alt/resolvers/resolver.py:235
+msgid ""
+"A package file from outside the repositories: it will not receive updates "
+"automatically."
+msgstr "Um pacote de fora dos repositórios: não receberá atualizações automaticamente."
+
+#: src/big_trust_alt/resolvers/resolver.py:250
+msgid ""
+"A Flatpak bundle does not come from a repository and will not be updated."
+msgstr "Um pacote Flatpak avulso não vem de um repositório e não será atualizado."
+
+#: src/big_trust_alt/resolvers/resolver.py:260
+msgid ""
+"Wine runs Windows programs, but it is not a security sandbox: the program "
+"can read and change your personal files."
+msgstr "O Wine executa programas do Windows, mas não é um isolamento de segurança: o programa pode ler e alterar seus arquivos pessoais."
+
+#: src/big_trust_alt/resolvers/resolver.py:272
+msgid "Run the Windows file with Wine"
+msgstr "Executar o arquivo do Windows com o Wine"
+
+#: src/big_trust_alt/resolvers/resolver.py:274
+msgid "Wine is not installed."
+msgstr "O Wine não está instalado."
+
+#: src/big_trust_alt/resolvers/resolver.py:286
+msgid "Needed only if you want to run the Windows file itself."
+msgstr "Necessário só se você quiser executar o próprio arquivo do Windows."
+
+#: src/big_trust_alt/resolvers/resolver.py:294
+msgid "Open with Bottles"
+msgstr "Abrir com o Bottles"
+
+#: src/big_trust_alt/resolvers/resolver.py:295
+msgid "Bottles keeps each Windows program in its own Wine prefix."
+msgstr "O Bottles mantém cada programa do Windows no seu próprio prefixo do Wine."
+
+#: src/big_trust_alt/resolvers/resolver.py:300
+msgid "Run this file"
+msgstr "Executar este arquivo"
+
+#: src/big_trust_alt/resolvers/resolver.py:304
+msgid "Run with Java"
+msgstr "Executar com o Java"
+
+#: src/big_trust_alt/resolvers/resolver.py:305
+msgid "No Java runtime is installed (package jre-openjdk)."
+msgstr "Nenhum Java está instalado (pacote jre-openjdk)."
+
+#: src/big_trust_alt/ui/app.py:100
+msgid ""
+"Identifies programs downloaded from the internet and shows the best way to "
+"use them on Linux: native packages first, without taking away your choice."
+msgstr "Identifica programas baixados da internet e mostra a melhor maneira de usá-los no Linux: pacotes nativos primeiro, sem tirar a sua liberdade de escolha."
+
+#: src/big_trust_alt/ui/app.py:109
+msgid "Based on ideas and data from"
+msgstr "Baseado em ideias e dados de"
+
+#: src/big_trust_alt/ui/app.py:113
+msgid "Works with"
+msgstr "Funciona com"
+
+#: src/big_trust_alt/ui/app.py:118
+msgid "Special thanks"
+msgstr "Agradecimentos especiais"
+
+#: src/big_trust_alt/ui/preferences.py:14 src/big_trust_alt/ui/window.py:103
+msgid "Preferences"
+msgstr "Preferências"
+
+#: src/big_trust_alt/ui/preferences.py:17
+msgid "General"
+msgstr "Geral"
+
+#: src/big_trust_alt/ui/preferences.py:20
+msgid "Sources"
+msgstr "Fontes"
+
+#: src/big_trust_alt/ui/preferences.py:21
+msgid "Safety checks stay the same whatever you choose."
+msgstr "As verificações de segurança são as mesmas, qualquer que seja a escolha."
+
+#: src/big_trust_alt/ui/preferences.py:22
+msgid "Prefer Flatpak"
+msgstr "Preferir Flatpak"
+
+#: src/big_trust_alt/ui/preferences.py:23
+msgid "Recommend Flathub before the system repositories"
+msgstr "Recomendar o Flathub antes dos repositórios do sistema"
+
+#: src/big_trust_alt/ui/preferences.py:25
+msgid "Show AUR packages"
+msgstr "Mostrar pacotes do AUR"
+
+#: src/big_trust_alt/ui/preferences.py:26
+msgid "Community packages, built on your computer"
+msgstr "Pacotes da comunidade, compilados no seu computador"
+
+#: src/big_trust_alt/ui/preferences.py:32
+msgid "Privacy"
+msgstr "Privacidade"
+
+#: src/big_trust_alt/ui/preferences.py:33
+msgid "Keep a history"
+msgstr "Manter histórico"
+
+#: src/big_trust_alt/ui/preferences.py:34
+msgid "File names, hashes and choices; stored only on this computer"
+msgstr "Nomes de arquivo, hashes e escolhas; guardados só neste computador"
+
+#: src/big_trust_alt/ui/preferences.py:40
+msgid "File associations"
+msgstr "Associação de arquivos"
+
+#: src/big_trust_alt/ui/preferences.py:41
+msgid ""
+"Opening a Windows program in the file manager shows Big Trust Alt. Your "
+"previous choices are saved and come back when you turn this off."
+msgstr "Abrir um programa do Windows no gerenciador de arquivos mostra o Big Trust Alt. Suas escolhas anteriores são guardadas e voltam quando você desliga esta opção."
+
+#: src/big_trust_alt/ui/preferences.py:43
+msgid "Open Windows programs with Big Trust Alt"
+msgstr "Abrir programas do Windows com o Big Trust Alt"
+
+#: src/big_trust_alt/ui/window.py:98
+msgid "Open file…"
+msgstr "Abrir arquivo…"
+
+#: src/big_trust_alt/ui/window.py:99
+msgid "Find an alternative…"
+msgstr "Procurar alternativa…"
+
+#: src/big_trust_alt/ui/window.py:100 src/big_trust_alt/ui/window.py:825
+msgid "History"
+msgstr "Histórico"
+
+#: src/big_trust_alt/ui/window.py:104
+msgid "About Big Trust Alt"
+msgstr "Sobre o Big Trust Alt"
+
+#: src/big_trust_alt/ui/window.py:107
+msgid "Main menu"
+msgstr "Menu principal"
+
+#: src/big_trust_alt/ui/window.py:129
+msgid "Open a downloaded program"
+msgstr "Abra um programa baixado"
+
+#: src/big_trust_alt/ui/window.py:130
+msgid ""
+"Drop a file here or choose one. Big Trust Alt finds out what it is and the "
+"best way to use it on Linux. Nothing is run during the analysis."
+msgstr "Solte um arquivo aqui ou escolha um. O Big Trust Alt descobre o que ele é e a melhor maneira de usá-lo no Linux. Nada é executado durante a análise."
+
+#: src/big_trust_alt/ui/window.py:134
+msgid "Choose a file…"
+msgstr "Escolher arquivo…"
+
+#: src/big_trust_alt/ui/window.py:137
+msgid "Find a Linux alternative for a program"
+msgstr "Procurar alternativa Linux para um programa"
+
+#: src/big_trust_alt/ui/window.py:145
+msgid "Choose a downloaded file"
+msgstr "Escolha um arquivo baixado"
+
+#: src/big_trust_alt/ui/window.py:164
+msgid "Only local files can be analyzed."
+msgstr "Só arquivos locais podem ser analisados."
+
+#: src/big_trust_alt/ui/window.py:177
+msgid "Analyzing…"
+msgstr "Analisando…"
+
+#: src/big_trust_alt/ui/window.py:179 src/big_trust_alt/ui/window.py:590
+#: src/big_trust_alt/ui/window.py:637
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/big_trust_alt/ui/window.py:185
+msgid "Analyzing"
+msgstr "Analisando"
+
+#: src/big_trust_alt/ui/window.py:227
+#, python-brace-format
+msgid "Opening {name}…"
+msgstr "Abrindo {name}…"
+
+#: src/big_trust_alt/ui/window.py:227
+msgid "Could not open the program."
+msgstr "Não foi possível abrir o programa."
+
+#: src/big_trust_alt/ui/window.py:237
+msgid "Opened in big-pkg-installer."
+msgstr "Aberto no big-pkg-installer."
+
+#: src/big_trust_alt/ui/window.py:273
+msgid "Could not analyze"
+msgstr "Não foi possível analisar"
+
+#: src/big_trust_alt/ui/window.py:275 src/big_trust_alt/ui/window.py:295
+msgid "Result"
+msgstr "Resultado"
+
+#: src/big_trust_alt/ui/window.py:311
+msgid "We found a better way to use this program on Linux."
+msgstr "Encontramos uma maneira melhor de usar este programa no Linux."
+
+#: src/big_trust_alt/ui/window.py:313
+msgid "We found the best way to install this program."
+msgstr "Encontramos a melhor maneira de instalar este programa."
+
+#: src/big_trust_alt/ui/window.py:315
+#, python-brace-format
+msgid "{kind} identified as {name}"
+msgstr "{kind} identificado como {name}"
+
+#: src/big_trust_alt/ui/window.py:319
+msgid "Choose which program this is"
+msgstr "Escolha qual programa é este"
+
+#: src/big_trust_alt/ui/window.py:320
+msgid "We could not identify this program"
+msgstr "Não conseguimos identificar este programa"
+
+#: src/big_trust_alt/ui/window.py:326
+msgid "Made for Windows"
+msgstr "Feito para Windows"
+
+#: src/big_trust_alt/ui/window.py:326
+msgid "Made for Linux"
+msgstr "Feito para Linux"
+
+#: src/big_trust_alt/ui/window.py:327
+msgid "Java"
+msgstr "Java"
+
+#: src/big_trust_alt/ui/window.py:334
+msgid "Identified by name and file details; it is not a guarantee of origin."
+msgstr "Identificado pelo nome e pelos detalhes do arquivo; não é garantia de origem."
+
+#: src/big_trust_alt/ui/window.py:345
+msgid "Be careful with this file"
+msgstr "Cuidado com este arquivo"
+
+#: src/big_trust_alt/ui/window.py:351
+msgid "Which of these is it?"
+msgstr "Qual destes é?"
+
+#: src/big_trust_alt/ui/window.py:352
+msgid ""
+"The file matches more than one program. Choose one; nothing is installed yet."
+msgstr "O arquivo corresponde a mais de um programa. Escolha um; nada é instalado ainda."
+
+#: src/big_trust_alt/ui/window.py:368
+msgid "RECOMMENDED FOR BIGLINUX"
+msgstr "RECOMENDADO PARA O BIGLINUX"
+
+#: src/big_trust_alt/ui/window.py:397
+msgid "Open installed program"
+msgstr "Abrir programa instalado"
+
+#: src/big_trust_alt/ui/window.py:399
+msgid "Install Linux version"
+msgstr "Instalar versão Linux"
+
+#: src/big_trust_alt/ui/window.py:399
+#, python-brace-format
+msgid "Install {name}"
+msgstr "Instalar {name}"
+
+#: src/big_trust_alt/ui/window.py:405
+msgid "It is already installed: nothing to download."
+msgstr "Já está instalado: não há nada para baixar."
+
+#: src/big_trust_alt/ui/window.py:406
+msgid ""
+"Comes from the system repositories: tested with BigLinux and updated with "
+"the rest of the system."
+msgstr "Vem dos repositórios do sistema: testado com o BigLinux e atualizado junto com o resto do sistema."
+
+#: src/big_trust_alt/ui/window.py:408
+msgid ""
+"Flatpak from Flathub: runs isolated from the system and updates by itself."
+msgstr "Flatpak do Flathub: roda isolado do sistema e se atualiza sozinho."
+
+#: src/big_trust_alt/ui/window.py:410
+msgid "Built from the AUR, the community repository."
+msgstr "Compilado a partir do AUR, o repositório da comunidade."
+
+#: src/big_trust_alt/ui/window.py:411
+msgid "The developer offers a Linux version on the official website."
+msgstr "O desenvolvedor oferece uma versão Linux no site oficial."
+
+#: src/big_trust_alt/ui/window.py:412
+msgid "Available on Steam, which runs it on Linux."
+msgstr "Disponível no Steam, que o executa no Linux."
+
+#: src/big_trust_alt/ui/window.py:413
+msgid "This file points to a Flatpak app."
+msgstr "Este arquivo aponta para um aplicativo Flatpak."
+
+#: src/big_trust_alt/ui/window.py:414
+msgid "An Arch package can be installed directly."
+msgstr "Um pacote do Arch pode ser instalado diretamente."
+
+#: src/big_trust_alt/ui/window.py:424
+msgid "Other options"
+msgstr "Outras opções"
+
+#: src/big_trust_alt/ui/window.py:424
+msgid "Options"
+msgstr "Opções"
+
+#: src/big_trust_alt/ui/window.py:443
+msgid "Experimental"
+msgstr "Experimental"
+
+#: src/big_trust_alt/ui/window.py:456
+msgid "Original file"
+msgstr "Arquivo original"
+
+#: src/big_trust_alt/ui/window.py:457
+msgid "Run it only if you trust where it came from."
+msgstr "Execute somente se você confia na origem."
+
+#: src/big_trust_alt/ui/window.py:459
+msgid "View the content"
+msgstr "Ver o conteúdo"
+
+#: src/big_trust_alt/ui/window.py:460
+msgid "Read the script before deciding."
+msgstr "Leia o script antes de decidir."
+
+#: src/big_trust_alt/ui/window.py:471
+msgid "Details"
+msgstr "Detalhes"
+
+#: src/big_trust_alt/ui/window.py:472
+msgid "Technical details"
+msgstr "Detalhes técnicos"
+
+#: src/big_trust_alt/ui/window.py:473
+msgid "Type, hash, origin and file information"
+msgstr "Tipo, hash, origem e informações do arquivo"
+
+#: src/big_trust_alt/ui/window.py:482
+msgid "Copy"
+msgstr "Copiar"
+
+#: src/big_trust_alt/ui/window.py:485
+msgid "Copied"
+msgstr "Copiado"
+
+#: src/big_trust_alt/ui/window.py:489
+msgid "Size"
+msgstr "Tamanho"
+
+#: src/big_trust_alt/ui/window.py:494
+msgid "Location"
+msgstr "Local"
+
+#: src/big_trust_alt/ui/window.py:495
+msgid "Symbolic link to"
+msgstr "Link simbólico para"
+
+#: src/big_trust_alt/ui/window.py:496
+msgid "Executable permission"
+msgstr "Permissão de execução"
+
+#: src/big_trust_alt/ui/window.py:496
+msgid "Yes"
+msgstr "Sim"
+
+#: src/big_trust_alt/ui/window.py:496
+msgid "No"
+msgstr "Não"
+
+#: src/big_trust_alt/ui/window.py:501
+msgid "Note"
+msgstr "Observação"
+
+#: src/big_trust_alt/ui/window.py:503
+msgid "Candidate"
+msgstr "Candidato"
+
+#: src/big_trust_alt/ui/window.py:506
+#, python-brace-format
+msgid "Command for “{title}”"
+msgstr "Comando para “{title}”"
+
+#: src/big_trust_alt/ui/window.py:512
+msgid "Analyze another file"
+msgstr "Analisar outro arquivo"
+
+#: src/big_trust_alt/ui/window.py:514 src/big_trust_alt/ui/window.py:540
+msgid "Report a wrong match"
+msgstr "Informar identificação errada"
+
+#: src/big_trust_alt/ui/window.py:541
+msgid ""
+"This report was copied to the clipboard. It has no folder names or personal "
+"data; check it before posting. Nothing is sent automatically."
+msgstr "Este relatório foi copiado para a área de transferência. Ele não tem nomes de pastas nem dados pessoais; confira antes de publicar. Nada é enviado automaticamente."
+
+#: src/big_trust_alt/ui/window.py:550
+msgid "Close"
+msgstr "Fechar"
+
+#: src/big_trust_alt/ui/window.py:551
+msgid "Open the issue page"
+msgstr "Abrir a página de issues"
+
+#: src/big_trust_alt/ui/window.py:569
+msgid ""
+"Programs run with your permissions: they can read and change your files."
+msgstr "Programas rodam com as suas permissões: podem ler e alterar seus arquivos."
+
+#: src/big_trust_alt/ui/window.py:571
+msgid "Wine is not a sandbox. Prefer the Linux options when there is one."
+msgstr "O Wine não é um isolamento de segurança. Prefira as opções para Linux quando houver."
+
+#: src/big_trust_alt/ui/window.py:574
+msgid "Notes about this file:"
+msgstr "Observações sobre este arquivo:"
+
+#: src/big_trust_alt/ui/window.py:575
+#, python-brace-format
+msgid "Run “{name}”?"
+msgstr "Executar “{name}”?"
+
+#: src/big_trust_alt/ui/window.py:581
+msgid "Allow this file to run (mark as executable)"
+msgstr "Permitir que este arquivo seja executado (marcar como executável)"
+
+#: src/big_trust_alt/ui/window.py:583
+msgid "Open in a terminal to see its messages"
+msgstr "Abrir em um terminal para ver as mensagens"
+
+#: src/big_trust_alt/ui/window.py:591
+msgid "Run"
+msgstr "Executar"
+
+#: src/big_trust_alt/ui/window.py:609
+msgid "Started."
+msgstr "Iniciado."
+
+#: src/big_trust_alt/ui/window.py:611
+msgid "Could not run the file."
+msgstr "Não foi possível executar o arquivo."
+
+#: src/big_trust_alt/ui/window.py:624
+#, python-brace-format
+msgid "Installing {name}"
+msgstr "Instalando {name}"
+
+#: src/big_trust_alt/ui/window.py:626
+msgid "Starting…"
+msgstr "Iniciando…"
+
+#: src/big_trust_alt/ui/window.py:633
+msgid "Show messages"
+msgstr "Mostrar mensagens"
+
+#: src/big_trust_alt/ui/window.py:639
+msgid "Cancelling…"
+msgstr "Cancelando…"
+
+#: src/big_trust_alt/ui/window.py:641
+msgid "Cancel in the Pamac window."
+msgstr "Cancele na janela do Pamac."
+
+#: src/big_trust_alt/ui/window.py:649
+msgid "Installation"
+msgstr "Instalação"
+
+#: src/big_trust_alt/ui/window.py:689
+#, python-brace-format
+msgid "{name} is installed"
+msgstr "{name} está instalado"
+
+#: src/big_trust_alt/ui/window.py:690
+msgid "Installed and verified."
+msgstr "Instalado e verificado."
+
+#: src/big_trust_alt/ui/window.py:697
+msgid "Installation cancelled"
+msgstr "Instalação cancelada"
+
+#: src/big_trust_alt/ui/window.py:698
+msgid "Installation not completed"
+msgstr "Instalação não concluída"
+
+#: src/big_trust_alt/ui/window.py:717
+msgid "Installed; find it in the applications menu."
+msgstr "Instalado; procure-o no menu de aplicativos."
+
+#: src/big_trust_alt/ui/window.py:730
+msgid "Worth a look (hints, not a verdict):"
+msgstr "Vale conferir (indícios, não um veredito):"
+
+#: src/big_trust_alt/ui/window.py:734
+msgid "First lines of the file, shown as text. Nothing was run."
+msgstr "Primeiras linhas do arquivo, mostradas como texto. Nada foi executado."
+
+#: src/big_trust_alt/ui/window.py:741
+msgid "Content"
+msgstr "Conteúdo"
+
+#: src/big_trust_alt/ui/window.py:749
+msgid "A Windows program, e.g. Photoshop"
+msgstr "Um programa do Windows, por exemplo Photoshop"
+
+#: src/big_trust_alt/ui/window.py:754
+msgid "Type a program name to see its Linux options."
+msgstr "Digite o nome de um programa para ver as opções no Linux."
+
+#: src/big_trust_alt/ui/window.py:757
+msgid "Find an alternative"
+msgstr "Procurar alternativa"
+
+#: src/big_trust_alt/ui/window.py:796
+msgid "No Linux option is known for this program yet."
+msgstr "Ainda não conhecemos uma opção Linux para este programa."
+
+#: src/big_trust_alt/ui/window.py:802
+msgid "Alternatives"
+msgstr "Alternativas"
+
+#: src/big_trust_alt/ui/window.py:809
+#, python-brace-format
+msgid ""
+"These are different programs with a similar purpose, not Linux versions of "
+"{name}."
+msgstr "São programas diferentes com finalidade parecida, não versões Linux do {name}."
+
+#: src/big_trust_alt/ui/window.py:822
+msgid "Clear history"
+msgstr "Limpar histórico"
+
+#: src/big_trust_alt/ui/window.py:833
+msgid "No history"
+msgstr "Sem histórico"
+
+#: src/big_trust_alt/ui/window.py:834
+msgid ""
+"Analyzed files and your choices appear here. Only file names are kept, never "
+"folders."
+msgstr "Os arquivos analisados e as suas escolhas aparecem aqui. Só os nomes dos arquivos são guardados, nunca as pastas."
+
+#: src/big_trust_alt/ui/window.py:853
+msgid "History cleared"
+msgstr "Histórico limpo"

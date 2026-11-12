@@ -1,0 +1,489 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "google-earth-pro",
+      "name": "Google Earth Pro",
+      "vendor": "Google LLC",
+      "category": "science",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "googleearthprowin*",
+          "googleearthprosetup*"
+        ],
+        "packages": [
+          "google-earth-pro-stable"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "google-earth-pro"
+        ],
+        "flatpak": [
+          "com.google.EarthPro"
+        ],
+        "desktop": [
+          "com.google.EarthPro.desktop"
+        ],
+        "website": "https://www.google.com/earth/about/versions/#download-pro"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "citrix-workspace",
+      "name": "Citrix Workspace app",
+      "vendor": "Cloud Software Group",
+      "category": "remote-desktop",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "citrixworkspace*"
+        ],
+        "packages": [
+          "icaclient"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "icaclient"
+        ],
+        "website": "https://www.citrix.com/downloads/workspace-app/linux/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "scratch",
+      "name": "Scratch Desktop",
+      "vendor": "MIT Media Lab",
+      "category": "education",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "scratch * setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "turbowarp",
+          "relation": "alternative",
+          "note": {
+            "en": "Scratch-compatible editor with a native Linux version, faster and with extras.",
+            "pt_BR": "Editor compatível com o Scratch com versão nativa para Linux, mais rápido e com extras."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "turbowarp",
+      "name": "TurboWarp",
+      "category": "education",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "turbowarp setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "turbowarp-desktop-bin"
+        ],
+        "flatpak": [
+          "org.turbowarp.TurboWarp"
+        ],
+        "desktop": [
+          "org.turbowarp.TurboWarp.desktop"
+        ],
+        "website": "https://desktop.turbowarp.org/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "bitcoin-core",
+      "name": "Bitcoin Core",
+      "category": "finance",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "bitcoin * setup*"
+        ],
+        "packages": [
+          "bitcoin-qt"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "bitcoin-qt"
+        ],
+        "flatpak": [
+          "org.bitcoincore.bitcoin-qt"
+        ],
+        "desktop": [
+          "org.bitcoin.bitcoin-qt.desktop",
+          "org.bitcoincore.bitcoin-qt.desktop"
+        ],
+        "website": "https://bitcoincore.org/en/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "vendor": "Anthropic",
+      "category": "ai",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "claude setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://claude.ai/"
+      },
+      "alternatives": [
+        {
+          "id": "alpaca",
+          "relation": "alternative",
+          "note": {
+            "en": "Desktop chat app for local AI models through Ollama.",
+            "pt_BR": "Aplicativo de chat para modelos de IA locais via Ollama."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown",
+        "note": {
+          "en": "This service works in the browser on Linux.",
+          "pt_BR": "Este serviço funciona no navegador no Linux."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "vendor": "OpenAI",
+      "category": "ai",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "chatgpt*installer*",
+          "chatgpt*setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://chatgpt.com/"
+      },
+      "alternatives": [
+        {
+          "id": "alpaca",
+          "relation": "alternative",
+          "note": {
+            "en": "Desktop chat app for local AI models through Ollama.",
+            "pt_BR": "Aplicativo de chat para modelos de IA locais via Ollama."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown",
+        "note": {
+          "en": "This service works in the browser on Linux.",
+          "pt_BR": "Este serviço funciona no navegador no Linux."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "microsoft-copilot",
+      "name": "Microsoft Copilot",
+      "vendor": "Microsoft Corporation",
+      "category": "ai",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "microsoft copilot*installer*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://copilot.microsoft.com/"
+      },
+      "alternatives": [
+        {
+          "id": "alpaca",
+          "relation": "alternative",
+          "note": {
+            "en": "Desktop chat app for local AI models through Ollama.",
+            "pt_BR": "Aplicativo de chat para modelos de IA locais via Ollama."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown",
+        "note": {
+          "en": "This service works in the browser on Linux.",
+          "pt_BR": "Este serviço funciona no navegador no Linux."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "vendor": "Perplexity AI",
+      "category": "ai",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "perplexity*setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://www.perplexity.ai/"
+      },
+      "alternatives": [
+        {
+          "id": "alpaca",
+          "relation": "alternative",
+          "note": {
+            "en": "Desktop chat app for local AI models through Ollama.",
+            "pt_BR": "Aplicativo de chat para modelos de IA locais via Ollama."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown",
+        "note": {
+          "en": "This service works in the browser on Linux.",
+          "pt_BR": "Este serviço funciona no navegador no Linux."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "category": "ai",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "ollamasetup*"
+        ],
+        "packages": [
+          "ollama"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "ollama"
+        ],
+        "website": "https://ollama.com/download/linux"
+      },
+      "alternatives": [
+        {
+          "id": "alpaca",
+          "relation": "alternative",
+          "note": {
+            "en": "Desktop chat app for local AI models through Ollama.",
+            "pt_BR": "Aplicativo de chat para modelos de IA locais via Ollama."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "alpaca",
+      "name": "Alpaca",
+      "category": "ai",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "alpaca"
+        ]
+      },
+      "linux": {
+        "flatpak": [
+          "com.jeffser.Alpaca"
+        ],
+        "desktop": [
+          "com.jeffser.Alpaca.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "flathub"
+      ]
+    }
+  ]
+}

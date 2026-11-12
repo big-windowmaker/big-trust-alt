@@ -1,0 +1,8 @@
+build/
+__pycache__/
+*.pyc
+pkgbuild/src/
+pkgbuild/pkg/
+pkgbuild/big-trust-alt/
+*.pkg.tar.*
+*.log

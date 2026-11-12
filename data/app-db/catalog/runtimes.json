@@ -1,0 +1,384 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "java-runtime",
+      "name": "Java Runtime Environment (JRE)",
+      "vendor": "Oracle / OpenJDK",
+      "category": "runtime",
+      "kind": "runtime",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "jre * windows*",
+          "javasetup*",
+          "openjdk*jre*windows*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "jre-openjdk",
+          "jre21-openjdk",
+          "jre17-openjdk",
+          "jre8-openjdk"
+        ],
+        "desktop": [
+          "java-java-openjdk.desktop",
+          "java-java21-openjdk.desktop",
+          "java-java17-openjdk.desktop"
+        ],
+        "website": "https://wiki.archlinux.org/title/Java"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "Install OpenJDK from the repositories for .jar programs. Inside Wine, Java must be installed in the same prefix as the program that needs it.",
+          "pt_BR": "Instale o OpenJDK pelos repositórios para programas .jar. No Wine, o Java precisa ser instalado no mesmo prefixo do programa que o usa."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "java-jdk",
+      "name": "Java Development Kit (JDK)",
+      "vendor": "Oracle / OpenJDK",
+      "category": "runtime",
+      "kind": "runtime",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "jdk * windows*",
+          "openjdk*jdk*windows*",
+          "microsoft jdk*windows*",
+          "zulu*jdk*win*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "jdk-openjdk",
+          "jdk21-openjdk"
+        ],
+        "website": "https://wiki.archlinux.org/title/Java"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "Install OpenJDK from the repositories; Linux IDEs and build tools use it directly.",
+          "pt_BR": "Instale o OpenJDK pelos repositórios; as IDEs e ferramentas de build do Linux o usam diretamente."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "dotnet-runtime",
+      "name": ".NET Runtime",
+      "vendor": "Microsoft Corporation",
+      "category": "runtime",
+      "kind": "runtime",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "dotnet runtime *win*",
+          "aspnetcore runtime *win*",
+          "dotnet hosting *win*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "dotnet-runtime",
+          "aspnet-runtime"
+        ],
+        "website": "https://learn.microsoft.com/dotnet/core/install/linux"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "Modern .NET runs natively on Linux. Inside Wine, install it per prefix (for example with winetricks); native apps do not need the Windows installer.",
+          "pt_BR": "O .NET moderno roda nativamente no Linux. No Wine, instale-o por prefixo (por exemplo, com o winetricks); apps nativos não precisam do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "dotnet-desktop-runtime",
+      "name": ".NET Desktop Runtime",
+      "vendor": "Microsoft Corporation",
+      "category": "runtime",
+      "kind": "runtime",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "windowsdesktop runtime*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "windows": {
+        "wine": "partial",
+        "note": {
+          "en": "Install it in the program's Wine prefix (winetricks has dotnetdesktop verbs) or let Bottles/Lutris handle it.",
+          "pt_BR": "Instale-o no prefixo Wine do programa (o winetricks tem verbos dotnetdesktop) ou deixe o Bottles/Lutris cuidar disso."
+        }
+      },
+      "message": {
+        "en": "The .NET Desktop Runtime (WPF/Windows Forms) exists only for Windows. It is only useful inside Wine, for the program that asked for it.",
+        "pt_BR": "O .NET Desktop Runtime (WPF/Windows Forms) existe só para Windows. Ele só é útil dentro do Wine, para o programa que o pediu."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt"
+      ]
+    },
+    {
+      "id": "dotnet-sdk",
+      "name": ".NET SDK",
+      "vendor": "Microsoft Corporation",
+      "category": "runtime",
+      "kind": "runtime",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "dotnet sdk *win*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "dotnet-sdk"
+        ],
+        "website": "https://learn.microsoft.com/dotnet/core/install/linux"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "Install the Linux .NET SDK from the repositories.",
+          "pt_BR": "Instale o .NET SDK para Linux pelos repositórios."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "dotnet-framework",
+      "name": ".NET Framework",
+      "vendor": "Microsoft Corporation",
+      "category": "runtime",
+      "kind": "runtime",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "ndp4*",
+          "dotnetfx*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "windows": {
+        "wine": "partial",
+        "note": {
+          "en": "Inside Wine, install it per prefix with winetricks (e.g. dotnet48); Wine also ships wine-mono for many apps.",
+          "pt_BR": "No Wine, instale-o por prefixo com o winetricks (ex.: dotnet48); o Wine também traz o wine-mono para muitos apps."
+        }
+      },
+      "message": {
+        "en": ".NET Framework is Windows-only and is not needed by Linux programs.",
+        "pt_BR": "O .NET Framework é exclusivo do Windows e não é necessário para programas do Linux."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt"
+      ]
+    },
+    {
+      "id": "vcredist",
+      "name": "Microsoft Visual C++ Redistributable",
+      "vendor": "Microsoft Corporation",
+      "category": "runtime",
+      "kind": "runtime",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "vc redist*",
+          "vcredist*"
+        ],
+        "products": [
+          "microsoft visual c++ redistributable"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "windows": {
+        "wine": "partial",
+        "note": {
+          "en": "If a Windows program in Wine needs it, install it in that prefix: winetricks vcrun2022 (Steam/Proton handles this per game).",
+          "pt_BR": "Se um programa do Windows no Wine precisar, instale no prefixo dele: winetricks vcrun2022 (Steam/Proton faz isso por jogo)."
+        }
+      },
+      "message": {
+        "en": "Visual C++ runtimes are Windows libraries and are not needed by Linux programs.",
+        "pt_BR": "As bibliotecas do Visual C++ são do Windows e não são necessárias para programas do Linux."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt"
+      ]
+    },
+    {
+      "id": "directx",
+      "name": "DirectX End-User Runtime",
+      "vendor": "Microsoft Corporation",
+      "category": "runtime",
+      "kind": "runtime",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "dxwebsetup*",
+          "directx * redist*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "windows": {
+        "wine": "partial",
+        "note": {
+          "en": "Old games may need extra DLLs in their prefix: winetricks d3dx9 / d3dcompiler_47.",
+          "pt_BR": "Jogos antigos podem precisar de DLLs extras no prefixo: winetricks d3dx9 / d3dcompiler_47."
+        }
+      },
+      "message": {
+        "en": "DirectX is not used by Linux programs. Wine and Proton translate DirectX to Vulkan (DXVK, VKD3D).",
+        "pt_BR": "O DirectX não é usado por programas do Linux. O Wine e o Proton traduzem DirectX para Vulkan (DXVK, VKD3D)."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt"
+      ]
+    },
+    {
+      "id": "xna-framework",
+      "name": "Microsoft XNA Framework Redistributable",
+      "vendor": "Microsoft Corporation",
+      "category": "runtime",
+      "kind": "runtime",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "xnafx*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "windows": {
+        "wine": "partial",
+        "note": {
+          "en": "Install it in the game's prefix with winetricks xna40.",
+          "pt_BR": "Instale-o no prefixo do jogo com winetricks xna40."
+        }
+      },
+      "message": {
+        "en": "XNA is a Windows game runtime; it is only useful inside Wine for the game that needs it.",
+        "pt_BR": "O XNA é um runtime de jogos do Windows; só é útil no Wine para o jogo que precisa dele."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt"
+      ]
+    },
+    {
+      "id": "webview2",
+      "name": "Microsoft Edge WebView2 Runtime",
+      "vendor": "Microsoft Corporation",
+      "category": "runtime",
+      "kind": "runtime",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "microsoftedgewebview2*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "windows": {
+        "wine": "unknown"
+      },
+      "message": {
+        "en": "WebView2 is a Windows component used by some Windows apps; Linux programs do not need it.",
+        "pt_BR": "O WebView2 é um componente do Windows usado por alguns apps do Windows; programas do Linux não precisam dele."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt"
+      ]
+    }
+  ]
+}

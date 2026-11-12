@@ -1,0 +1,1538 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "gimp",
+      "name": "GIMP",
+      "aliases": [
+        "GNU Image Manipulation Program"
+      ],
+      "category": "graphics",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "gimp * setup*"
+        ],
+        "products": [
+          "gimp",
+          "gnu image manipulation program"
+        ],
+        "packages": [
+          "gimp"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "gimp"
+        ],
+        "flatpak": [
+          "org.gimp.GIMP"
+        ],
+        "desktop": [
+          "gimp.desktop",
+          "org.gimp.GIMP.desktop"
+        ],
+        "website": "https://www.gimp.org/downloads/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "krita",
+      "name": "Krita",
+      "vendor": "Krita Foundation",
+      "category": "graphics",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "krita * setup*",
+          "krita x64 *setup*"
+        ],
+        "products": [
+          "krita"
+        ],
+        "packages": [
+          "krita"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "krita"
+        ],
+        "flatpak": [
+          "org.kde.krita"
+        ],
+        "desktop": [
+          "org.kde.krita.desktop"
+        ],
+        "website": "https://krita.org/en/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "vendor": "Blender Foundation",
+      "category": "3d",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "blender * windows*"
+        ],
+        "products": [
+          "blender"
+        ],
+        "packages": [
+          "blender"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "msix",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "blender"
+        ],
+        "flatpak": [
+          "org.blender.Blender"
+        ],
+        "desktop": [
+          "blender.desktop",
+          "org.blender.Blender.desktop"
+        ],
+        "website": "https://www.blender.org/download/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "inkscape",
+      "name": "Inkscape",
+      "category": "design",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "inkscape * x64*",
+          "inkscape * x86*",
+          "inkscape * arm64*"
+        ],
+        "products": [
+          "inkscape"
+        ],
+        "packages": [
+          "inkscape"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "inkscape"
+        ],
+        "flatpak": [
+          "org.inkscape.Inkscape"
+        ],
+        "desktop": [
+          "org.inkscape.Inkscape.desktop"
+        ],
+        "website": "https://inkscape.org/release/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "paint-net",
+      "name": "Paint.NET",
+      "vendor": "dotPDN LLC",
+      "category": "graphics",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "paint net *"
+        ],
+        "products": [
+          "paint net"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "pinta",
+          "relation": "alternative",
+          "note": {
+            "en": "Simple image editor modelled on Paint.NET.",
+            "pt_BR": "Editor de imagens simples inspirado no Paint.NET."
+          }
+        },
+        {
+          "id": "krita",
+          "relation": "alternative",
+          "note": {
+            "en": "Free painting and illustration program with brushes and layers.",
+            "pt_BR": "Programa livre de pintura digital e ilustração com pincéis e camadas."
+          }
+        },
+        {
+          "id": "gimp",
+          "relation": "alternative",
+          "note": {
+            "en": "Free raster image editor with layers, masks and filters; different workflow from Photoshop.",
+            "pt_BR": "Editor de imagens livre com camadas, máscaras e filtros; fluxo de trabalho diferente do Photoshop."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "pinta",
+      "name": "Pinta",
+      "category": "graphics",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "pinta *"
+        ],
+        "packages": [
+          "pinta"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "pinta"
+        ],
+        "flatpak": [
+          "com.github.PintaProject.Pinta"
+        ],
+        "desktop": [
+          "com.github.PintaProject.Pinta.desktop"
+        ],
+        "website": "https://www.pinta-project.com/releases/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "irfanview",
+      "name": "IrfanView",
+      "category": "photo",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "iview* setup*"
+        ],
+        "products": [
+          "irfanview"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "xnview-mp",
+          "relation": "alternative",
+          "note": {
+            "en": "Fast image viewer and batch converter that runs natively on Linux.",
+            "pt_BR": "Visualizador de imagens rápido e conversor em lote com versão nativa para Linux."
+          }
+        },
+        {
+          "id": "gwenview",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE image viewer with basic editing.",
+            "pt_BR": "Visualizador de imagens do KDE com edição básica."
+          }
+        },
+        {
+          "id": "loupe",
+          "relation": "alternative",
+          "note": {
+            "en": "Simple GNOME image viewer.",
+            "pt_BR": "Visualizador de imagens simples do GNOME."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "xnview-mp",
+      "name": "XnView MP",
+      "vendor": "XnSoft",
+      "category": "photo",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "xnviewmp win*",
+          "xnview win*"
+        ],
+        "packages": [
+          "xnview"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "xnviewmp"
+        ],
+        "flatpak": [
+          "com.xnview.XnViewMP"
+        ],
+        "desktop": [
+          "com.xnview.XnViewMP.desktop"
+        ],
+        "website": "https://www.xnview.com/en/xnview/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "gwenview",
+      "name": "Gwenview",
+      "vendor": "KDE",
+      "category": "photo",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "gwenview"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "gwenview"
+        ],
+        "flatpak": [
+          "org.kde.gwenview"
+        ],
+        "desktop": [
+          "org.kde.gwenview.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "loupe",
+      "name": "Loupe (Image Viewer)",
+      "vendor": "The GNOME Project",
+      "category": "photo",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "loupe"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "loupe"
+        ],
+        "flatpak": [
+          "org.gnome.Loupe"
+        ],
+        "desktop": [
+          "org.gnome.Loupe.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "photoscape",
+      "name": "PhotoScape",
+      "category": "photo",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "photoscape*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "gimp",
+          "relation": "alternative",
+          "note": {
+            "en": "Free raster image editor with layers, masks and filters; different workflow from Photoshop.",
+            "pt_BR": "Editor de imagens livre com camadas, máscaras e filtros; fluxo de trabalho diferente do Photoshop."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "sharex",
+      "name": "ShareX",
+      "category": "utilities",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "sharex *"
+        ],
+        "products": [
+          "sharex"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "flameshot",
+          "relation": "alternative",
+          "note": {
+            "en": "Screenshot tool with annotation and upload.",
+            "pt_BR": "Ferramenta de captura de tela com anotações e envio."
+          }
+        },
+        {
+          "id": "spectacle",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE screenshot and screen recording tool.",
+            "pt_BR": "Ferramenta de captura e gravação de tela do KDE."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "greenshot",
+      "name": "Greenshot",
+      "category": "utilities",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "greenshot installer*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "flameshot",
+          "relation": "alternative",
+          "note": {
+            "en": "Screenshot tool with annotation and upload.",
+            "pt_BR": "Ferramenta de captura de tela com anotações e envio."
+          }
+        },
+        {
+          "id": "spectacle",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE screenshot and screen recording tool.",
+            "pt_BR": "Ferramenta de captura e gravação de tela do KDE."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "flameshot",
+      "name": "Flameshot",
+      "category": "utilities",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "flameshot *"
+        ],
+        "packages": [
+          "flameshot"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "flameshot"
+        ],
+        "flatpak": [
+          "org.flameshot.Flameshot"
+        ],
+        "desktop": [
+          "org.flameshot.Flameshot.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "spectacle",
+      "name": "Spectacle",
+      "vendor": "KDE",
+      "category": "utilities",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "spectacle"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "spectacle"
+        ],
+        "desktop": [
+          "org.kde.spectacle.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman"
+      ]
+    },
+    {
+      "id": "adobe-creative-cloud",
+      "name": "Adobe Creative Cloud",
+      "vendor": "Adobe Inc.",
+      "category": "design",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "creative cloud set up*",
+          "adobe creative cloud*installer*",
+          "creative cloud installer*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://www.adobe.com/apps/all/web"
+      },
+      "alternatives": [
+        {
+          "id": "gimp",
+          "relation": "alternative",
+          "note": {
+            "en": "Free raster image editor with layers, masks and filters; different workflow from Photoshop.",
+            "pt_BR": "Editor de imagens livre com camadas, máscaras e filtros; fluxo de trabalho diferente do Photoshop."
+          }
+        },
+        {
+          "id": "inkscape",
+          "relation": "alternative",
+          "note": {
+            "en": "Free vector graphics editor (SVG), comparable to Illustrator for most tasks.",
+            "pt_BR": "Editor de gráficos vetoriais livre (SVG), comparável ao Illustrator na maioria das tarefas."
+          }
+        },
+        {
+          "id": "krita",
+          "relation": "alternative",
+          "note": {
+            "en": "Free painting and illustration program with brushes and layers.",
+            "pt_BR": "Programa livre de pintura digital e ilustração com pincéis e camadas."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Current Adobe Creative Cloud apps do not run under Wine.",
+          "pt_BR": "Os aplicativos atuais da Adobe Creative Cloud não funcionam no Wine."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "adobe-photoshop",
+      "name": "Adobe Photoshop",
+      "vendor": "Adobe Inc.",
+      "category": "graphics",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "adobe*photoshop*installer*",
+          "photoshop set up*"
+        ],
+        "products": [
+          "adobe photoshop"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "gimp",
+          "relation": "alternative",
+          "note": {
+            "en": "Free raster image editor with layers, masks and filters; different workflow from Photoshop.",
+            "pt_BR": "Editor de imagens livre com camadas, máscaras e filtros; fluxo de trabalho diferente do Photoshop."
+          }
+        },
+        {
+          "id": "krita",
+          "relation": "alternative",
+          "note": {
+            "en": "Free painting and illustration program with brushes and layers.",
+            "pt_BR": "Programa livre de pintura digital e ilustração com pincéis e camadas."
+          }
+        },
+        {
+          "id": "adobe-creative-cloud",
+          "relation": "web",
+          "note": {
+            "en": "Adobe offers some apps (Photoshop, Express) in the browser.",
+            "pt_BR": "A Adobe oferece alguns aplicativos (Photoshop, Express) no navegador."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Current Adobe Creative Cloud apps do not run under Wine.",
+          "pt_BR": "Os aplicativos atuais da Adobe Creative Cloud não funcionam no Wine."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "adobe-photoshop-cs6",
+      "name": "Adobe Photoshop CS6",
+      "vendor": "Adobe Systems",
+      "category": "graphics",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "photoshop*cs6*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "gimp",
+          "relation": "alternative",
+          "note": {
+            "en": "Free raster image editor with layers, masks and filters; different workflow from Photoshop.",
+            "pt_BR": "Editor de imagens livre com camadas, máscaras e filtros; fluxo de trabalho diferente do Photoshop."
+          }
+        },
+        {
+          "id": "krita",
+          "relation": "alternative",
+          "note": {
+            "en": "Free painting and illustration program with brushes and layers.",
+            "pt_BR": "Programa livre de pintura digital e ilustração com pincéis e camadas."
+          }
+        },
+        {
+          "id": "bottles",
+          "relation": "launcher",
+          "note": {
+            "en": "Can try to run old Windows versions in a Wine prefix; results vary.",
+            "pt_BR": "Pode tentar rodar versões antigas para Windows em um prefixo Wine; o resultado varia."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "adobe-lightroom",
+      "name": "Adobe Lightroom",
+      "vendor": "Adobe Inc.",
+      "category": "photo",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "adobe*lightroom*installer*",
+          "lightroom set up*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "darktable",
+          "relation": "alternative",
+          "note": {
+            "en": "Free RAW photo developer and library, similar to Lightroom.",
+            "pt_BR": "Revelador de fotos RAW e catálogo livre, semelhante ao Lightroom."
+          }
+        },
+        {
+          "id": "rawtherapee",
+          "relation": "alternative",
+          "note": {
+            "en": "Free RAW photo processing program.",
+            "pt_BR": "Programa livre de processamento de fotos RAW."
+          }
+        },
+        {
+          "id": "adobe-creative-cloud",
+          "relation": "web",
+          "note": {
+            "en": "Adobe offers some apps (Photoshop, Express) in the browser.",
+            "pt_BR": "A Adobe oferece alguns aplicativos (Photoshop, Express) no navegador."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Current Adobe Creative Cloud apps do not run under Wine.",
+          "pt_BR": "Os aplicativos atuais da Adobe Creative Cloud não funcionam no Wine."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "adobe-illustrator",
+      "name": "Adobe Illustrator",
+      "vendor": "Adobe Inc.",
+      "category": "design",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "adobe*illustrator*installer*",
+          "illustrator set up*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "inkscape",
+          "relation": "alternative",
+          "note": {
+            "en": "Free vector graphics editor (SVG), comparable to Illustrator for most tasks.",
+            "pt_BR": "Editor de gráficos vetoriais livre (SVG), comparável ao Illustrator na maioria das tarefas."
+          }
+        },
+        {
+          "id": "adobe-creative-cloud",
+          "relation": "web",
+          "note": {
+            "en": "Adobe offers some apps (Photoshop, Express) in the browser.",
+            "pt_BR": "A Adobe oferece alguns aplicativos (Photoshop, Express) no navegador."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Current Adobe Creative Cloud apps do not run under Wine.",
+          "pt_BR": "Os aplicativos atuais da Adobe Creative Cloud não funcionam no Wine."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "adobe-illustrator-cs6",
+      "name": "Adobe Illustrator CS6",
+      "vendor": "Adobe Systems",
+      "category": "design",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "illustrator*cs6*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "inkscape",
+          "relation": "alternative",
+          "note": {
+            "en": "Free vector graphics editor (SVG), comparable to Illustrator for most tasks.",
+            "pt_BR": "Editor de gráficos vetoriais livre (SVG), comparável ao Illustrator na maioria das tarefas."
+          }
+        },
+        {
+          "id": "bottles",
+          "relation": "launcher",
+          "note": {
+            "en": "Can try to run old Windows versions in a Wine prefix; results vary.",
+            "pt_BR": "Pode tentar rodar versões antigas para Windows em um prefixo Wine; o resultado varia."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "affinity",
+      "name": "Affinity (Photo, Designer, Publisher)",
+      "vendor": "Serif / Canva",
+      "category": "design",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "affinity photo*",
+          "affinity designer*",
+          "affinity publisher*",
+          "affinity x64*",
+          "affinity setup*"
+        ],
+        "formats": [
+          "exe",
+          "msix"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "gimp",
+          "relation": "alternative",
+          "note": {
+            "en": "Free raster image editor with layers, masks and filters; different workflow from Photoshop.",
+            "pt_BR": "Editor de imagens livre com camadas, máscaras e filtros; fluxo de trabalho diferente do Photoshop."
+          }
+        },
+        {
+          "id": "inkscape",
+          "relation": "alternative",
+          "note": {
+            "en": "Free vector graphics editor (SVG), comparable to Illustrator for most tasks.",
+            "pt_BR": "Editor de gráficos vetoriais livre (SVG), comparável ao Illustrator na maioria das tarefas."
+          }
+        },
+        {
+          "id": "scribus",
+          "relation": "alternative",
+          "note": {
+            "en": "Free desktop publishing program, comparable to Affinity Publisher.",
+            "pt_BR": "Programa livre de editoração eletrônica, comparável ao Affinity Publisher."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial",
+        "note": {
+          "en": "Community scripts run Affinity under a patched Wine; not officially supported.",
+          "pt_BR": "Scripts da comunidade rodam o Affinity com um Wine modificado; sem suporte oficial."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "vendor": "Figma, Inc.",
+      "category": "design",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "figmasetup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://www.figma.com/"
+      },
+      "alternatives": [
+        {
+          "id": "penpot",
+          "relation": "alternative",
+          "note": {
+            "en": "Open-source design and prototyping tool, comparable to Figma.",
+            "pt_BR": "Ferramenta de design e protótipos de código aberto, comparável ao Figma."
+          }
+        },
+        {
+          "id": "inkscape",
+          "relation": "alternative",
+          "note": {
+            "en": "Free vector graphics editor (SVG), comparable to Illustrator for most tasks.",
+            "pt_BR": "Editor de gráficos vetoriais livre (SVG), comparável ao Illustrator na maioria das tarefas."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown",
+        "note": {
+          "en": "Figma works in the browser on Linux.",
+          "pt_BR": "O Figma funciona no navegador no Linux."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "penpot",
+      "name": "Penpot",
+      "category": "design",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "penpot desktop*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "flatpak": [
+          "com.authormore.penpotdesktop"
+        ],
+        "desktop": [
+          "com.authormore.penpotdesktop.desktop"
+        ],
+        "website": "https://penpot.app/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "vendor": "Canva Pty Ltd",
+      "category": "design",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "canva*setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://www.canva.com/"
+      },
+      "alternatives": [
+        {
+          "id": "inkscape",
+          "relation": "alternative",
+          "note": {
+            "en": "Free vector graphics editor (SVG), comparable to Illustrator for most tasks.",
+            "pt_BR": "Editor de gráficos vetoriais livre (SVG), comparável ao Illustrator na maioria das tarefas."
+          }
+        },
+        {
+          "id": "penpot",
+          "relation": "alternative",
+          "note": {
+            "en": "Open-source design and prototyping tool, comparable to Figma.",
+            "pt_BR": "Ferramenta de design e protótipos de código aberto, comparável ao Figma."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown",
+        "note": {
+          "en": "Canva works in the browser on Linux.",
+          "pt_BR": "O Canva funciona no navegador no Linux."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "autodesk-sketchbook",
+      "name": "Autodesk SketchBook",
+      "category": "graphics",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "sketchbook*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "krita",
+          "relation": "alternative",
+          "note": {
+            "en": "Free painting and illustration program with brushes and layers.",
+            "pt_BR": "Programa livre de pintura digital e ilustração com pincéis e camadas."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "cinema-4d",
+      "name": "Cinema 4D",
+      "vendor": "Maxon",
+      "category": "3d",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "cinema4d*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "blender",
+          "relation": "alternative",
+          "note": {
+            "en": "Free 3D suite for modelling, animation and rendering.",
+            "pt_BR": "Suíte 3D livre para modelagem, animação e renderização."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "darktable",
+      "name": "darktable",
+      "category": "photo",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "darktable * win64*"
+        ],
+        "packages": [
+          "darktable"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "darktable"
+        ],
+        "flatpak": [
+          "org.darktable.Darktable"
+        ],
+        "desktop": [
+          "org.darktable.darktable.desktop",
+          "org.darktable.Darktable.desktop"
+        ],
+        "website": "https://www.darktable.org/install/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "rawtherapee",
+      "name": "RawTherapee",
+      "category": "photo",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "rawtherapee * win*"
+        ],
+        "packages": [
+          "rawtherapee"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "rawtherapee"
+        ],
+        "flatpak": [
+          "com.rawtherapee.RawTherapee"
+        ],
+        "desktop": [
+          "rawtherapee.desktop",
+          "com.rawtherapee.RawTherapee.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "scribus",
+      "name": "Scribus",
+      "category": "design",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "scribus * windows*"
+        ],
+        "packages": [
+          "scribus"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "scribus"
+        ],
+        "flatpak": [
+          "net.scribus.Scribus"
+        ],
+        "desktop": [
+          "scribus.desktop",
+          "net.scribus.Scribus.desktop"
+        ],
+        "website": "https://www.scribus.net/downloads/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "freecad",
+      "name": "FreeCAD",
+      "category": "3d",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "freecad * windows*"
+        ],
+        "packages": [
+          "freecad"
+        ],
+        "formats": [
+          "exe",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "freecad"
+        ],
+        "flatpak": [
+          "org.freecad.FreeCAD"
+        ],
+        "desktop": [
+          "org.freecad.FreeCAD.desktop"
+        ],
+        "website": "https://www.freecad.org/downloads.php"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "ultimaker-cura",
+      "name": "UltiMaker Cura",
+      "vendor": "UltiMaker",
+      "category": "3d",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "ultimaker cura*"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "cura-bin"
+        ],
+        "flatpak": [
+          "com.ultimaker.cura"
+        ],
+        "desktop": [
+          "com.ultimaker.cura.desktop"
+        ],
+        "website": "https://ultimaker.com/software/ultimaker-cura/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    }
+  ]
+}

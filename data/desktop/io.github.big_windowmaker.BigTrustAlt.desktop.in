@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Big Trust Alt
+GenericName=Program compatibility assistant
+Comment=Find the best way to use a downloaded program on Linux
+Keywords=exe;msi;windows;wine;install;alternative;deb;rpm;appimage;flatpak;
+Exec=big-trust-alt %F
+Icon=io.github.big_windowmaker.BigTrustAlt
+Terminal=false
+Categories=System;PackageManager;Utility;
+StartupNotify=true
+StartupWMClass=io.github.big_windowmaker.BigTrustAlt
+MimeType=application/x-ms-dos-executable;application/x-msdownload;application/vnd.microsoft.portable-executable;application/x-msi;application/msix;application/appx;application/x-bat;

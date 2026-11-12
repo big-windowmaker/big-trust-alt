@@ -1,0 +1,19 @@
+line-length = 132
+target-version = "py312"
+src = ["src", "tests"]
+
+[lint]
+select = ["E", "F", "W", "B", "UP", "S", "I"]
+ignore = [
+  "S603",  # subprocess with argument lists is the intended pattern
+  "S607",  # tools are looked up in PATH on purpose (pacman, flatpak, wine…)
+  "S310",  # urlopen is only used with the fixed https AUR endpoint
+  "S101",
+  "B008",
+  "I001",
+]
+
+[lint.per-file-ignores]
+"tests/*" = ["S", "B", "E501"]
+"tools/pt_BR.py" = ["E501"]
+"tools/update_po.py" = ["E501"]

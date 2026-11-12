@@ -1,0 +1,63 @@
+# Maintainer: Rafael Ruscher <rruscher@gmail.com>
+# Maintainer: Barnabé Di Kartola <barnabedikartola@gmail.com>
+# Big WindowMaker: https://github.com/big-windowmaker
+#
+# Big Trust Alt: identifica programas baixados (.exe, .msi, .deb, .rpm,
+# AppImage…) sem executá-los e mostra a melhor maneira de usá-los no
+# BigLinux: pacote dos repositórios, Flatpak, AUR, site oficial, uma
+# alternativa funcional ou, por escolha do usuário, o Wine.
+#
+# A instalação não muda nenhuma associação de arquivo: o .desktop só se
+# declara capaz de abrir os tipos do Windows. Tornar-se o padrão é uma
+# opção nas Preferências, com volta ao que era antes.
+#
+# BIG_TRUST_ALT_SOURCE troca a fonte (ex.: git+file:///caminho/big-trust-alt).
+pkgname=big-trust-alt
+pkgver=0.1.0
+pkgrel=1
+pkgdesc='Find the best way to use a downloaded program on Linux: native packages, Flatpak, AUR or Wine'
+arch=(any)
+url='https://github.com/big-windowmaker/big-trust-alt'
+license=('GPL-3.0-or-later')
+depends=(
+  gtk4
+  hicolor-icon-theme
+  libadwaita
+  pacman          # repositórios: pacman -Sl / -Qq
+  python
+  python-gobject
+)
+makedepends=(git gettext)
+checkdepends=(python-pytest)
+optdepends=(
+  'pamac-gtk: instalar dos repositórios e do AUR com revisão da transação (pamac-installer)'
+  'flatpak: aplicativos do Flathub'
+  'big-pkg-installer: converter e instalar pacotes .deb e .rpm'
+  'wine: executar programas do Windows, por escolha do usuário'
+  'jre-openjdk: executar aplicativos Java (.jar)'
+)
+source=("big-trust-alt::${BIG_TRUST_ALT_SOURCE:-git+$url.git#tag=v$pkgver}")
+sha256sums=('SKIP')
+
+prepare() {
+  local v
+  v=$(sed -n 's/^__version__ = "\(.*\)"$/\1/p' big-trust-alt/src/big_trust_alt/__init__.py)
+  if [[ ${v} != "${pkgver}" ]]; then
+    echo "__init__.py diz ${v}, mas pkgver=${pkgver}" >&2
+    return 1
+  fi
+}
+
+build() {
+  make -C big-trust-alt build
+}
+
+check() {
+  make -C big-trust-alt check
+}
+
+package() {
+  make -C big-trust-alt install DESTDIR="$pkgdir" PREFIX=/usr
+  install -Dm644 big-trust-alt/README.md "$pkgdir/usr/share/doc/$pkgname/README.md"
+  install -Dm644 big-trust-alt/LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

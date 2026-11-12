@@ -1,0 +1,2549 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "7-zip",
+      "name": "7-Zip",
+      "vendor": "Igor Pavlov",
+      "category": "archive",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "7z1???",
+          "7z1??? *",
+          "7z2???",
+          "7z2??? *"
+        ],
+        "products": [
+          "7 zip"
+        ],
+        "packages": [
+          "7zip",
+          "p7zip-full"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "7zip"
+        ],
+        "website": "https://www.7-zip.org/download.html"
+      },
+      "alternatives": [
+        {
+          "id": "peazip",
+          "relation": "alternative",
+          "note": {
+            "en": "Cross-platform archiver with a WinRAR/7-Zip style interface.",
+            "pt_BR": "Compactador multiplataforma com interface no estilo do WinRAR/7-Zip."
+          }
+        },
+        {
+          "id": "ark",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE archive manager: zip, 7z, rar (extract), tar and more.",
+            "pt_BR": "Gerenciador de arquivos compactados do KDE: zip, 7z, rar (extração), tar e outros."
+          }
+        },
+        {
+          "id": "file-roller",
+          "relation": "alternative",
+          "note": {
+            "en": "GNOME archive manager for zip, 7z, tar and more.",
+            "pt_BR": "Gerenciador de arquivos compactados do GNOME para zip, 7z, tar e outros."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "7-Zip has an official Linux command-line version (7z); graphical managers handle .7z too.",
+          "pt_BR": "O 7-Zip tem versão oficial de linha de comando para Linux (7z); os gerenciadores gráficos também abrem .7z."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "winrar",
+      "name": "WinRAR",
+      "vendor": "win.rar GmbH",
+      "category": "archive",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "winrar *",
+          "wrar*"
+        ],
+        "products": [
+          "winrar"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "unrar",
+          "rar"
+        ],
+        "website": "https://www.rarlab.com/download.htm"
+      },
+      "alternatives": [
+        {
+          "id": "peazip",
+          "relation": "alternative",
+          "note": {
+            "en": "Cross-platform archiver with a WinRAR/7-Zip style interface.",
+            "pt_BR": "Compactador multiplataforma com interface no estilo do WinRAR/7-Zip."
+          }
+        },
+        {
+          "id": "ark",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE archive manager: zip, 7z, rar (extract), tar and more.",
+            "pt_BR": "Gerenciador de arquivos compactados do KDE: zip, 7z, rar (extração), tar e outros."
+          }
+        },
+        {
+          "id": "file-roller",
+          "relation": "alternative",
+          "note": {
+            "en": "GNOME archive manager for zip, 7z, tar and more.",
+            "pt_BR": "Gerenciador de arquivos compactados do GNOME para zip, 7z, tar e outros."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "partial",
+        "note": {
+          "en": "RARLAB offers rar/unrar for Linux on the command line; graphical archivers use them to open .rar files.",
+          "pt_BR": "A RARLAB oferece rar/unrar para Linux na linha de comando; os compactadores gráficos os usam para abrir .rar."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "winzip",
+      "name": "WinZip",
+      "vendor": "Corel / Alludo",
+      "category": "archive",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "winzip*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "ark",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE archive manager: zip, 7z, rar (extract), tar and more.",
+            "pt_BR": "Gerenciador de arquivos compactados do KDE: zip, 7z, rar (extração), tar e outros."
+          }
+        },
+        {
+          "id": "file-roller",
+          "relation": "alternative",
+          "note": {
+            "en": "GNOME archive manager for zip, 7z, tar and more.",
+            "pt_BR": "Gerenciador de arquivos compactados do GNOME para zip, 7z, tar e outros."
+          }
+        },
+        {
+          "id": "peazip",
+          "relation": "alternative",
+          "note": {
+            "en": "Cross-platform archiver with a WinRAR/7-Zip style interface.",
+            "pt_BR": "Compactador multiplataforma com interface no estilo do WinRAR/7-Zip."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "peazip",
+      "name": "PeaZip",
+      "category": "archive",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "peazip * win*"
+        ],
+        "packages": [
+          "peazip"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "peazip"
+        ],
+        "flatpak": [
+          "io.github.peazip.PeaZip"
+        ],
+        "desktop": [
+          "peazip.desktop",
+          "io.github.peazip.PeaZip.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "ark",
+      "name": "Ark",
+      "vendor": "KDE",
+      "category": "archive",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "ark"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "ark"
+        ],
+        "flatpak": [
+          "org.kde.ark"
+        ],
+        "desktop": [
+          "org.kde.ark.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "file-roller",
+      "name": "File Roller (Archive Manager)",
+      "vendor": "The GNOME Project",
+      "category": "archive",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "file-roller"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "file-roller"
+        ],
+        "flatpak": [
+          "org.gnome.FileRoller"
+        ],
+        "desktop": [
+          "org.gnome.FileRoller.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "anydesk",
+      "name": "AnyDesk",
+      "vendor": "AnyDesk Software GmbH",
+      "category": "remote-desktop",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "anydesk",
+          "anydesk *"
+        ],
+        "products": [
+          "anydesk"
+        ],
+        "packages": [
+          "anydesk"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "anydesk-bin"
+        ],
+        "flatpak": [
+          "com.anydesk.Anydesk"
+        ],
+        "desktop": [
+          "com.anydesk.Anydesk.desktop"
+        ],
+        "website": "https://anydesk.com/en/downloads/linux"
+      },
+      "alternatives": [
+        {
+          "id": "rustdesk",
+          "relation": "alternative",
+          "note": {
+            "en": "Open-source remote support tool, similar to TeamViewer and AnyDesk.",
+            "pt_BR": "Ferramenta de suporte remoto de código aberto, semelhante ao TeamViewer e ao AnyDesk."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "teamviewer",
+      "name": "TeamViewer",
+      "vendor": "TeamViewer Germany GmbH",
+      "category": "remote-desktop",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "teamviewer setup*",
+          "teamviewer host*",
+          "teamviewerqs*",
+          "teamviewer full*"
+        ],
+        "products": [
+          "teamviewer"
+        ],
+        "packages": [
+          "teamviewer",
+          "teamviewer-host"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "teamviewer"
+        ],
+        "website": "https://www.teamviewer.com/en/download/linux/"
+      },
+      "alternatives": [
+        {
+          "id": "rustdesk",
+          "relation": "alternative",
+          "note": {
+            "en": "Open-source remote support tool, similar to TeamViewer and AnyDesk.",
+            "pt_BR": "Ferramenta de suporte remoto de código aberto, semelhante ao TeamViewer e ao AnyDesk."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "rustdesk",
+      "name": "RustDesk",
+      "category": "remote-desktop",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "rustdesk *"
+        ],
+        "packages": [
+          "rustdesk"
+        ],
+        "formats": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "rustdesk-bin",
+          "rustdesk"
+        ],
+        "flatpak": [
+          "com.rustdesk.RustDesk"
+        ],
+        "desktop": [
+          "rustdesk.desktop",
+          "com.rustdesk.RustDesk.desktop"
+        ],
+        "website": "https://rustdesk.com/download"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "remmina",
+      "name": "Remmina",
+      "category": "remote-desktop",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "remmina"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "remmina"
+        ],
+        "flatpak": [
+          "org.remmina.Remmina"
+        ],
+        "desktop": [
+          "org.remmina.Remmina.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "powertoys",
+      "name": "Microsoft PowerToys",
+      "vendor": "Microsoft Corporation",
+      "category": "utilities",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "powertoys*setup*"
+        ],
+        "products": [
+          "powertoys"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "albert",
+          "relation": "alternative",
+          "note": {
+            "en": "Keyboard launcher, similar to PowerToys Run.",
+            "pt_BR": "Lançador por teclado, semelhante ao PowerToys Run."
+          }
+        },
+        {
+          "id": "eyedropper",
+          "relation": "alternative",
+          "note": {
+            "en": "Color picker, similar to the PowerToys Color Picker.",
+            "pt_BR": "Seletor de cores, semelhante ao Color Picker do PowerToys."
+          }
+        },
+        {
+          "id": "krename",
+          "relation": "alternative",
+          "note": {
+            "en": "Batch file renamer, similar to PowerRename.",
+            "pt_BR": "Renomeador de arquivos em lote, semelhante ao PowerRename."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported"
+      },
+      "message": {
+        "en": "PowerToys is Windows-only. Many of its features (window snapping, launcher, shortcuts) are built into Linux desktops.",
+        "pt_BR": "O PowerToys é exclusivo do Windows. Muitos recursos dele (encaixe de janelas, lançador, atalhos) já vêm nos ambientes Linux."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt"
+      ]
+    },
+    {
+      "id": "albert",
+      "name": "Albert",
+      "category": "utilities",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "albert"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "albert"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur"
+      ]
+    },
+    {
+      "id": "eyedropper",
+      "name": "Eyedropper",
+      "category": "utilities",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "eyedropper"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "eyedropper"
+        ],
+        "flatpak": [
+          "com.github.finefindus.eyedropper"
+        ],
+        "desktop": [
+          "com.github.finefindus.eyedropper.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "krename",
+      "name": "KRename",
+      "vendor": "KDE",
+      "category": "utilities",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "krename"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "krename"
+        ],
+        "desktop": [
+          "org.kde.krename.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman"
+      ]
+    },
+    {
+      "id": "ccleaner",
+      "name": "CCleaner",
+      "vendor": "Piriform",
+      "category": "system",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "ccsetup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "bleachbit",
+          "relation": "alternative",
+          "note": {
+            "en": "Frees disk space by removing caches and temporary files.",
+            "pt_BR": "Libera espaço em disco removendo caches e arquivos temporários."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "message": {
+        "en": "Linux has no registry to clean; BleachBit removes caches and temporary files.",
+        "pt_BR": "O Linux não tem registro para limpar; o BleachBit remove caches e arquivos temporários."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "bleachbit",
+      "name": "BleachBit",
+      "category": "system",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "bleachbit * setup*"
+        ],
+        "packages": [
+          "bleachbit"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "bleachbit"
+        ],
+        "flatpak": [
+          "org.bleachbit.BleachBit"
+        ],
+        "desktop": [
+          "org.bleachbit.BleachBit.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "cpu-z",
+      "name": "CPU-Z",
+      "vendor": "CPUID",
+      "category": "hardware",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "cpu z *"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "cpu-x",
+          "relation": "alternative",
+          "note": {
+            "en": "Shows CPU, motherboard, memory and GPU details, like CPU-Z.",
+            "pt_BR": "Mostra detalhes de CPU, placa-mãe, memória e GPU, como o CPU-Z."
+          }
+        },
+        {
+          "id": "hardinfo2",
+          "relation": "alternative",
+          "note": {
+            "en": "System information and benchmark tool.",
+            "pt_BR": "Ferramenta de informações do sistema e benchmark."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "speccy",
+      "name": "Speccy",
+      "vendor": "Piriform",
+      "category": "hardware",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "spsetup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "cpu-x",
+          "relation": "alternative",
+          "note": {
+            "en": "Shows CPU, motherboard, memory and GPU details, like CPU-Z.",
+            "pt_BR": "Mostra detalhes de CPU, placa-mãe, memória e GPU, como o CPU-Z."
+          }
+        },
+        {
+          "id": "hardinfo2",
+          "relation": "alternative",
+          "note": {
+            "en": "System information and benchmark tool.",
+            "pt_BR": "Ferramenta de informações do sistema e benchmark."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "cpu-x",
+      "name": "CPU-X",
+      "category": "hardware",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "cpu-x"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "cpu-x"
+        ],
+        "flatpak": [
+          "io.github.thetumultuousunicornofdarkness.cpu-x"
+        ],
+        "desktop": [
+          "io.github.thetumultuousunicornofdarkness.cpu-x.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "hardinfo2",
+      "name": "HardInfo2",
+      "category": "hardware",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "hardinfo2"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "hardinfo2"
+        ],
+        "desktop": [
+          "hardinfo2.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman"
+      ]
+    },
+    {
+      "id": "windirstat",
+      "name": "WinDirStat",
+      "category": "system",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "windirstat*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "filelight",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE disk usage analyzer with a ring chart.",
+            "pt_BR": "Analisador de uso de disco do KDE com gráfico em anéis."
+          }
+        },
+        {
+          "id": "baobab",
+          "relation": "alternative",
+          "note": {
+            "en": "GNOME disk usage analyzer.",
+            "pt_BR": "Analisador de uso de disco do GNOME."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "treesize",
+      "name": "TreeSize",
+      "vendor": "JAM Software",
+      "category": "system",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "treesize*setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "filelight",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE disk usage analyzer with a ring chart.",
+            "pt_BR": "Analisador de uso de disco do KDE com gráfico em anéis."
+          }
+        },
+        {
+          "id": "baobab",
+          "relation": "alternative",
+          "note": {
+            "en": "GNOME disk usage analyzer.",
+            "pt_BR": "Analisador de uso de disco do GNOME."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "baobab",
+      "name": "Disk Usage Analyzer (Baobab)",
+      "vendor": "The GNOME Project",
+      "category": "system",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "baobab"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "baobab"
+        ],
+        "flatpak": [
+          "org.gnome.baobab"
+        ],
+        "desktop": [
+          "org.gnome.baobab.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "filelight",
+      "name": "Filelight",
+      "vendor": "KDE",
+      "category": "system",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "filelight"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "filelight"
+        ],
+        "flatpak": [
+          "org.kde.filelight"
+        ],
+        "desktop": [
+          "org.kde.filelight.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "f-lux",
+      "name": "f.lux",
+      "category": "utilities",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "flux setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "redshift",
+          "relation": "alternative",
+          "note": {
+            "en": "Adjusts screen color temperature by time of day (X11).",
+            "pt_BR": "Ajusta a temperatura de cor da tela conforme o horário (X11)."
+          }
+        },
+        {
+          "id": "gammastep",
+          "relation": "alternative",
+          "note": {
+            "en": "Screen color temperature tool that also works on Wayland.",
+            "pt_BR": "Ferramenta de temperatura de cor da tela que também funciona no Wayland."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported"
+      },
+      "message": {
+        "en": "KDE Plasma and GNOME include a built-in night light in the display settings.",
+        "pt_BR": "O KDE Plasma e o GNOME já trazem luz noturna nas configurações de tela."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "redshift",
+      "name": "Redshift",
+      "category": "utilities",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "redshift"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "redshift"
+        ],
+        "desktop": [
+          "redshift-gtk.desktop",
+          "redshift.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman"
+      ]
+    },
+    {
+      "id": "gammastep",
+      "name": "Gammastep",
+      "category": "utilities",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "gammastep"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "gammastep"
+        ],
+        "desktop": [
+          "gammastep-indicator.desktop",
+          "gammastep.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman"
+      ]
+    },
+    {
+      "id": "rufus",
+      "name": "Rufus",
+      "category": "system",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "rufus *",
+          "rufus"
+        ],
+        "products": [
+          "rufus"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "impression",
+          "relation": "alternative",
+          "note": {
+            "en": "Writes disk images (ISO) to USB drives.",
+            "pt_BR": "Grava imagens de disco (ISO) em pendrives."
+          }
+        },
+        {
+          "id": "isoimagewriter",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE tool to write ISO images to USB drives.",
+            "pt_BR": "Ferramenta do KDE para gravar imagens ISO em pendrives."
+          }
+        },
+        {
+          "id": "ventoy",
+          "relation": "alternative",
+          "note": {
+            "en": "Prepares a USB drive that boots many ISO files.",
+            "pt_BR": "Prepara um pendrive que inicia vários arquivos ISO."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "balena-etcher",
+      "name": "balenaEtcher",
+      "vendor": "Balena",
+      "category": "system",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "balenaetcher*"
+        ],
+        "formats": [
+          "exe",
+          "appimage",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "balena-etcher"
+        ],
+        "website": "https://etcher.balena.io/#download-etcher"
+      },
+      "alternatives": [
+        {
+          "id": "impression",
+          "relation": "alternative",
+          "note": {
+            "en": "Writes disk images (ISO) to USB drives.",
+            "pt_BR": "Grava imagens de disco (ISO) em pendrives."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "vendor"
+      ]
+    },
+    {
+      "id": "ventoy",
+      "name": "Ventoy",
+      "category": "system",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "ventoy * windows*"
+        ],
+        "packages": [
+          "ventoy"
+        ],
+        "formats": [
+          "exe",
+          "tarball"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "ventoy"
+        ],
+        "desktop": [
+          "ventoy.desktop"
+        ],
+        "website": "https://www.ventoy.net/en/download.html"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "impression",
+      "name": "Impression",
+      "category": "system",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "impression"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "impression"
+        ],
+        "flatpak": [
+          "io.gitlab.adhami3310.Impression"
+        ],
+        "desktop": [
+          "io.gitlab.adhami3310.Impression.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "isoimagewriter",
+      "name": "ISO Image Writer",
+      "vendor": "KDE",
+      "category": "system",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "isoimagewriter"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "isoimagewriter"
+        ],
+        "desktop": [
+          "org.kde.isoimagewriter.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman"
+      ]
+    },
+    {
+      "id": "popsicle",
+      "name": "Popsicle",
+      "category": "system",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "popsicle"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "popsicle"
+        ],
+        "flatpak": [
+          "com.system76.Popsicle"
+        ],
+        "desktop": [
+          "com.system76.Popsicle.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "virtualbox",
+      "name": "Oracle VirtualBox",
+      "vendor": "Oracle Corporation",
+      "category": "virtualization",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "virtualbox * win*"
+        ],
+        "packages": [
+          "virtualbox"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "virtualbox"
+        ],
+        "desktop": [
+          "virtualbox.desktop"
+        ],
+        "website": "https://wiki.archlinux.org/title/VirtualBox"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "vmware-workstation",
+      "name": "VMware Workstation",
+      "vendor": "Broadcom",
+      "category": "virtualization",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "vmware workstation*"
+        ],
+        "formats": [
+          "exe",
+          "bin"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "vmware-workstation"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "virt-manager",
+          "relation": "alternative",
+          "note": {
+            "en": "Full virtual machine manager based on KVM/QEMU.",
+            "pt_BR": "Gerenciador completo de máquinas virtuais baseado em KVM/QEMU."
+          }
+        },
+        {
+          "id": "gnome-boxes",
+          "relation": "alternative",
+          "note": {
+            "en": "Simple app to create and run virtual machines.",
+            "pt_BR": "Aplicativo simples para criar e usar máquinas virtuais."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur"
+      ]
+    },
+    {
+      "id": "gnome-boxes",
+      "name": "GNOME Boxes",
+      "vendor": "The GNOME Project",
+      "category": "virtualization",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "gnome-boxes"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "gnome-boxes"
+        ],
+        "flatpak": [
+          "org.gnome.Boxes"
+        ],
+        "desktop": [
+          "org.gnome.Boxes.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "virt-manager",
+      "name": "Virtual Machine Manager",
+      "category": "virtualization",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "virt-manager"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "virt-manager"
+        ],
+        "flatpak": [
+          "org.virt_manager.virt-manager"
+        ],
+        "desktop": [
+          "virt-manager.desktop",
+          "org.virt_manager.virt-manager.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "syncthing",
+      "name": "Syncthing",
+      "category": "cloud-storage",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "syncthing windows setup*",
+          "syncthing windows*"
+        ],
+        "packages": [
+          "syncthing"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "syncthing",
+          "syncthingtray"
+        ],
+        "flatpak": [
+          "com.github.zocker_160.SyncThingy"
+        ],
+        "desktop": [
+          "syncthingtray.desktop",
+          "com.github.zocker_160.SyncThingy.desktop"
+        ],
+        "website": "https://syncthing.net/downloads/"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "google-drive",
+      "name": "Google Drive for desktop",
+      "vendor": "Google LLC",
+      "category": "cloud-storage",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "googledrivesetup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://drive.google.com/"
+      },
+      "alternatives": [
+        {
+          "id": "kio-gdrive",
+          "relation": "alternative",
+          "note": {
+            "en": "Shows Google Drive inside KDE's file manager (Dolphin).",
+            "pt_BR": "Mostra o Google Drive dentro do gerenciador de arquivos do KDE (Dolphin)."
+          }
+        },
+        {
+          "id": "rclone",
+          "relation": "alternative",
+          "note": {
+            "en": "Command-line sync and mount tool for Google Drive and many other clouds.",
+            "pt_BR": "Ferramenta de linha de comando para sincronizar e montar Google Drive e outras nuvens."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "kio-gdrive",
+      "name": "KIO GDrive",
+      "vendor": "KDE",
+      "category": "cloud-storage",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "kio-gdrive"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "kio-gdrive"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman"
+      ]
+    },
+    {
+      "id": "rclone",
+      "name": "rclone",
+      "category": "cloud-storage",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "rclone"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "rclone"
+        ],
+        "website": "https://rclone.org/"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "onedrive",
+      "name": "Microsoft OneDrive",
+      "vendor": "Microsoft Corporation",
+      "category": "cloud-storage",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "onedrivesetup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://onedrive.live.com/"
+      },
+      "alternatives": [
+        {
+          "id": "onedrive-abraunegg",
+          "relation": "alternative",
+          "note": {
+            "en": "Unofficial OneDrive sync client for Linux.",
+            "pt_BR": "Cliente não oficial de sincronização do OneDrive para Linux."
+          }
+        },
+        {
+          "id": "rclone",
+          "relation": "alternative",
+          "note": {
+            "en": "Can sync and mount OneDrive from the command line.",
+            "pt_BR": "Sincroniza e monta o OneDrive pela linha de comando."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "vendor"
+      ]
+    },
+    {
+      "id": "onedrive-abraunegg",
+      "name": "OneDrive Client for Linux",
+      "category": "cloud-storage",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "onedrive-abraunegg"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "onedrive-abraunegg"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur"
+      ]
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "vendor": "Dropbox, Inc.",
+      "category": "cloud-storage",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "dropbox*installer*",
+          "dropboxinstaller*"
+        ],
+        "packages": [
+          "dropbox",
+          "nautilus-dropbox"
+        ],
+        "formats": [
+          "exe",
+          "deb",
+          "rpm"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "dropbox"
+        ],
+        "flatpak": [
+          "com.dropbox.Client"
+        ],
+        "desktop": [
+          "com.dropbox.Client.desktop"
+        ],
+        "website": "https://www.dropbox.com/install-linux"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "aur",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "nextcloud",
+      "name": "Nextcloud Desktop",
+      "category": "cloud-storage",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "nextcloud * x64*"
+        ],
+        "packages": [
+          "nextcloud-desktop",
+          "nextcloud-client"
+        ],
+        "formats": [
+          "msi",
+          "exe",
+          "appimage"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "nextcloud-client"
+        ],
+        "flatpak": [
+          "com.nextcloud.desktopclient.nextcloud"
+        ],
+        "desktop": [
+          "com.nextcloud.desktopclient.nextcloud.desktop"
+        ],
+        "website": "https://nextcloud.com/install/#install-clients"
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub",
+        "vendor"
+      ]
+    },
+    {
+      "id": "proton-drive",
+      "name": "Proton Drive",
+      "vendor": "Proton AG",
+      "category": "cloud-storage",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "web"
+      ],
+      "match": {
+        "filenames": [
+          "proton*drive*setup*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "website": "https://drive.proton.me/"
+      },
+      "alternatives": [
+        {
+          "id": "rclone",
+          "relation": "alternative",
+          "note": {
+            "en": "Supports Proton Drive from the command line.",
+            "pt_BR": "Suporta o Proton Drive pela linha de comando."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "vendor"
+      ]
+    },
+    {
+      "id": "qbittorrent",
+      "name": "qBittorrent",
+      "category": "network",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "qbittorrent * setup*"
+        ],
+        "packages": [
+          "qbittorrent"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "qbittorrent"
+        ],
+        "flatpak": [
+          "org.qbittorrent.qBittorrent"
+        ],
+        "desktop": [
+          "org.qbittorrent.qBittorrent.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "transmission",
+      "name": "Transmission",
+      "category": "network",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "transmission * x64*",
+          "transmission * x86*"
+        ],
+        "packages": [
+          "transmission-gtk",
+          "transmission-qt"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "transmission-gtk",
+          "transmission-qt"
+        ],
+        "flatpak": [
+          "com.transmissionbt.Transmission"
+        ],
+        "desktop": [
+          "transmission-gtk.desktop",
+          "transmission-qt.desktop",
+          "com.transmissionbt.Transmission.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "ktorrent",
+      "name": "KTorrent",
+      "vendor": "KDE",
+      "category": "network",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "ktorrent"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "ktorrent"
+        ],
+        "flatpak": [
+          "org.kde.ktorrent"
+        ],
+        "desktop": [
+          "org.kde.ktorrent.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "utorrent",
+      "name": "µTorrent",
+      "aliases": [
+        "uTorrent"
+      ],
+      "category": "network",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "utorrent*",
+          "utweb*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "qbittorrent",
+          "relation": "alternative",
+          "note": {
+            "en": "Ad-free open-source BitTorrent client.",
+            "pt_BR": "Cliente BitTorrent de código aberto e sem anúncios."
+          }
+        },
+        {
+          "id": "transmission",
+          "relation": "alternative",
+          "note": {
+            "en": "Simple, lightweight BitTorrent client.",
+            "pt_BR": "Cliente BitTorrent simples e leve."
+          }
+        },
+        {
+          "id": "ktorrent",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE BitTorrent client.",
+            "pt_BR": "Cliente BitTorrent do KDE."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "bittorrent",
+      "name": "BitTorrent",
+      "category": "network",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "bittorrent*",
+          "btweb*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "qbittorrent",
+          "relation": "alternative",
+          "note": {
+            "en": "Ad-free open-source BitTorrent client.",
+            "pt_BR": "Cliente BitTorrent de código aberto e sem anúncios."
+          }
+        },
+        {
+          "id": "transmission",
+          "relation": "alternative",
+          "note": {
+            "en": "Simple, lightweight BitTorrent client.",
+            "pt_BR": "Cliente BitTorrent simples e leve."
+          }
+        },
+        {
+          "id": "ktorrent",
+          "relation": "alternative",
+          "note": {
+            "en": "KDE BitTorrent client.",
+            "pt_BR": "Cliente BitTorrent do KDE."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unknown"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "jdownloader",
+      "name": "JDownloader 2",
+      "category": "network",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "jdownloader2setup*"
+        ],
+        "packages": [
+          "jdownloader2"
+        ],
+        "formats": [
+          "exe",
+          "sh"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "jdownloader2"
+        ],
+        "flatpak": [
+          "org.jdownloader.JDownloader"
+        ],
+        "desktop": [
+          "jdownloader.desktop",
+          "org.jdownloader.JDownloader.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "windows-iso",
+      "name": "Microsoft Windows (installation media)",
+      "vendor": "Microsoft Corporation",
+      "category": "virtualization",
+      "kind": "system",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "win11 *",
+          "win10 *",
+          "mediacreationtool*",
+          "windows11installationassistant*",
+          "windows10upgrade*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "gnome-boxes",
+          "relation": "alternative",
+          "note": {
+            "en": "Simple app to create and run virtual machines.",
+            "pt_BR": "Aplicativo simples para criar e usar máquinas virtuais."
+          }
+        },
+        {
+          "id": "virt-manager",
+          "relation": "alternative",
+          "note": {
+            "en": "Full virtual machine manager based on KVM/QEMU.",
+            "pt_BR": "Gerenciador completo de máquinas virtuais baseado em KVM/QEMU."
+          }
+        },
+        {
+          "id": "virtualbox",
+          "relation": "alternative",
+          "note": {
+            "en": "Oracle's virtual machine program, also available for Linux.",
+            "pt_BR": "Programa de máquinas virtuais da Oracle, também disponível para Linux."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported"
+      },
+      "message": {
+        "en": "To use Windows alongside BigLinux, install it in a virtual machine (GNOME Boxes, virt-manager or VirtualBox).",
+        "pt_BR": "Para usar o Windows junto com o BigLinux, instale-o em uma máquina virtual (GNOME Boxes, virt-manager ou VirtualBox)."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "nvidia-driver",
+      "name": "NVIDIA graphics driver (Windows)",
+      "vendor": "NVIDIA Corporation",
+      "category": "hardware",
+      "kind": "system",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "* desktop win10 win11 64bit*",
+          "* notebook win10 win11 64bit*",
+          "nvidia app*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Drivers cannot be installed through Wine.",
+          "pt_BR": "Drivers não podem ser instalados pelo Wine."
+        }
+      },
+      "message": {
+        "en": "NVIDIA's Windows driver does not work on Linux. Install the NVIDIA driver with the BigLinux Driver Manager.",
+        "pt_BR": "O driver da NVIDIA para Windows não funciona no Linux. Instale o driver NVIDIA pelo Gerenciador de Drivers do BigLinux."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt"
+      ],
+      "alternatives": [
+        {
+          "id": "biglinux-driver-manager",
+          "relation": "alternative",
+          "note": {
+            "en": "Installs and switches the right driver for your hardware.",
+            "pt_BR": "Instala e troca o driver certo para o seu hardware."
+          }
+        }
+      ]
+    },
+    {
+      "id": "amd-adrenalin",
+      "name": "AMD Software: Adrenalin Edition",
+      "vendor": "Advanced Micro Devices",
+      "category": "hardware",
+      "kind": "system",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "*amd software adrenalin*",
+          "amd software installer*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Drivers cannot be installed through Wine.",
+          "pt_BR": "Drivers não podem ser instalados pelo Wine."
+        }
+      },
+      "message": {
+        "en": "AMD graphics drivers are already part of the Linux kernel and Mesa; nothing needs to be installed.",
+        "pt_BR": "Os drivers gráficos da AMD já fazem parte do kernel Linux e do Mesa; não é preciso instalar nada."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt"
+      ]
+    },
+    {
+      "id": "hp-printer-software",
+      "name": "HP printer software (Windows)",
+      "vendor": "HP Inc.",
+      "category": "hardware",
+      "kind": "system",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "hpeasystart*",
+          "hp smart*setup*",
+          "full webpack*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "hplip"
+        ],
+        "desktop": [
+          "hp-uiscan.desktop",
+          "hplip.desktop"
+        ],
+        "website": "https://developers.hp.com/hp-linux-imaging-and-printing"
+      },
+      "windows": {
+        "wine": "unsupported",
+        "note": {
+          "en": "Drivers cannot be installed through Wine.",
+          "pt_BR": "Drivers não podem ser instalados pelo Wine."
+        }
+      },
+      "message": {
+        "en": "Windows drivers do not work on Linux. Most hardware is supported by the kernel; for the rest use the BigLinux Driver Manager or the package manager.",
+        "pt_BR": "Drivers do Windows não funcionam no Linux. A maior parte do hardware é suportada pelo kernel; para o resto, use o Gerenciador de Drivers do BigLinux ou o gerenciador de pacotes."
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "vendor"
+      ]
+    },
+    {
+      "id": "razer-synapse",
+      "name": "Razer Synapse",
+      "vendor": "Razer Inc.",
+      "category": "hardware",
+      "kind": "application",
+      "platforms": [
+        "windows"
+      ],
+      "match": {
+        "filenames": [
+          "razersynapseinstaller*",
+          "razer synapse*installer*"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "alternatives": [
+        {
+          "id": "razergenie",
+          "relation": "alternative",
+          "note": {
+            "en": "Configures Razer devices using OpenRazer.",
+            "pt_BR": "Configura dispositivos Razer usando o OpenRazer."
+          }
+        },
+        {
+          "id": "openrgb",
+          "relation": "alternative",
+          "note": {
+            "en": "Controls RGB lighting of many brands.",
+            "pt_BR": "Controla a iluminação RGB de várias marcas."
+          }
+        }
+      ],
+      "windows": {
+        "wine": "unsupported"
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "zorin-exec-guard-app-db"
+      ]
+    },
+    {
+      "id": "razergenie",
+      "name": "RazerGenie",
+      "category": "hardware",
+      "kind": "application",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "razergenie"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "razergenie"
+        ],
+        "flatpak": [
+          "xyz.z3ntu.razergenie"
+        ],
+        "desktop": [
+          "xyz.z3ntu.razergenie.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "aur",
+        "flathub"
+      ]
+    },
+    {
+      "id": "openrgb",
+      "name": "OpenRGB",
+      "category": "hardware",
+      "kind": "application",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "match": {
+        "filenames": [
+          "openrgb * windows*"
+        ],
+        "packages": [
+          "openrgb"
+        ],
+        "formats": [
+          "exe",
+          "msi"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "openrgb"
+        ],
+        "flatpak": [
+          "org.openrgb.OpenRGB"
+        ],
+        "desktop": [
+          "org.openrgb.OpenRGB.desktop"
+        ]
+      },
+      "windows": {
+        "wine": "not-needed",
+        "note": {
+          "en": "A native Linux version exists; use it instead of the Windows installer.",
+          "pt_BR": "Existe versão nativa para Linux; use-a em vez do instalador do Windows."
+        }
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "big-trust-alt",
+        "pacman",
+        "flathub"
+      ]
+    },
+    {
+      "id": "biglinux-driver-manager",
+      "name": "BigLinux Driver Manager",
+      "aliases": [
+        "Gerenciador de Drivers do BigLinux"
+      ],
+      "vendor": "BigLinux",
+      "category": "hardware",
+      "kind": "system",
+      "platforms": [
+        "linux"
+      ],
+      "match": {
+        "packages": [
+          "biglinux-driver-manager"
+        ]
+      },
+      "linux": {
+        "packages": [
+          "biglinux-driver-manager"
+        ],
+        "desktop": [
+          "br.com.biglinux.drivermanager.desktop"
+        ]
+      },
+      "verified": "2026-11-12",
+      "provenance": [
+        "pacman"
+      ]
+    }
+  ]
+}

@@ -14,10 +14,8 @@ Sem dependência de KDE, GNOME ou de um compositor: só GTK4, XDG e `Gio`.
 
 **Associação de arquivos:**
 
-- O `.desktop` declara apenas os tipos do Windows (`application/x-msdownload`, `x-ms-dos-executable`, `vnd.microsoft.portable-executable`, `x-msi`, `msix`, `appx`, `x-bat`).
-- Instalar o pacote **não grava** nenhum padrão.
-- Nas Preferências, "Abrir programas do Windows com o Big Trust Alt":
-  - grava o padrão no `~/.config/mimeapps.list` e guarda os anteriores;
-  - acrescenta o app em "Abrir com" para `.deb`, `.rpm`, AppImage, `.jar`, `.flatpakref` e scripts, sem mudar o padrão desses tipos;
-  - desligar a opção restaura tudo (`big-trust-alt --dissociate`).
-- O `big-pkg-installer` continua o padrão de `.deb/.rpm`. O `big-executable` continua com `x-executable/x-shellscript`.
+- O `.desktop` declara todos os tipos analisados: os do Windows (`application/x-msdownload`, `x-ms-dos-executable`, `vnd.microsoft.portable-executable`, `x-msi`, `msix`, `appx`, `x-bat`) e `vnd.debian.binary-package`, `x-deb`, `x-rpm`, `vnd.appimage`, `x-executable`, `x-shellscript`, `java-archive`, `vnd.flatpak.ref`, `vnd.flatpak`. Assim ele aparece em "Abrir com" em qualquer desktop.
+- **Nas sessões Big WindowMaker o Big Trust Alt abre primeiro.** Isso é decidido pelo big-wm em `/etc/xdg/{windowmaker,wlmaker}-mimeapps.list`, que o XDG lê antes do `/etc/xdg/mimeapps.list` da BigLinux (o qual manda `.deb` para o big-pkg-installer, `.rpm` para o rpmtoarch e AppImage/scripts para o big-executable). Esses programas ficam atrás na lista: sem o Big Trust Alt, o XDG abre o próximo.
+- Em outros desktops o padrão não muda ao instalar. A opção "Abrir programas e pacotes baixados com o Big Trust Alt" das Preferências (ou `big-trust-alt --associate`) grava o padrão no `~/.config/mimeapps.list` e guarda os anteriores; desligar (`--dissociate`) restaura tudo.
+- A escolha do usuário (`~/.config/mimeapps.list`) vale mais que a da sessão.
+- Dentro do Big Trust Alt, "Converter e instalar" chama o `big-pkg-installer-gui` diretamente, e executar um AppImage ou script chama o próprio arquivo: não há volta para o Big Trust Alt.

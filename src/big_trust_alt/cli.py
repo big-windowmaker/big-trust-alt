@@ -24,7 +24,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--offline", action="store_true", help=_("do not query the AUR over the network"))
     p.add_argument("--associations", action="store_true", help=_("show the file associations"))
     p.add_argument("--associate", action="store_true",
-                   help=_("make Big Trust Alt the default for Windows programs (previous choices are saved)"))
+                   help=_("make Big Trust Alt the default for downloaded programs and packages (previous choices are saved)"))
     p.add_argument("--dissociate", action="store_true", help=_("restore the previous file associations"))
     p.add_argument("--diagnostics", action="store_true", help=_("print a diagnostics report without personal data"))
     p.add_argument("--version", action="version", version=f"big-trust-alt {__version__}")

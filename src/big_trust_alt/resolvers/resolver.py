@@ -327,8 +327,10 @@ class Resolver:
         for opt in options:
             if not opt.available or opt.experimental:
                 continue
-            if opt.relation in (Relation.COMPATIBILITY, Relation.ORIGINAL) and \
-                    opt.kind not in (OptionKind.INSTALL_FLATPAKREF, OptionKind.INSTALL_PACKAGE_FILE):
+            # The file itself is recommended only when it is a package to install;
+            # it comes after the native options because of its rank.
+            if opt.relation in (Relation.COMPATIBILITY, Relation.ORIGINAL) and opt.kind not in (
+                    OptionKind.INSTALL_FLATPAKREF, OptionKind.INSTALL_PACKAGE_FILE, OptionKind.CONVERT_PACKAGE):
                 continue
             if opt.kind == OptionKind.OPEN_WEBSITE and opt.relation != Relation.SAME:
                 continue

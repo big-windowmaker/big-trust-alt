@@ -41,9 +41,9 @@ msgstr "mostra as associações de arquivos"
 
 #: src/big_trust_alt/cli.py:27
 msgid ""
-"make Big Trust Alt the default for Windows programs (previous choices are "
-"saved)"
-msgstr "torna o Big Trust Alt o padrão para programas do Windows (as escolhas anteriores são guardadas)"
+"make Big Trust Alt the default for downloaded programs and packages "
+"(previous choices are saved)"
+msgstr "torna o Big Trust Alt o padrão para programas e pacotes baixados (as escolhas anteriores são guardadas)"
 
 #: src/big_trust_alt/cli.py:28
 msgid "restore the previous file associations"
@@ -53,12 +53,12 @@ msgstr "restaura as associações de arquivos anteriores"
 msgid "print a diagnostics report without personal data"
 msgstr "mostra um relatório de diagnóstico sem dados pessoais"
 
-#: src/big_trust_alt/cli.py:44 src/big_trust_alt/ui/preferences.py:62
+#: src/big_trust_alt/cli.py:44 src/big_trust_alt/ui/preferences.py:63
 #, python-brace-format
 msgid "Associated: {n} file types."
 msgstr "Associados: {n} tipos de arquivo."
 
-#: src/big_trust_alt/cli.py:47 src/big_trust_alt/ui/preferences.py:65
+#: src/big_trust_alt/cli.py:47 src/big_trust_alt/ui/preferences.py:66
 #, python-brace-format
 msgid "Restored: {n} file types."
 msgstr "Restaurados: {n} tipos de arquivo."
@@ -624,13 +624,15 @@ msgstr "Associação de arquivos"
 
 #: src/big_trust_alt/ui/preferences.py:41
 msgid ""
-"Opening a Windows program in the file manager shows Big Trust Alt. Your "
-"previous choices are saved and come back when you turn this off."
-msgstr "Abrir um programa do Windows no gerenciador de arquivos mostra o Big Trust Alt. Suas escolhas anteriores são guardadas e voltam quando você desliga esta opção."
+"Opening a downloaded program or package (.exe, .msi, .deb, .rpm, AppImage, "
+"scripts…) in the file manager shows Big Trust Alt first. In the Big "
+"WindowMaker sessions this is already the default. Your previous choices are "
+"saved and come back when you turn this off."
+msgstr "Abrir um programa ou pacote baixado (.exe, .msi, .deb, .rpm, AppImage, scripts…) no gerenciador de arquivos mostra primeiro o Big Trust Alt. Nas sessões Big WindowMaker isso já é o padrão. Suas escolhas anteriores são guardadas e voltam quando você desliga esta opção."
 
-#: src/big_trust_alt/ui/preferences.py:43
-msgid "Open Windows programs with Big Trust Alt"
-msgstr "Abrir programas do Windows com o Big Trust Alt"
+#: src/big_trust_alt/ui/preferences.py:44
+msgid "Open downloaded programs and packages with Big Trust Alt"
+msgstr "Abrir programas e pacotes baixados com o Big Trust Alt"
 
 #: src/big_trust_alt/ui/window.py:98
 msgid "Open file…"

@@ -173,3 +173,16 @@ def test_installed_cli_tool_is_recommended_not_an_alternative(catalog, write):
     a = resolve(catalog, write("7z2501-x64.msi", build_msi("7-Zip (x64 edition) Package", "Igor Pavlov")), repos=repos)
     assert a.recommended.kind == OptionKind.OPEN_INSTALLED and a.recommended.relation == Relation.SAME
     assert not a.recommended.available and a.recommended.unavailable_reason
+
+
+def test_unknown_deb_recommends_big_pkg_installer(catalog, write):
+    a = resolve(catalog, write("some-tool_1.0_amd64.deb", build_deb("some-tool")))
+    assert a.level == Level.UNKNOWN
+    assert a.recommended.kind == OptionKind.CONVERT_PACKAGE
+
+
+def test_known_deb_without_native_recommends_big_pkg_installer(catalog, write):
+    a = resolve(catalog, write("google-chrome-stable_current_amd64.deb", build_deb("google-chrome-stable")),
+                flatpak=FakeFlatpak(), aur=FakeAur())
+    assert a.entry_id == "google-chrome"
+    assert a.recommended.kind == OptionKind.CONVERT_PACKAGE

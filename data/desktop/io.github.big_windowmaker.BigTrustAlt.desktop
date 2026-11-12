@@ -10,4 +10,4 @@ Terminal=false
 Categories=System;PackageManager;
 StartupNotify=true
 StartupWMClass=io.github.big_windowmaker.BigTrustAlt
-MimeType=application/x-ms-dos-executable;application/x-msdownload;application/vnd.microsoft.portable-executable;application/x-msi;application/msix;application/appx;application/x-bat;
+MimeType=application/x-ms-dos-executable;application/x-msdownload;application/vnd.microsoft.portable-executable;application/x-msi;application/msix;application/appx;application/x-bat;application/vnd.debian.binary-package;application/x-deb;application/x-rpm;application/x-redhat-package-manager;application/vnd.appimage;application/x-iso9660-appimage;application/x-executable;application/x-shellscript;application/java-archive;application/x-java-archive;application/vnd.flatpak.ref;application/vnd.flatpak;

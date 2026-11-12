@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 — 2026-11-12
+
+- O Big Trust Alt se declara para todos os tipos que analisa (`.deb`, `.rpm`, AppImage, executáveis ELF, scripts, `.jar`, `.flatpakref`), além dos do Windows. Nas sessões Big WindowMaker ele abre primeiro (padrão do big-wm); nos outros desktops, pela opção das Preferências, que agora cobre todos esses tipos.
+- `.deb`/`.rpm` sem equivalente nativo: o big-pkg-installer passa a ser a recomendação (antes, nenhuma).
+- `--dissociate` também limpa as entradas "Abrir com" gravadas pela 0.1.0.
+
 ## 0.1.0 — 2026-11-12
 
 Primeira versão.

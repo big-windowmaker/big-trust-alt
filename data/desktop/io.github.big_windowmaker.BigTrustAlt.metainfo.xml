@@ -25,6 +25,9 @@
     <mediatype>application/x-msi</mediatype>
   </provides>
   <releases>
+    <release version="0.1.1" date="2026-11-12">
+      <description><p>Opens downloaded packages, AppImages and scripts first, before the installers.</p></description>
+    </release>
     <release version="0.1.0" date="2026-11-12">
       <description><p>First release.</p></description>
     </release>

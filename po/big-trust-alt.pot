@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: big-trust-alt 0.1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/big-windowmaker/big-trust-alt/"
 "issues\n"
-"POT-Creation-Date: 2026-11-12 04:38-0300\n"
+"POT-Creation-Date: 2026-11-12 06:26-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,8 +49,8 @@ msgstr ""
 
 #: src/big_trust_alt/cli.py:27
 msgid ""
-"make Big Trust Alt the default for Windows programs (previous choices are "
-"saved)"
+"make Big Trust Alt the default for downloaded programs and packages "
+"(previous choices are saved)"
 msgstr ""
 
 #: src/big_trust_alt/cli.py:28
@@ -61,12 +61,12 @@ msgstr ""
 msgid "print a diagnostics report without personal data"
 msgstr ""
 
-#: src/big_trust_alt/cli.py:44 src/big_trust_alt/ui/preferences.py:62
+#: src/big_trust_alt/cli.py:44 src/big_trust_alt/ui/preferences.py:63
 #, python-brace-format
 msgid "Associated: {n} file types."
 msgstr ""
 
-#: src/big_trust_alt/cli.py:47 src/big_trust_alt/ui/preferences.py:65
+#: src/big_trust_alt/cli.py:47 src/big_trust_alt/ui/preferences.py:66
 #, python-brace-format
 msgid "Restored: {n} file types."
 msgstr ""
@@ -632,12 +632,14 @@ msgstr ""
 
 #: src/big_trust_alt/ui/preferences.py:41
 msgid ""
-"Opening a Windows program in the file manager shows Big Trust Alt. Your "
-"previous choices are saved and come back when you turn this off."
+"Opening a downloaded program or package (.exe, .msi, .deb, .rpm, AppImage, "
+"scripts…) in the file manager shows Big Trust Alt first. In the Big "
+"WindowMaker sessions this is already the default. Your previous choices are "
+"saved and come back when you turn this off."
 msgstr ""
 
-#: src/big_trust_alt/ui/preferences.py:43
-msgid "Open Windows programs with Big Trust Alt"
+#: src/big_trust_alt/ui/preferences.py:44
+msgid "Open downloaded programs and packages with Big Trust Alt"
 msgstr ""
 
 #: src/big_trust_alt/ui/window.py:98

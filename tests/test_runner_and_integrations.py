@@ -94,18 +94,30 @@ def test_mime_associate_and_restore(tmp_path):
     path = mime.mimeapps_path()
     path.parent.mkdir(parents=True)
     path.write_text("[Default Applications]\napplication/x-msdownload=wine.desktop;\ntext/plain=kate.desktop;\n"
-                    "[Added Associations]\napplication/vnd.debian.binary-package=big-pkg-installer.desktop;\n")
+                    "application/vnd.debian.binary-package=big-pkg-installer.desktop;\n"
+                    "[Added Associations]\napplication/x-rpm=rpmtoarch-gui.desktop;io.github.big_windowmaker.BigTrustAlt.desktop;\n")
     changed = mime.associate()
-    assert "application/x-msdownload" in changed
+    assert {"application/x-msdownload", "application/vnd.debian.binary-package", "application/x-rpm",
+            "application/vnd.appimage", "application/x-shellscript"} <= set(changed)
     text = path.read_text()
     assert "application/x-msdownload=io.github.big_windowmaker.BigTrustAlt.desktop;" in text
-    assert "big-pkg-installer.desktop;io.github.big_windowmaker.BigTrustAlt.desktop;" in text
+    assert "application/vnd.debian.binary-package=io.github.big_windowmaker.BigTrustAlt.desktop;" in text
     assert "text/plain=kate.desktop;" in text
+    assert mime.associate() == []  # idempotent
     mime.dissociate()
     text = path.read_text()
     assert "application/x-msdownload=wine.desktop;" in text
-    assert "BigTrustAlt" not in text
     assert "application/vnd.debian.binary-package=big-pkg-installer.desktop;" in text
+    assert "application/x-rpm=rpmtoarch-gui.desktop;" in text  # 0.1.0 "Open with" entry cleaned up
+    assert "BigTrustAlt" not in text
+    assert "text/plain=kate.desktop;" in text
+
+
+def test_desktop_file_declares_every_associated_type():
+    from pathlib import Path
+    desktop = Path(__file__).resolve().parent.parent / "data/desktop/io.github.big_windowmaker.BigTrustAlt.desktop"
+    line = next(x for x in desktop.read_text().splitlines() if x.startswith("MimeType="))
+    assert set(line[9:].strip(";").split(";")) == set(mime.ALL_TYPES)
 
 
 def test_history_keeps_names_not_paths(tmp_path):

@@ -13,7 +13,7 @@
 #
 # BIG_TRUST_ALT_SOURCE troca a fonte (ex.: git+file:///caminho/big-trust-alt).
 pkgname=big-trust-alt
-pkgver=0.1.0
+pkgver=0.1.1
 pkgrel=1
 pkgdesc='Find the best way to use a downloaded program on Linux: native packages, Flatpak, AUR or Wine'
 arch=(any)

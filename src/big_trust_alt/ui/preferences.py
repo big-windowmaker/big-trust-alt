@@ -38,9 +38,10 @@ class PreferencesDialog(Adw.PreferencesDialog):
 
         assoc = Adw.PreferencesGroup(
             title=_("File associations"),
-            description=_("Opening a Windows program in the file manager shows Big Trust Alt. Your "
-                          "previous choices are saved and come back when you turn this off."))
-        self.assoc = Adw.SwitchRow(title=_("Open Windows programs with Big Trust Alt"),
+            description=_("Opening a downloaded program or package (.exe, .msi, .deb, .rpm, AppImage, scripts…) in the "
+                          "file manager shows Big Trust Alt first. In the Big WindowMaker sessions this is already "
+                          "the default. Your previous choices are saved and come back when you turn this off."))
+        self.assoc = Adw.SwitchRow(title=_("Open downloaded programs and packages with Big Trust Alt"),
                                    active=any(ours for _t, _c, ours in mime.status()))
         assoc.add(self.assoc)
         page.add(assoc)

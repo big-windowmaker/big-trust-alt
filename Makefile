@@ -16,7 +16,6 @@ build:
 		mkdir -p build/locale/$$l/LC_MESSAGES; \
 		msgfmt --check -o build/locale/$$l/LC_MESSAGES/big-trust-alt.mo po/$$l.po || exit 1; \
 	done
-	sed 's/@VERSION@//' data/desktop/$(APP_ID).desktop.in > build/$(APP_ID).desktop
 
 check: build
 	$(PYTHON) tools/validate_catalog.py
@@ -33,7 +32,7 @@ install: build
 	install -m644 data/app-db/catalog/*.json $(DESTDIR)$(APPDIR)/app-db/catalog/
 	install -m644 data/schemas/*.json $(DESTDIR)$(APPDIR)/schemas/
 	install -Dm755 bin/big-trust-alt $(DESTDIR)$(PREFIX)/bin/big-trust-alt
-	install -Dm644 build/$(APP_ID).desktop $(DESTDIR)$(PREFIX)/share/applications/$(APP_ID).desktop
+	install -Dm644 data/desktop/$(APP_ID).desktop $(DESTDIR)$(PREFIX)/share/applications/$(APP_ID).desktop
 	install -Dm644 data/desktop/$(APP_ID).metainfo.xml $(DESTDIR)$(PREFIX)/share/metainfo/$(APP_ID).metainfo.xml
 	install -Dm644 data/icons/hicolor/scalable/apps/$(APP_ID).svg \
 		$(DESTDIR)$(PREFIX)/share/icons/hicolor/scalable/apps/$(APP_ID).svg

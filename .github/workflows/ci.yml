@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    container: archlinux:base-devel
+    steps:
+      - name: Dependências
+        run: |
+          for i in 1 2 3 4 5; do
+            pacman -Syu --noconfirm --needed git python python-gobject gtk4 libadwaita gettext \
+              python-pytest ruff appstream desktop-file-utils namcap && break
+            sleep 15
+          done
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Catálogo, traduções e testes
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          make check
+      - name: Lint
+        run: ruff check src tests tools
+      - name: Metadados
+        run: |
+          appstreamcli validate --no-net data/desktop/*.metainfo.xml
+          desktop-file-validate data/desktop/*.desktop
+      - name: Pacote (makepkg + namcap)
+        run: |
+          useradd -m builder
+          cp -r "$GITHUB_WORKSPACE" /home/builder/src && chown -R builder: /home/builder/src
+          su builder -c 'cd /home/builder/src/pkgbuild && \
+            BIG_TRUST_ALT_SOURCE="git+file:///home/builder/src#commit=$(git -C /home/builder/src rev-parse HEAD)" \
+            PACKAGER="Big WindowMaker <rruscher@gmail.com>" makepkg --noconfirm -f'
+          namcap /home/builder/src/pkgbuild/*.pkg.tar.zst
+          mkdir -p out && cp /home/builder/src/pkgbuild/*.pkg.tar.zst out/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: big-trust-alt-package
+          path: out/*.pkg.tar.zst

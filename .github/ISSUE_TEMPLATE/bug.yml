@@ -1,0 +1,25 @@
+name: Problema no aplicativo
+description: Algo não funcionou como deveria
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: O que aconteceu e o que você esperava
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Como reproduzir
+  - type: textarea
+    id: diag
+    attributes:
+      label: Diagnóstico
+      description: Saída de `big-trust-alt --diagnostics` (sem dados pessoais).
+      render: text
+  - type: dropdown
+    id: session
+    attributes:
+      label: Sessão
+      options: [Big WindowMaker X11, Big WindowMaker Wayland, KDE Plasma, GNOME, XFCE, Outra]

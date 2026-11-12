@@ -1,0 +1,29 @@
+name: Programa não reconhecido ou reconhecido errado
+description: Um arquivo que o Big Trust Alt não identificou, ou identificou como outro programa
+labels: [catálogo]
+body:
+  - type: textarea
+    id: report
+    attributes:
+      label: Relatório do aplicativo
+      description: No resultado, clique em "Informar identificação errada" e cole aqui (não tem pastas nem dados pessoais).
+      render: markdown
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: Qual é o programa de verdade?
+      placeholder: ex. Notepad++ 8.9 (instalador oficial)
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: De onde você baixou? (site oficial)
+      placeholder: https://…
+  - type: textarea
+    id: linux
+    attributes:
+      label: Como ter esse programa no Linux, se você souber
+      description: pacote dos repositórios, ID Flatpak, pacote do AUR ou alternativa

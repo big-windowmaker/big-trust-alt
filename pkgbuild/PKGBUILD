@@ -14,7 +14,7 @@
 # BIG_TRUST_ALT_SOURCE troca a fonte (ex.: git+file:///caminho/big-trust-alt).
 pkgname=big-trust-alt
 pkgver=0.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Find the best way to use a downloaded program on Linux: native packages, Flatpak, AUR or Wine'
 arch=(any)
 url='https://github.com/big-windowmaker/big-trust-alt'
@@ -37,6 +37,7 @@ optdepends=(
   'big-pkg-installer: converter e instalar pacotes .deb e .rpm'
   'wine: executar programas do Windows, por escolha do usuário'
   'jre-openjdk: executar aplicativos Java (.jar)'
+  'steam: abrir na loja do Steam os jogos que têm versão para Linux'
 )
 source=("big-trust-alt::${BIG_TRUST_ALT_SOURCE:-git+$url.git#tag=v$pkgver}")
 sha256sums=('SKIP')
